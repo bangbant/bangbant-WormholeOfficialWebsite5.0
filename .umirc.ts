@@ -8,7 +8,13 @@ export default defineConfig({
     {
       path: '/',
       component: '@/pages/index.jsx',
-      routes: [{ path: '/', component: './HomePage/HomePage.jsx' }],
+      routes: [
+        { path: '/', component: './HomePage/HomePage.jsx' },
+        {
+          path: '/Ecosystem',
+          component: './Ecosystem/Ecosystem.jsx',
+        },
+      ],
     },
   ],
   fastRefresh: {},
