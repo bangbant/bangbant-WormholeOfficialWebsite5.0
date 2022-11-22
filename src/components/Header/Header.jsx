@@ -41,7 +41,7 @@ export default function Header() {
       </div>
       <div className={Header_ls.HeaderBox2}>
         <div className={Header_ls.HeaderBox2_center}>
-          <span>Learn</span>
+          <span>Economic</span>
           <span>Docs</span>
           <span>Interfaces</span>
           <img src={require('../../assets/images/Header/Slice 908.png')} />
