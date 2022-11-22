@@ -69,10 +69,18 @@ export default function Header() {
                 className={Header_ls.HeaderBox3_right_spanblock}
                 style={{ opacity: basicopacity }}
               >
-                <span>Overview</span>
-                <span>Architecture</span>
-                <span>Sub Chain System</span>
-                <span>Join Wormholes</span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Overview
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Architecture
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Sub Chain System
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Join Wormholes
+                </span>
               </span>
             </span>
             <span
@@ -85,9 +93,15 @@ export default function Header() {
                 className={Header_ls.HeaderBox3_right_spanblock}
                 style={{ opacity: technologyopacity, width: '198px' }}
               >
-                <span>Multi Dimensional Chain</span>
-                <span>Wormholes Test Wallet</span>
-                <span>Wormholes Test Explor</span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Multi Dimensional Chain
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Wormholes Test Wallet
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Wormholes Test Explor
+                </span>
               </span>
             </span>
             <span
@@ -100,9 +114,18 @@ export default function Header() {
                 className={Header_ls.HeaderBox3_right_spanblock}
                 style={{ opacity: economyopacity, width: '220px' }}
               >
-                <span>Ecological Economy</span>
-                <span>Primary Network Native ERB</span>
-                <span>Primary Fragment S-NFT</span>
+                <Link
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                  to={{ pathname: '/Ecosystem', state: '' }}
+                >
+                  Ecological Economy
+                </Link>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Primary Network Native ERB
+                </span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Primary Fragment S-NFT
+                </span>
               </span>
             </span>
             <span
@@ -115,7 +138,9 @@ export default function Header() {
                 className={Header_ls.HeaderBox3_right_spanblock}
                 style={{ opacity: dappsopacity }}
               >
-                <span>Meteorite Exchange</span>
+                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                  Meteorite Exchange
+                </span>
               </span>
             </span>
           </div>
