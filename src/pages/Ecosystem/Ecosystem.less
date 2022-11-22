@@ -1,8 +1,287 @@
 .container {
   width: 100%;
   background-color: #f0f0f3;
+  padding-top: 75px;
   .content {
     width: 1220px;
     margin: 0 auto;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .topLeft {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 30px;
+        padding-top: 20px;
+        .line {
+          width: 92px;
+          height: 7px;
+          background-color: #a486fa;
+        }
+      }
+      .topRight {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        .topRightBold {
+          font-size: 32px;
+          font-weight: 800;
+          color: #000000;
+          line-height: 45px;
+        }
+        .topRightBolder {
+          margin-top: 20px;
+          font-size: 64px;
+          font-weight: 800;
+          color: #000000;
+          line-height: 60px;
+          span {
+            color: #a486fa;
+          }
+        }
+        .topRightLight {
+          margin-top: 40px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #000000;
+          line-height: 28px;
+        }
+      }
+    }
+    .circle {
+      padding-top: 100px;
+      padding-bottom: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1186px;
+        width: 1220px;
+        position: relative;
+        overflow: hidden;
+        .dot {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #a486fa;
+        }
+        .outtop1 {
+          position: absolute;
+          top: -11px;
+          left: 387px;
+          .dot {
+            position: absolute;
+            top: 72px;
+            left: 373px;
+          }
+          .text {
+            width: 230px;
+            position: absolute;
+            top: 102px;
+            left: 128px;
+          }
+        }
+        .outleft1 {
+          position: absolute;
+          top: 88px;
+          left: 7px;
+          .dot {
+            position: absolute;
+            top: 64px;
+            left: 249px;
+          }
+          .text {
+            width: 230px;
+            position: absolute;
+            top: 225px;
+            left: 149px;
+          }
+        }
+        .outleft2 {
+          position: absolute;
+          top: 496px;
+          left: -42px;
+          .dot {
+            position: absolute;
+            top: 80px;
+            left: 93px;
+          }
+          .text {
+            width: 230px;
+            position: absolute;
+            top: 149px;
+            left: 149px;
+          }
+        }
+        .outleft3 {
+          position: absolute;
+          top: 747px;
+          left: 212px;
+          .dot {
+            position: absolute;
+            top: 256px;
+            left: 45px;
+          }
+          .text {
+            width: 230px;
+            position: absolute;
+            top: 170px;
+            left: 135px;
+          }
+        }
+        .outright1 {
+          position: absolute;
+          top: 68px;
+          left: 721px;
+          .dot {
+            position: absolute;
+            top: 320px;
+            left: 400px;
+          }
+          .text {
+            width: 245px;
+            position: absolute;
+            top: 177px;
+            left: 116px;
+          }
+        }
+        .outright2 {
+          position: absolute;
+          top: 466px;
+          left: 804px;
+          .dot {
+            position: absolute;
+            top: 370px;
+            left: 287px;
+          }
+          .text {
+            width: 245px;
+            position: absolute;
+            top: 140px;
+            left: 96px;
+          }
+        }
+        .outright3 {
+          position: absolute;
+          top: 723px;
+          left: 603px;
+          .dot {
+            position: absolute;
+            top: 408px;
+            left: 130px;
+          }
+          .text {
+            width: 245px;
+            position: absolute;
+            top: 190px;
+            left: 116px;
+          }
+        }
+        .in {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 450px;
+          height: 450px;
+          .intop1 {
+            position: absolute;
+            top: 0;
+            left: 135px;
+            .number {
+              position: absolute;
+              top: 50px;
+              left: 60px;
+            }
+          }
+          .inleft1 {
+            position: absolute;
+            top: 45px;
+            left: 17px;
+            .number {
+              position: absolute;
+              top: 60px;
+              left: 50px;
+            }
+          }
+          .inleft2 {
+            position: absolute;
+            top: 180px;
+            left: -14px;
+            .number {
+              position: absolute;
+              top: 60px;
+              left: 58px;
+            }
+          }
+          .inleft3 {
+            position: absolute;
+            top: 290px;
+            left: 80px;
+            .number {
+              position: absolute;
+              top: 52px;
+              left: 61px;
+            }
+          }
+          .inright1 {
+            position: absolute;
+            top: 38px;
+            left: 276px;
+            .number {
+              position: absolute;
+              top: 68px;
+              left: 45px;
+            }
+          }
+          .inright2 {
+            position: absolute;
+            top: 170px;
+            left: 305px;
+            .number {
+              position: absolute;
+              top: 55px;
+              left: 44px;
+            }
+          }
+          .inright3 {
+            position: absolute;
+            top: 285px;
+            left: 220px;
+            .number {
+              position: absolute;
+              top: 50px;
+              left: 60px;
+            }
+          }
+          .round {
+            width: 242px;
+            height: 233px;
+            background-image: url('../../assets/images/ecosystem/circle.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .roundButton {
+              .roundText {
+                font-size: 24px;
+                font-weight: bold;
+                color: #000000;
+                line-height: 24px;
+              }
+            }
+            &:hover {
+              cursor: pointer;
+              background-image: url('../../assets/images/ecosystem/circleHover.png');
+            }
+          }
+        }
+      }
+    }
   }
 }
