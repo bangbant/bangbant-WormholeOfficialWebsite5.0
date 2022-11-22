@@ -18,4 +18,33 @@ export default defineConfig({
     },
   ],
   fastRefresh: {},
+  proxy: {
+    '/api': {
+      target: 'https://www.wormholestest.com',
+      changeOrigin: true,
+      secure: false,
+      pathRewrite: {
+        '^/api': '/api',
+      },
+    },
+    '/ipfs': {
+      target: 'https://www.wormholestest.com',
+      changeOrigin: true,
+      secure: false,
+      pathRewrite: {
+        '^/ipfs': '/ipfs',
+      },
+    },
+  },
+  publicPath: './',
+  runtimePublicPath: true,
+  history: {
+    type: 'hash',
+  },
+  hash: true,
+  links: [
+    // href的图片你可以放在public里面，直接./图片名.png 就可以了，也可以是cdn链接
+    { rel: 'ico', href: './src/assets/images/logo.ico' },
+  ],
+  title: false,
 });
