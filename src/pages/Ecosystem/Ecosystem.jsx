@@ -11,7 +11,7 @@ export default function Ecosystem() {
           <div className={styles.topRight}>
             <div className={styles.topRightBold}>
               The principal cryptocurrency of the Wormholes<br></br>Blockchain
-              is the Wormholes ERB.{' '}
+              is the Wormholes ERB.
             </div>
             <div className={styles.topRightBolder}>
               Wormholes&nbsp;<span>Ecosystem</span>
@@ -31,12 +31,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                ERB is used to pay transaction<br></br>fees on the Wormholes
-                Internal<br></br>
-                Exchange and other NFT<br></br>marketplaces, gas fees, and
-                <br></br>persistent storage payments. It<br></br>is also used as
-                a stake to open<br></br>NFT marketplaces and increase<br></br>
-                mining revenue.
+                ERB is used to pay transaction<br></br>fees on Wormholes NFT
+                <br></br>Marketplaces, gas fees, and<br></br>persistent storage
+                payments.
               </div>
             </div>
             <div className={styles.outleft1}>
@@ -78,14 +75,11 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                The theme of each issue of S-NFT<br></br>is decided on by the
-                community<br></br>
-                through voting, giving SNFTs a<br></br>collectible value
-                separate from<br></br>
-                their pure exchange to ERB value<br></br>and allowing community
-                members<br></br>
-                to participate in creating the<br></br>assets that make up the
-                <br></br>Wormholes Blockchain.
+                The theme of each issue of S-NFTs is decided on by the community
+                through voting, giving SNFTs a collectible value separate from
+                their pure exchange to ERB value and allowing community members
+                to participate in creating the assets that make up the Wormholes
+                Blockchain.
               </div>
             </div>
             <div className={styles.outright2}>
@@ -96,7 +90,7 @@ export default function Ecosystem() {
               <div className={styles.text}>
                 They are returned to the Wormholes Blockchain S-NFT Pool and
                 will continue to serve as the direct reward for miners and NFT
-                Exchange creators in the future.
+                Marketplace creators in the future.
               </div>
             </div>
             <div className={styles.outright3}>
