@@ -14,6 +14,14 @@ export default defineConfig({
           path: '/Ecosystem',
           component: './Ecosystem/Ecosystem.jsx',
         },
+        {
+          path: '/Wallet',
+          component: './Wallet/Wallet.jsx',
+        },
+        {
+          path: '/Join',
+          component: './Join/Join.jsx',
+        },
       ],
     },
   ],
