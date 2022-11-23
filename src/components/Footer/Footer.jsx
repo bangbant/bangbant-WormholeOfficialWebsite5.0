@@ -34,20 +34,20 @@ export default function Footer() {
               <p>Basic</p>
               <span>Overview</span>
               <span>Architecture</span>
-              <span>Sub Chain System</span>
+              <span>Subchain System</span>
               <span>Join Wormholes</span>
             </div>
             <div>
               <p>Technology</p>
-              <span>Multi Dimensional Chain</span>
-              <span>Wormholes Test Wallet</span>
-              <span>Wormholes Test Explor</span>
+              <span>Multi-Dimensional Chain</span>
+              <span>Test Wallet</span>
+              <span>Test Explorer</span>
             </div>
             <div>
-              <p>Economy</p>
-              <span>Ecological Economy</span>
-              <span>Primary Network Native ERB</span>
-              <span>Primary Fragment S-NFT</span>
+              <p>Ecosystem</p>
+              <span>Ecosystem Economy</span>
+              <span>Mainnet Native ERB</span>
+              <span>Mainnet Native S-NFT</span>
             </div>
             <div>
               <p>Dapps</p>

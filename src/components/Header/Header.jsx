@@ -76,7 +76,7 @@ export default function Header() {
                   Architecture
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Sub Chain System
+                  Subchain System
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Join Wormholes
@@ -94,13 +94,13 @@ export default function Header() {
                 style={{ opacity: technologyopacity, width: '198px' }}
               >
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Multi Dimensional Chain
+                  Multi-Dimensional Chain
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Wormholes Test Wallet
+                  Test Wallet
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Wormholes Test Explor
+                  Test Explorer
                 </span>
               </span>
             </span>
@@ -109,7 +109,7 @@ export default function Header() {
               onMouseOut={navigationOut.bind(this, 3)}
               onMouseOver={navigationOver.bind(this, 3)}
             >
-              Economy
+              Ecosystem
               <span
                 className={Header_ls.HeaderBox3_right_spanblock}
                 style={{ opacity: economyopacity, width: '220px' }}
@@ -118,13 +118,13 @@ export default function Header() {
                   className={Header_ls.HeaderBox3_right_spanblock_link}
                   to={{ pathname: '/Ecosystem', state: '' }}
                 >
-                  Ecological Economy
+                  Ecosystem Economy
                 </Link>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Primary Network Native ERB
+                  Mainnet Native ERB
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
-                  Primary Fragment S-NFT
+                  Mainnet Native S-NFT
                 </span>
               </span>
             </span>
