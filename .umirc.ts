@@ -22,6 +22,10 @@ export default defineConfig({
           path: '/Join',
           component: './Join/Join.jsx',
         },
+        {
+          path: '/AboutERB',
+          component: './AboutERB/AboutERB.jsx',
+        },
       ],
     },
   ],
