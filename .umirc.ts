@@ -38,6 +38,10 @@ export default defineConfig({
           path: '/Dapps',
           component: './Dapps/Dapps.jsx',
         },
+        {
+          path: '/AboutSNFT',
+          component: './AboutSNFT/AboutSNFT.jsx',
+        },
       ],
     },
   ],
