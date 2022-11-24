@@ -10,7 +10,7 @@ export default function Footer() {
             <div className={Footer_ls.FooterBox_inputbox}>
               <input
                 className={Footer_ls.FooterBox_input}
-                placeholder="Enter Emall"
+                placeholder="Enter Email"
                 id="combutton"
               />
               <div className={Footer_ls.FooterBox_button}>

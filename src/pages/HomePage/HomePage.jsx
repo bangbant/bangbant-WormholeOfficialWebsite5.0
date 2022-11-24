@@ -71,7 +71,7 @@ export default function HomePage() {
         </div>
         <div className={HomePage_ls.HomePageBox_Featuresbox_divviodebox}>
           <div className={HomePage_ls.HomePageBox_Featuresbox_divviode}>
-            <img src={require('../../assets/gif/1.gif')} />
+            <img src={require('../../assets/gif/4.gif')} />
           </div>
           <div className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox}>
             <div
@@ -246,7 +246,7 @@ export default function HomePage() {
             <div className={HomePage_ls.HomePageBox3_videobox_button}>Join</div>
           </div>
           <div className={HomePage_ls.HomePageBox3_video}>
-            <img src={require('../../assets/gif/4.gif')} />
+            {/* <img src={require('../../assets/gif/4.gif')} /> */}
           </div>
         </div>
       </div>

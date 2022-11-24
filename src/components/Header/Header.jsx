@@ -44,9 +44,12 @@ export default function Header() {
           <span>Economic</span>
           <span>Docs</span>
           <span>Interfaces</span>
-          <img src={require('../../assets/images/Header/Slice 908.png')} />
+          <div className={Header_ls.HeaderBox2_center_img1}></div>
+          <div className={Header_ls.HeaderBox2_center_img2}></div>
+          <div className={Header_ls.HeaderBox2_center_img3}></div>
+          {/* <img src={require('../../assets/images/Header/Slice 908.png')} />
           <img src={require('../../assets/images/Header/Slice 909.png')} />
-          <img src={require('../../assets/images/Header/Slice 910.png')} />
+          <img src={require('../../assets/images/Header/Slice 910.png')} /> */}
         </div>
       </div>
       <div className={Header_ls.HeaderBox3}>
@@ -164,7 +167,11 @@ export default function Header() {
               Dapps
               <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ display: dappsopacity, left: '-110px' }}
+                style={{
+                  display: dappsopacity,
+                  left: '-130px',
+                  width: '200px',
+                }}
                 onMouseOut={navigationOut.bind(this, 4)}
                 onMouseOver={navigationOver.bind(this, 4)}
               >
