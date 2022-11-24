@@ -252,6 +252,14 @@ export default function HomePage() {
       </div>
       <div className={HomePage_ls.HomePageBox6}>
         <div className={HomePage_ls.HomePageBox6_center}>
+          <img
+            src={require('../../assets/images/HomePage/Slice 838.png')}
+            className={HomePage_ls.HomePageBox6_leftimg}
+          />
+          <img
+            src={require('../../assets/images/HomePage/Slice 837.png')}
+            className={HomePage_ls.HomePageBox6_rightimg}
+          />
           <p className={HomePage_ls.HomePageBox6_title}>
             <span>Main</span>&nbsp; Partners and&nbsp;
             <span>Team</span> Members

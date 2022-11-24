@@ -44,9 +44,12 @@ export default function Footer() {
               <span className={Footer_ls.FooterBox_databoxLink}>
                 Subchain System
               </span>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <Link
+                to={{ pathname: '/Join', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
                 Join Wormholes
-              </span>
+              </Link>
             </div>
             <div>
               <p>Technology</p>
@@ -56,9 +59,12 @@ export default function Footer() {
               >
                 Multi-Dimensional Chain
               </Link>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <Link
+                to={{ pathname: '/Wallet', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
                 Test Wallet
-              </span>
+              </Link>
               <span className={Footer_ls.FooterBox_databoxLink}>
                 Test Explorer
               </span>
@@ -68,12 +74,18 @@ export default function Footer() {
               <span className={Footer_ls.FooterBox_databoxLink}>
                 Ecosystem Economy
               </span>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <Link
+                to={{ pathname: '/AboutERB', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
                 Mainnet Native ERB
-              </span>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              </Link>
+              <Link
+                to={{ pathname: '/AboutSNFT', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
                 Mainnet Native S-NFT
-              </span>
+              </Link>
             </div>
             <div>
               <p>Dapps</p>

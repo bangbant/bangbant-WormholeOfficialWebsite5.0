@@ -83,9 +83,12 @@ export default function Header() {
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Subchain System
                 </span>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/Join', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Join Wormholes
-                </span>
+                </Link>
               </div>
             </div>
             <div
@@ -106,9 +109,12 @@ export default function Header() {
                 >
                   Multi-Dimensional Chain
                 </Link>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/Wallet', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Test Wallet
-                </span>
+                </Link>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Test Explorer
                 </span>
@@ -122,7 +128,11 @@ export default function Header() {
               Ecosystem
               <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ display: economyopacity, width: '220px' }}
+                style={{
+                  display: economyopacity,
+                  width: '220px',
+                  left: '-50px',
+                }}
                 onMouseOut={navigationOut.bind(this, 3)}
                 onMouseOver={navigationOver.bind(this, 3)}
               >
@@ -132,12 +142,18 @@ export default function Header() {
                 >
                   Ecosystem Economy
                 </Link>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/AboutERB', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Mainnet Native ERB
-                </span>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                </Link>
+                <Link
+                  to={{ pathname: '/AboutSNFT', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Mainnet Native S-NFT
-                </span>
+                </Link>
               </div>
             </div>
             <div
@@ -148,7 +164,7 @@ export default function Header() {
               Dapps
               <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ display: dappsopacity }}
+                style={{ display: dappsopacity, left: '-110px' }}
                 onMouseOut={navigationOut.bind(this, 4)}
                 onMouseOver={navigationOver.bind(this, 4)}
               >

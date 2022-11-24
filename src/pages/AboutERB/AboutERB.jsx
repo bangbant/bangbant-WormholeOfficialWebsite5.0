@@ -10,21 +10,6 @@ export default function AboutERB() {
       setImgsomrewidth('-1220px');
     }
   }
-  function imgbig(data) {
-    if (data == 1) {
-      if (imgbigwidth == '-2440px') {
-        setImgbigwidth('-1220px');
-      } else {
-        setImgbigwidth('0px');
-      }
-    } else {
-      if (imgbigwidth == '0px') {
-        setImgbigwidth('-1220px');
-      } else {
-        setImgbigwidth('-2440px');
-      }
-    }
-  }
   return (
     <div className={styles.container}>
       <div className={styles.top}>
