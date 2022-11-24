@@ -32,26 +32,57 @@ export default function Footer() {
           <div className={Footer_ls.FooterBox_databox}>
             <div>
               <p>Basic</p>
-              <span>Overview</span>
-              <span>Architecture</span>
-              <span>Subchain System</span>
-              <span>Join Wormholes</span>
+              <Link
+                className={Footer_ls.FooterBox_databoxLink}
+                to={{ pathname: '/WormholesOverview', state: '' }}
+              >
+                Overview
+              </Link>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Architecture
+              </span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Subchain System
+              </span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Join Wormholes
+              </span>
             </div>
             <div>
               <p>Technology</p>
-              <span>Multi-Dimensional Chain</span>
-              <span>Test Wallet</span>
-              <span>Test Explorer</span>
+              <Link
+                to={{ pathname: '/AboutWormholes', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
+                Multi-Dimensional Chain
+              </Link>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Test Wallet
+              </span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Test Explorer
+              </span>
             </div>
             <div>
               <p>Ecosystem</p>
-              <span>Ecosystem Economy</span>
-              <span>Mainnet Native ERB</span>
-              <span>Mainnet Native S-NFT</span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Ecosystem Economy
+              </span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Mainnet Native ERB
+              </span>
+              <span className={Footer_ls.FooterBox_databoxLink}>
+                Mainnet Native S-NFT
+              </span>
             </div>
             <div>
               <p>Dapps</p>
-              <span>Meteorite Exchange</span>
+              <Link
+                to={{ pathname: '/Dapps', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
+                Meteorite Exchange
+              </Link>
             </div>
           </div>
         </div>

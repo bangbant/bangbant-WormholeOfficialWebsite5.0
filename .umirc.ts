@@ -26,6 +26,18 @@ export default defineConfig({
           path: '/AboutERB',
           component: './AboutERB/AboutERB.jsx',
         },
+        {
+          path: '/WormholesOverview',
+          component: './WormholesOverview/WormholesOverview.jsx',
+        },
+        {
+          path: '/AboutWormholes',
+          component: './AboutWormholes/AboutWormholes.jsx',
+        },
+        {
+          path: '/Dapps',
+          component: './Dapps/Dapps.jsx',
+        },
       ],
     },
   ],

@@ -70,7 +70,9 @@ export default function HomePage() {
           {/* 紫色图片 */}
         </div>
         <div className={HomePage_ls.HomePageBox_Featuresbox_divviodebox}>
-          <div className={HomePage_ls.HomePageBox_Featuresbox_divviode}></div>
+          <div className={HomePage_ls.HomePageBox_Featuresbox_divviode}>
+            <img src={require('../../assets/gif/1.gif')} />
+          </div>
           <div className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox}>
             <div
               className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox_top2}
@@ -243,7 +245,9 @@ export default function HomePage() {
             </p>
             <div className={HomePage_ls.HomePageBox3_videobox_button}>Join</div>
           </div>
-          <div className={HomePage_ls.HomePageBox3_video}></div>
+          <div className={HomePage_ls.HomePageBox3_video}>
+            <img src={require('../../assets/gif/4.gif')} />
+          </div>
         </div>
       </div>
       <div className={HomePage_ls.HomePageBox6}>
@@ -743,6 +747,113 @@ export default function HomePage() {
             src={require('../../assets/images/HomePage/Slice 863.png')}
             className={HomePage_ls.HomePageBox7_databox_d6}
           />
+          <img
+            src={require('../../assets/images/HomePage/Slice 857.png')}
+            className={HomePage_ls.HomePageBox7_databox_d7}
+          />
+          <div className={HomePage_ls.HomePageBox7_databox_d8}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q4 2022</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              WormholesChain Cross Swap, WormholesChain Faucet WormholesChain
+              Evm Extend
+            </p>
+          </div>
+          <div className={HomePage_ls.HomePageBox7_databox_d9}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>
+              August 2022
+            </p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              Official Website, Events, Airdrops, NFT Competition
+            </p>
+          </div>
+          <img
+            src={require('../../assets/images/HomePage/Slice 864.png')}
+            className={HomePage_ls.HomePageBox7_databox_d10}
+          />
+          <img
+            src={require('../../assets/images/HomePage/Slice 857.png')}
+            className={HomePage_ls.HomePageBox7_databox_d11}
+          />
+          <div className={HomePage_ls.HomePageBox7_databox_d12}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q1 2023</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              WormholesChain Limino
+            </p>
+          </div>
+          <div className={HomePage_ls.HomePageBox7_databox_d13}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>
+              September 2022
+            </p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              Testnet & Ecosystem Events
+            </p>
+          </div>
+          <img
+            src={require('../../assets/images/HomePage/Slice 865.png')}
+            className={HomePage_ls.HomePageBox7_databox_d14}
+          />
+          <img
+            src={require('../../assets/images/HomePage/Slice 857.png')}
+            className={HomePage_ls.HomePageBox7_databox_d15}
+          />
+          <div className={HomePage_ls.HomePageBox7_databox_d16}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q4 2022</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              NFT Ecosystem Development, dApp Developer Events
+            </p>
+          </div>
+          <img
+            src={require('../../assets/images/HomePage/Slice 857.png')}
+            className={HomePage_ls.HomePageBox7_databox_d17}
+          />
+          <div className={HomePage_ls.HomePageBox7_databox_d18}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q1 2023</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              GameFi, Web3 Hackathon Event WormholesChain Foundation Ecosystem
+              Fund
+            </p>
+          </div>
+          <img
+            src={require('../../assets/images/HomePage/Slice 857.png')}
+            className={HomePage_ls.HomePageBox7_databox_d19}
+          />
+          <div className={HomePage_ls.HomePageBox7_databox_d20}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q2 2023</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              Metaverse & NFT Tools, incl. Oculus Tools, WormholesChain
+              Metaverse APl
+            </p>
+          </div>
+          <div className={HomePage_ls.HomePageBox7_databox_d21}>
+            <div className={HomePage_ls.HomePageBox7_databox_dy}>
+              {/* 圆 */}
+            </div>
+            <p className={HomePage_ls.HomePageBox7_databox_dname}>Q4 2023</p>
+            <p className={HomePage_ls.HomePageBox7_databox_dtext}>
+              Metaverse Application Promotion &<br /> Events
+            </p>
+          </div>
         </div>
       </div>
     </div>

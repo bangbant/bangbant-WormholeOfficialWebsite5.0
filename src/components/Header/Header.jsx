@@ -3,38 +3,38 @@ import React, { useState, useEffect } from 'react';
 import { history, Link } from 'umi';
 export default function Header() {
   //Basic
-  const [basicopacity, setBasicopacity] = useState(0);
+  const [basicopacity, setBasicopacity] = useState('none');
   //Technology
-  const [technologyopacity, setTechnologyopacity] = useState(0);
+  const [technologyopacity, setTechnologyopacity] = useState('none');
   //Economy
-  const [economyopacity, setEconomyopacity] = useState(0);
+  const [economyopacity, setEconomyopacity] = useState('none');
   //Dapps
-  const [dappsopacity, setDappsopacity] = useState(0);
+  const [dappsopacity, setDappsopacity] = useState('none');
   function navigationOver(data) {
     if (data == 1) {
-      setBasicopacity(1);
+      setBasicopacity('block');
     } else if (data == 2) {
-      setTechnologyopacity(1);
+      setTechnologyopacity('block');
     } else if (data == 3) {
-      setEconomyopacity(1);
+      setEconomyopacity('block');
     } else if (data == 4) {
-      setDappsopacity(1);
+      setDappsopacity('block');
     }
   }
   function navigationOut(data) {
     if (data == 1) {
-      setBasicopacity(0);
+      setBasicopacity('none');
     } else if (data == 2) {
-      setTechnologyopacity(0);
+      setTechnologyopacity('none');
     } else if (data == 3) {
-      setEconomyopacity(0);
+      setEconomyopacity('none');
     } else if (data == 4) {
-      setDappsopacity(0);
+      setDappsopacity('none');
     }
   }
 
   return (
-    <>
+    <div className={Header_ls.Header}>
       <div className={Header_ls.HeaderBox}>
         <img src={require('../../assets/images/Header/Slice 817.png')} />
         <span>Mirror universe public testnet No.2</span>
@@ -59,19 +59,24 @@ export default function Header() {
             <span>Wormholes</span>
           </Link>
           <div className={Header_ls.HeaderBox3_right}>
-            <span
+            <div
               className={Header_ls.HeaderBox3_right_span}
               onMouseOut={navigationOut.bind(this, 1)}
               onMouseOver={navigationOver.bind(this, 1)}
             >
               Basic
-              <span
+              <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ opacity: basicopacity }}
+                style={{ display: basicopacity }}
+                onMouseOut={navigationOut.bind(this, 1)}
+                onMouseOver={navigationOver.bind(this, 1)}
               >
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/WormholesOverview', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Overview
-                </span>
+                </Link>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Architecture
                 </span>
@@ -81,38 +86,45 @@ export default function Header() {
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Join Wormholes
                 </span>
-              </span>
-            </span>
-            <span
+              </div>
+            </div>
+            <div
               className={Header_ls.HeaderBox3_right_span}
               onMouseOut={navigationOut.bind(this, 2)}
               onMouseOver={navigationOver.bind(this, 2)}
             >
               Technology
-              <span
+              <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ opacity: technologyopacity, width: '198px' }}
+                style={{ display: technologyopacity, width: '198px' }}
+                onMouseOut={navigationOut.bind(this, 2)}
+                onMouseOver={navigationOver.bind(this, 2)}
               >
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/AboutWormholes', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Multi-Dimensional Chain
-                </span>
+                </Link>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Test Wallet
                 </span>
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Test Explorer
                 </span>
-              </span>
-            </span>
-            <span
+              </div>
+            </div>
+            <div
               className={Header_ls.HeaderBox3_right_span}
               onMouseOut={navigationOut.bind(this, 3)}
               onMouseOver={navigationOver.bind(this, 3)}
             >
               Ecosystem
-              <span
+              <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ opacity: economyopacity, width: '220px' }}
+                style={{ display: economyopacity, width: '220px' }}
+                onMouseOut={navigationOut.bind(this, 3)}
+                onMouseOver={navigationOver.bind(this, 3)}
               >
                 <Link
                   className={Header_ls.HeaderBox3_right_spanblock_link}
@@ -126,26 +138,31 @@ export default function Header() {
                 <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Mainnet Native S-NFT
                 </span>
-              </span>
-            </span>
-            <span
+              </div>
+            </div>
+            <div
               className={Header_ls.HeaderBox3_right_span}
               onMouseOut={navigationOut.bind(this, 4)}
               onMouseOver={navigationOver.bind(this, 4)}
             >
               Dapps
-              <span
+              <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ opacity: dappsopacity }}
+                style={{ display: dappsopacity }}
+                onMouseOut={navigationOut.bind(this, 4)}
+                onMouseOver={navigationOver.bind(this, 4)}
               >
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <Link
+                  to={{ pathname: '/Dapps', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
                   Meteorite Exchange
-                </span>
-              </span>
-            </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
