@@ -32,9 +32,9 @@ export default function HomePage() {
         <div className={HomePage_ls.HomePageBox_center}>
           <p>The First Truly Decentralized POS</p>
           <p>
-            <span>Multi-Dimensional</span>
+            <span>Multi-Dimensional&nbsp;</span>
             Chain in
-            <span>Web3</span>.
+            <span>&nbsp;Web3</span>.
           </p>
         </div>
       </div>
