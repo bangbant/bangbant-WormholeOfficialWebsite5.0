@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './AboutERB.less';
 export default function AboutERB() {
+  const [imgsomrewidth, setImgsomrewidth] = useState('0px');
+  const [imgbigwidth, setImgbigwidth] = useState('0px');
+  function imgsomre(data) {
+    if (data == 1) {
+      setImgsomrewidth('0px');
+    } else {
+      setImgsomrewidth('-1220px');
+    }
+  }
+  function imgbig(data) {
+    if (data == 1) {
+      if (imgbigwidth == '-2440px') {
+        setImgbigwidth('-1220px');
+      } else {
+        setImgbigwidth('0px');
+      }
+    } else {
+      if (imgbigwidth == '0px') {
+        setImgbigwidth('-1220px');
+      } else {
+        setImgbigwidth('-2440px');
+      }
+    }
+  }
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -112,6 +136,111 @@ export default function AboutERB() {
           <div className={styles.topRightLight}>
             ERB is used to pay transaction fees on WormholesChain NFT
             Marketplaces, gas<br></br>fees, and persistent storage payments.
+          </div>
+        </div>
+      </div>
+      <div className={styles.slideBox}>
+        <div className={styles.HomePageBox6_Carouselbox1}>
+          <div
+            className={styles.HomePageBox6_Carouselbox1_left}
+            onClick={imgsomre.bind(this, 1)}
+          >
+            {/* 左 */}
+          </div>
+          <div className={styles.HomePageBox6_Carouselbox1_centerbox}>
+            <div
+              className={styles.HomePageBox6_Carouselbox1_centerboxlong}
+              style={{ marginLeft: imgsomrewidth }}
+            >
+              {/* 1页 */}
+              <div
+                className={styles.HomePageBox6_Carouselbox1_centerboxlong_block}
+              >
+                {/* 1 */}
+                <div
+                  className={
+                    styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
+                  }
+                >
+                  <div className={styles.slideTitle}>What is Staking?</div>
+                  <div className={styles.content}>
+                    The ERB staking system creates the primary incentive for
+                    users and nodes to validate transactions properly,
+                    maintaining the security and stability of the WormholesChain
+                    ecosystem.
+                  </div>
+                </div>
+                {/* 2 */}
+                <div
+                  className={
+                    styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
+                  }
+                >
+                  <div className={styles.slideTitle}>Why Stake?</div>
+                  <div className={styles.content}>
+                    Staking allows validator nodes to join the WormholesChain
+                    network by locking a quantity of their mainnet ERBs for a
+                    specified amount of time. The network takes the number of
+                    ERBs staked by the node as one of the determiners of the
+                    level of trust in the node, preventing some nodes from
+                    operating WormholesChain mainnet nodes inappropriately to
+                    control and break network rules. Staking ERBs increases the
+                    cost of misbehavior for rule-breakers and protects the
+                    entire network from the possibility of manipulation by
+                    specific nodes.
+                  </div>
+                </div>
+                {/* 3 */}
+                <div
+                  className={
+                    styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
+                  }
+                >
+                  <div className={styles.slideTitle}>Voting and Governance</div>
+                  <div className={styles.content}>
+                    The ERB plays a crucial role in voting and participating in
+                    governance throughout the community.
+                  </div>
+                </div>
+              </div>
+              {/* 2页 */}
+              <div
+                className={styles.HomePageBox6_Carouselbox1_centerboxlong_block}
+              >
+                {/* 1 */}
+                <div
+                  className={
+                    styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
+                  }
+                >
+                  <div className={styles.slideTitle}>Crypto Asset Exchange</div>
+                  <div className={styles.content}>
+                    ERB, as the underlying native fungible token of the
+                    Wormholes Chain, can be used as a medium of value exchange
+                    with any other crypto assets throughout the network.
+                  </div>
+                </div>
+                {/* 2 */}
+                <div
+                  className={
+                    styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
+                  }
+                >
+                  <div className={styles.slideTitle}>NFT Exchange Staking</div>
+                  <div className={styles.content}>
+                    Users can open an NFT exchange by staking a prespecified
+                    amount of ERB; this also entitles them to a pro-rata share
+                    of the mainnet validation rewards.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={styles.HomePageBox6_Carouselbox1_right}
+            onClick={imgsomre.bind(this, 2)}
+          >
+            {/* 右 */}
           </div>
         </div>
       </div>

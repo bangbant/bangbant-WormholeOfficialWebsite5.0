@@ -1,0 +1,312 @@
+.container {
+  width: 100%;
+  background-color: #f0f0f3;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+    margin: 0 auto;
+    .topLeft {
+      width: 100%;
+      padding-left: 40px;
+    }
+    .topRight {
+      width: 100%;
+      padding-right: 40px;
+    }
+    .topRightBolder {
+      width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+      font-family: Gilroy-Black;
+      font-weight: 900;
+      color: #000000;
+      line-height: 60px;
+      span {
+        color: #a486fa;
+      }
+    }
+    .topRightLight {
+      width: 100%;
+      font-size: 20px;
+      font-family: Manrope-Regular;
+      font-weight: 400;
+      color: #000000;
+      line-height: 28px;
+    }
+  }
+  .line {
+    margin-top: -150px;
+    width: 100%;
+  }
+  .middle {
+    width: 1220px;
+    margin: -40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 200px;
+    .title {
+      font-size: 24px;
+      font-family: Manrope-SemiBold;
+      font-weight: 600;
+      color: #a486fa;
+      line-height: 43px;
+      position: relative;
+      .num {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        color: rgba(164, 134, 250, 0.23);
+        font-size: 64px;
+      }
+    }
+    .content {
+      font-size: 16px;
+      font-family: Manrope-Regular;
+      font-weight: 400;
+      color: #000000;
+      line-height: 24px;
+      padding-top: 15px;
+    }
+    .boxLeft {
+      width: 533px;
+      height: 470px;
+      background: #f0f0f3;
+      box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+        -20px -20px 30px 0px #ffffff;
+      border-radius: 0px 0px 0px 0px;
+      opacity: 1;
+      padding-top: 100px;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+    .boxRight {
+      width: 720px;
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      .boxRightTop {
+        width: 665px;
+        height: 184px;
+        background: #f0f0f3;
+        box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+          -20px -20px 30px 0px #ffffff;
+        border-radius: 0px 0px 0px 0px;
+        opacity: 1;
+        padding-top: 40px;
+        padding-left: 65px;
+        padding-right: 65px;
+      }
+      .boxRightBot {
+        width: 665px;
+        height: 252px;
+        background: #f0f0f3;
+        box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+          -20px -20px 30px 0px #ffffff;
+        border-radius: 0px 0px 0px 0px;
+        opacity: 1;
+        padding-top: 40px;
+        padding-left: 65px;
+        padding-right: 65px;
+      }
+    }
+  }
+  .cross {
+    width: 100%;
+    height: 331px;
+    background: #f0f0f3;
+    box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+      -20px -20px 30px 0px #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    .topRightBolder {
+      width: 100%;
+      margin-top: 40px;
+      font-size: 64px;
+      font-family: Gilroy-Black;
+      font-weight: 900;
+      color: #000000;
+      line-height: 60px;
+      span {
+        color: #a486fa;
+      }
+    }
+    .topRightLight {
+      padding-top: 20px;
+      font-size: 24px;
+      font-family: Manrope-SemiBold;
+      font-weight: 600;
+      color: #000000;
+      line-height: 36px;
+    }
+    .box {
+      width: 1220px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .Button {
+      width: 280px;
+      height: 67px;
+      background: #f0f0f3;
+      box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+        -5px -5px 10px 0px #ffffff;
+      border-radius: 0px 0px 0px 0px;
+      opacity: 1;
+      color: #000000;
+      cursor: pointer;
+      font-size: 24px;
+      font-family: Manrope-ExtraBold;
+      font-weight: 800;
+      line-height: 67px;
+      text-align: center;
+      &:hover {
+        color: #a486fa;
+      }
+    }
+  }
+}
+.circle {
+  width: 1220px;
+  margin: 0 auto;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 100px;
+  .in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    border: 5px solid #a486fa;
+    .round {
+      width: 435px;
+      height: 444px;
+      background-image: url('../../assets/images/AboutSNFT/circle.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .roundButton {
+        .roundText {
+          font-size: 36px;
+          font-weight: bold;
+          color: #a486fa;
+          line-height: 51px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .out {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 1186px;
+
+    position: absolute;
+    //   overflow: hidden;
+    z-index: 5;
+    .text {
+      font-size: 16px;
+      font-family: Manrope-Medium;
+      font-weight: 500;
+      color: #000000;
+      line-height: 24px;
+    }
+    .outtop1 {
+      position: absolute;
+      top: 90px;
+      left: 435px;
+      .dot {
+        position: absolute;
+        top: 77px;
+        left: 48px;
+      }
+      .text {
+        width: 300px;
+        position: absolute;
+        top: 120px;
+        left: 68px;
+      }
+    }
+    .outleft1 {
+      position: absolute;
+      top: 20px;
+      left: -143px;
+      .dot {
+        position: absolute;
+        top: 550px;
+        left: 128px;
+      }
+      .text {
+        width: 335px;
+        position: absolute;
+        top: 320px;
+        left: 149px;
+      }
+    }
+    .outleft2 {
+      position: absolute;
+      top: 646px;
+      left: -44px;
+      .dot {
+        position: absolute;
+        top: 410px;
+        left: 376px;
+      }
+      .text {
+        width: 270px;
+        position: absolute;
+        top: 200px;
+        left: 172px;
+      }
+    }
+    .outright1 {
+      position: absolute;
+      top: 275px;
+      left: 795px;
+      .dot {
+        position: absolute;
+        top: 90px;
+        left: 200px;
+      }
+      .text {
+        width: 205px;
+        position: absolute;
+        top: 165px;
+        left: 84px;
+      }
+    }
+    .outright2 {
+      position: absolute;
+      top: 715px;
+      left: 457px;
+      .dot {
+        position: absolute;
+        top: 200px;
+        left: 492px;
+      }
+      .text {
+        width: 310px;
+        position: absolute;
+        top: 168px;
+        left: 115px;
+      }
+    }
+  }
+}

@@ -26,6 +26,10 @@ export default defineConfig({
           path: '/AboutERB',
           component: './AboutERB/AboutERB.jsx',
         },
+        {
+          path: '/AboutSNFT',
+          component: './AboutSNFT/AboutSNFT.jsx',
+        },
       ],
     },
   ],
