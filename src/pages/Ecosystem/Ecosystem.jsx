@@ -10,15 +10,15 @@ export default function Ecosystem() {
           </div>
           <div className={styles.topRight}>
             <div className={styles.topRightBold}>
-              The principal cryptocurrency of the Wormholes<br></br>Blockchain
-              is the Wormholes ERB.
+              The principal cryptocurrency<br></br>of WormholesChain is the
+              WormholesChain ERB.
             </div>
             <div className={styles.topRightBolder}>
-              Wormholes&nbsp;<span>Ecosystem</span>
+              WormholesChain&nbsp;<span>Ecosystem</span>
             </div>
             <div className={styles.topRightLight}>
-              The Wormholes Blockchain economy is backed by a two-tier token
-              model consisting of the Wormholes fungible token ERB and
+              The WormholesChain economy is backed by a two-tier token model
+              consisting of the WormholesChain fungible token ERB and
               non-fungible token S-NFT.
             </div>
           </div>
@@ -31,9 +31,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                ERB is used to pay transaction<br></br>fees on Wormholes NFT
-                <br></br>Marketplaces, gas fees, and<br></br>persistent storage
-                payments.
+                ERB is used to pay transaction<br></br>fees on WormholesChain
+                NFT<br></br>Marketplaces, gas fees, and<br></br>persistent
+                storage payments.
               </div>
             </div>
             <div className={styles.outleft1}>
@@ -54,7 +54,7 @@ export default function Ecosystem() {
               <div className={styles.text}>
                 Ranging from frequent tasks such as voting on the theme of each
                 issue of S-NFT to major decisions such as the disbursement of
-                funds from the Wormholes Community fund.
+                funds from the WormholesChain Community fund.
               </div>
             </div>
             <div className={styles.outleft3}>
@@ -63,10 +63,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                Wormholes S-NFTs is the second native token of the Wormholes
-                Blockchain. S-NFTs serve as the direct reward to the miners and
-                NFT marketplace creators who secure the Wormholes Blockchain
-                through their stakes and actions.
+                WormholesChain S-NFTs are the second native token of the
+                WormholesChain. S-NFTs serve as the direct reward for S-NFT
+                Nodes who stake their tokens on WormholesChain.
               </div>
             </div>
             <div className={styles.outright1}>
@@ -76,10 +75,10 @@ export default function Ecosystem() {
               <div className={styles.dot}></div>
               <div className={styles.text}>
                 The theme of each issue of S-NFTs is decided on by the community
-                through voting, giving SNFTs a collectible value separate from
+                through voting, giving S-NFTs a collectible value separate from
                 their pure exchange to ERB value and allowing community members
-                to participate in creating the assets that make up the Wormholes
-                Blockchain.
+                to participate in creating the assets that make up
+                WormholesChain.
               </div>
             </div>
             <div className={styles.outright2}>
@@ -88,21 +87,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                They are returned to the Wormholes Blockchain S-NFT Pool and
-                will continue to serve as the direct reward for miners and NFT
-                Marketplace creators in the future.
-              </div>
-            </div>
-            <div className={styles.outright3}>
-              <img
-                src={require('../../assets/images/ecosystem/outright3.png')}
-              ></img>
-              <div className={styles.dot}></div>
-              <div className={styles.text}>
-                S-NFTs also have an additional utility function, granting
-                holders the privilege of increasing their S-NFT to ERB exchange
-                rate. S-NFTs are not burned or destroyed after they are
-                exchanged for ERBs.
+                S-NFTs also have an additional utility function, rewarding
+                holders with extra rewards for collecting and exchanging full
+                sets of S-NFTs.
               </div>
             </div>
             <div className={styles.in}>
@@ -126,7 +113,7 @@ export default function Ecosystem() {
                 ></img>
                 <img
                   className={styles.number}
-                  src={require('../../assets/images/ecosystem/7.png')}
+                  src={require('../../assets/images/ecosystem/6.png')}
                 ></img>
               </div>
               <div className={styles.inleft2}>
@@ -135,7 +122,7 @@ export default function Ecosystem() {
                 ></img>
                 <img
                   className={styles.number}
-                  src={require('../../assets/images/ecosystem/6.png')}
+                  src={require('../../assets/images/ecosystem/5.png')}
                 ></img>
               </div>
 
@@ -145,7 +132,7 @@ export default function Ecosystem() {
                 ></img>
                 <img
                   className={styles.number}
-                  src={require('../../assets/images/ecosystem/5.png')}
+                  src={require('../../assets/images/ecosystem/4.png')}
                 ></img>
               </div>
               <div className={styles.inright1}>
@@ -164,15 +151,6 @@ export default function Ecosystem() {
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/3.png')}
-                ></img>
-              </div>
-              <div className={styles.inright3}>
-                <img
-                  src={require('../../assets/images/ecosystem/inright3.png')}
-                ></img>
-                <img
-                  className={styles.number}
-                  src={require('../../assets/images/ecosystem/7.png')}
                 ></img>
               </div>
             </div>

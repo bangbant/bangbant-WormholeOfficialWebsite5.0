@@ -33,15 +33,6 @@ export default function Join() {
           <div className={styles.block}>
             <div className={styles.dot}></div>
             <div className={styles.item}>
-              If you know blockchain development, come work with the
-              WormholesChain Community Team to resolve security bugs and
-              optimize algorithm protocols and application tools, earning
-              rewards in the process.
-            </div>
-          </div>
-          <div className={styles.block}>
-            <div className={styles.dot}></div>
-            <div className={styles.item}>
               If you are good at writing, come provide unique written or video
               content about WormholesChain to a global audience, earning rewards
               in the process.
@@ -52,6 +43,14 @@ export default function Join() {
             <div className={styles.item}>
               If you can propose and develop creative ideas for WormholesChain,
               you will earn recieve rewards if they are selected.
+            </div>
+          </div>
+          <div className={styles.block}>
+            <div className={styles.dot}></div>
+            <div className={styles.item}>
+              If know community operation, come work with the WormholesChain
+              Community Team to establish an active global community, getting
+              paid as you reach benchmarks.
             </div>
           </div>
         </div>
