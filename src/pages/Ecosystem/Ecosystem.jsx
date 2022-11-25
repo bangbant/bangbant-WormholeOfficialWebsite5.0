@@ -99,27 +99,27 @@ export default function Ecosystem() {
                 </div>
               </div>
               <div className={styles.intop1}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/intop1.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/1.png')}
                 ></img>
               </div>
               <div className={styles.inleft1}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/inleft1.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/6.png')}
                 ></img>
               </div>
               <div className={styles.inleft2}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/inleft2.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/5.png')}
@@ -127,27 +127,27 @@ export default function Ecosystem() {
               </div>
 
               <div className={styles.inleft3}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/inleft3.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/4.png')}
                 ></img>
               </div>
               <div className={styles.inright1}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/inright1.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/2.png')}
                 ></img>
               </div>
               <div className={styles.inright2}>
-                <img
+                {/* <img
                   src={require('../../assets/images/ecosystem/inright2.png')}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.number}
                   src={require('../../assets/images/ecosystem/3.png')}

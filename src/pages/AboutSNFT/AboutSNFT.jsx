@@ -75,7 +75,14 @@ export default function AboutSNFT() {
             </div>
           </div>
           <div className={styles.crossRight}>
-            <div className={styles.Button}>More</div>
+            <div
+              className={styles.Button}
+              style={{
+                color: '#a486fa',
+              }}
+            >
+              More
+            </div>
           </div>
         </div>
       </div>
