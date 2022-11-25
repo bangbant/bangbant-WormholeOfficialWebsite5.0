@@ -18,14 +18,14 @@ export default function AboutERB() {
             About the&nbsp;<span>ERB</span>
           </div>
           <div className={styles.topRightLight}>
-            The principal cryptocurrency of the WormholesChain is the
-            WormholesChain ERB. ERB is used to pay transaction fees on
-            WormholesChain NFT Marketplaces, gas fees, and persistent storage
-            payments.It is also used as a stake to open NFT marketplaces and
-            increase mining revenue. Finally, ERB plays a crucial role in voting
-            and participating in governance throughout the community, ranging
-            from frequent tasks such as voting on the theme of each issue of
-            S-NFT to major decisions such as the disbursement of funds from the
+            The principal cryptocurrency of WormholesChain is the WormholesChain
+            ERB. ERB is used to pay transaction fees on WormholesChain NFT
+            Marketplaces, gas fees, and persistent storage payments.It is also
+            used as a stake to open NFT marketplaces and increase mining
+            revenue. Finally, ERB plays a crucial role in voting and
+            participating in governance throughout the community, ranging from
+            frequent tasks such as voting on the theme of each issue of S-NFT to
+            major decisions such as the disbursement of funds from the
             WormholesChain Community Fund.
           </div>
         </div>
@@ -36,13 +36,13 @@ export default function AboutERB() {
       <div className={styles.mid}>
         <div className={styles.content}>
           <div className={styles.topRightLight}>
-            Wormholes Chain validation and staking rewards are distributed in
-            the form of ERBs and S-NFTs. S-NFTs can also be exchanged for ERBs
-            in Limino, the WormholesChain digital wallet.
+            WormholesChain validation and staking rewards are distributed in the
+            form of ERBs and S-NFTs. S-NFTs can also be exchanged for ERBs in
+            Limino, the WormholesChain digital wallet.
           </div>
           <div className={styles.topRightBolder}>
-            <span>Mainnet</span>&nbsp;
-            <span className={styles.smallTitle}>Token Inflation Logic</span>
+            <span>Mainnet</span>&nbsp;Token<br></br>
+            <span className={styles.smallTitle}>Inflation Logic</span>
           </div>
         </div>
       </div>
@@ -181,7 +181,9 @@ export default function AboutERB() {
                     styles.HomePageBox6_Carouselbox1_centerboxlong_block_d
                   }
                 >
-                  <div className={styles.slideTitle}>Voting and Governance</div>
+                  <div className={styles.slideTitle}>
+                    Voting and<br></br>Governance
+                  </div>
                   <div className={styles.content}>
                     The ERB plays a crucial role in voting and participating in
                     governance throughout the community.
@@ -201,7 +203,7 @@ export default function AboutERB() {
                   <div className={styles.slideTitle}>Crypto Asset Exchange</div>
                   <div className={styles.content}>
                     ERB, as the underlying native fungible token of the
-                    Wormholes Chain, can be used as a medium of value exchange
+                    WormholesChain, can be used as a medium of value exchange
                     with any other crypto assets throughout the network.
                   </div>
                 </div>
