@@ -72,7 +72,9 @@ export default function Wallet() {
           <div className={styles.line}></div>
         </div>
         <div className={styles.buttonBox}>
-          <div className={styles.Button}>WormholesChain Limino Tutorial</div>
+          <div className={styles.Button} style={{ color: '#a486fa' }}>
+            WormholesChain Limino Tutorial
+          </div>
           <div className={styles.Button}>WormholesChain Supports MetaMask</div>
         </div>
       </div>

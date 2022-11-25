@@ -79,7 +79,7 @@ export default function Header() {
             className={Header_ls.HeaderBox3_left}
           >
             <img src={require('../../assets/images/Header/Frame.png')} />
-            <span>Wormholes</span>
+            <span>WormholesChain</span>
           </Link>
           <div className={Header_ls.HeaderBox3_right}>
             <div

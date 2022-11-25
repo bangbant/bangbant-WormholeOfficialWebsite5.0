@@ -240,9 +240,12 @@ export default function Footer() {
             </div>
             <div>
               <p>Ecosystem</p>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <Link
+                to={{ pathname: '/Ecosystem', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
                 Ecosystem Economy
-              </span>
+              </Link>
               <Link
                 to={{ pathname: '/AboutERB', state: '' }}
                 className={Footer_ls.FooterBox_databoxLink}
