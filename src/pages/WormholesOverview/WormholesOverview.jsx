@@ -6,10 +6,10 @@ export default function WormholesOverview() {
       <div className={WormholesOverview_ls.WormholesOverviewBox}>
         <div className={WormholesOverview_ls.WormholesOverviewBox_center}>
           <p className={WormholesOverview_ls.WormholesOverviewBox_title}>
-            Wormholes&nbsp;<span>Overview</span>
+            WormholesChain&nbsp;<span>Overview</span>
           </p>
           <p className={WormholesOverview_ls.WormholesOverviewBox_text}>
-            The Wormholes Chain solves the blockchain trilemma, which entails a
+            WormholesChain solves the blockchain trilemma, which entails a
             necessary tradeoff between scalability, security, and
             decentralization, by building the technology to achieve the ideal
             balance between these three metrics, creating a highly scalable and
@@ -98,7 +98,7 @@ export default function WormholesOverview() {
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_dtext
                 }
               >
-                The Wormholes Chain Network is composed of multiple levels,
+                The WormholesChain Network is composed of multiple levels,
                 consisting of the Transport Level, Blockchain Level, API Level,
                 and Application Level. The Transport Level is for making
                 efficient use of network connectivity. The Blockchain Level
@@ -137,9 +137,9 @@ export default function WormholesOverview() {
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_dtext
                 }
               >
-                The Wormholes Chain economy is backed by a two-tier token model
-                consisting of the Wormholes fungible token ERB and non-fungible
-                token S-NFT.
+                The WormholesChain economy is backed by a two-tier token model
+                consisting of the WormholesChain fungible token ERB and
+                non-fungible token S-NFT.
               </p>
               <div
                 className={

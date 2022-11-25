@@ -1,9 +1,25 @@
 import HomePage_ls from './HomePage.less';
 import React, { useState, useEffect } from 'react';
+import { total } from '../../api/request_data/block_request';
 import { history, Link } from 'umi';
+import { comma } from '../../utils/methods/Methods';
 export default function HomePage() {
   const [imgsomrewidth, setImgsomrewidth] = useState('0px');
   const [imgbigwidth, setImgbigwidth] = useState('0px');
+  //总数
+  const [totaldata, setTotaldata] = useState({});
+  useEffect(() => {
+    total_q();
+  }, []);
+  //总数查询
+  const total_q = async () => {
+    const data = await total();
+    console.log('总数查询');
+    console.log(data);
+    if (data) {
+      setTotaldata(data);
+    }
+  };
   function imgsomre(data) {
     if (data == 1) {
       setImgsomrewidth('0px');
@@ -48,7 +64,7 @@ export default function HomePage() {
         <div className={HomePage_ls.HomePageBox_Featuresbox_div3}>
           <div></div>
           <p>
-            One-click coupling generates clone sub-chains and multiple sub-chain
+            One-click coupling generates clone subchains and multiple subchain
             systems combined with the SWAP interaction scheme to complete the
             cross-chain interaction of different crypto assets.
           </p>
@@ -82,7 +98,7 @@ export default function HomePage() {
             <div
               className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox_top1}
             >
-              <p>Become a Wormholes Validator</p>
+              <p>Become a Validator</p>
             </div>
           </div>
         </div>
@@ -90,20 +106,20 @@ export default function HomePage() {
       <div className={HomePage_ls.HomePageBox2}>
         <div className={HomePage_ls.HomePageBox2_center}>
           <p className={HomePage_ls.HomePageBox2_title}>
-            <span>S - NFT</span> Nodes
+            <span>S-NFT</span> Nodes
           </p>
           <div className={HomePage_ls.HomePageBox2_box}>
             <p className={HomePage_ls.HomePageBox2_box_data}>
               Distinct from smart-contract based NFTs, S-NFTs are a native
-              chain-layer non-fungible asset on the WormholesChain. S-NFTs are
-              rewarded to Wormholes SNFT Validators; they receive 4/11 of the
+              chain-layer non-fungible asset on WormholesChain. S-NFTs are
+              rewarded to WormholesChain S-NFT Nodes; they receive 4/11 of the
               Mainnet block rewards.
             </p>
             <div className={HomePage_ls.HomePageBox2_box_button1}>
-              Mandatory reading for S-NFT Miner
+              Mandatory reading for S-NFT Nodes
             </div>
             <div className={HomePage_ls.HomePageBox2_box_button2}>
-              Become Wormholes S-NFT Miner
+              Become a WormholesChain S-NFT Node
             </div>
             <div className={HomePage_ls.HomePageBox2_box_gifbox}>
               <img src={require('../../assets/gif/3.gif')} />
@@ -115,7 +131,7 @@ export default function HomePage() {
         <div className={HomePage_ls.HomePageBox3_center}>
           <p className={HomePage_ls.HomePageBox3_title}>
             Advantages of&nbsp;
-            <span>Wormholes</span>
+            <span>WormholesChain</span>
           </p>
           <div className={HomePage_ls.HomePageBox3_line}>{/* 线 */}</div>
           <div className={HomePage_ls.HomePageBox3_databox}>
@@ -124,8 +140,8 @@ export default function HomePage() {
                 Infinite Scalability
               </p>
               <p className={HomePage_ls.HomePageBox3_databox_block_text}>
-                The Wormholes Blockchain is a multi-dimensional blockchain, in
-                which parallel chains are coupled together to form the network,
+                WormholesChain is a multi-dimensional blockchain, in which
+                parallel chains are coupled together to form the network,
                 supporting parallelism as a way to linearly increase throughput
                 with each additional chain added to the system.
               </p>
@@ -146,10 +162,10 @@ export default function HomePage() {
                 Multi-Dimensional Blockchain Architecture
               </p>
               <p className={HomePage_ls.HomePageBox3_databox_block_text}>
-                The Wormholes multi-dimensional blockchain architecture allows
-                the realization of a linear increase in throughput with each
-                additional chain and layer added to the system, allowing the
-                Wormholes Blockchain to easily achieve high transactions per
+                The WormholesChain multi-dimensional blockchain architecture
+                allows the realization of a linear increase in throughput with
+                each additional chain and layer added to the system, allowing
+                the WormholesChain to easily achieve high transactions per
                 second (TPS).
               </p>
             </div>
@@ -161,25 +177,25 @@ export default function HomePage() {
           <div className={HomePage_ls.HomePageBox4_databox}>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                119,703,333
+                {comma(totaldata.totalBlock - 1)}
               </div>
               <p>Block Height</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                119,703,333
+                {totaldata.avgBlockTime} ms
               </div>
-              <p>Block Time </p>
+              <p>Block Time</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                119,703,333
+                {comma(totaldata.totalSNFT)}
               </div>
               <p>Number of S-NFTs</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                119,703,333
+                {comma(totaldata.totalTransaction)}
               </div>
               <p>Total Transactions</p>
             </div>
@@ -204,10 +220,10 @@ export default function HomePage() {
               Diversified Developer Ecosystem
             </p>
             <p className={HomePage_ls.HomePageBox3_databox_block_text}>
-              Wormholes provides developers with a simple way to integrate their
-              DApp and projects with the Wormholes Chain, allowing developers
-              and creators to focus their time on what they do best – creating
-              the best new DApps and products.
+              WormholesChain provides developers with a simple way to integrate
+              their DApp and projects with the WormholesChain, allowing
+              developers and creators to focus their time on what they do best –
+              creating the best new DApps and products.
             </p>
           </div>
           <div className={HomePage_ls.HomePageBox3_databox_block1}>
@@ -217,7 +233,7 @@ export default function HomePage() {
             <p className={HomePage_ls.HomePageBox3_databox_block_text}>
               The multi-level blockchain system structure: It consists of
               Transport, Blockchain, API, and Application levels, which make the
-              Wormholes Chain network secure and efficient.
+              WormholesChain network secure and efficient.
             </p>
           </div>
           <div className={HomePage_ls.HomePageBox3_databox_block2}>
@@ -300,12 +316,11 @@ export default function HomePage() {
                       MANDRA <br />
                       CAPITAL
                     </p>
-                    <img
+                    <div
                       className={
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
-                      src={require('../../assets/images/HomePage/Slice 844.png')}
-                    />
+                    ></div>
                   </div>
                   {/* 2 */}
                   <div
@@ -320,12 +335,11 @@ export default function HomePage() {
                       src={require('../../assets/images/HomePage/Slice 845.png')}
                     />
                     <p>E/M GROUP</p>
-                    <img
+                    <div
                       className={
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
-                      src={require('../../assets/images/HomePage/Slice 844.png')}
-                    />
+                    ></div>
                   </div>
                   {/* 3 */}
                   <div
@@ -340,12 +354,11 @@ export default function HomePage() {
                       src={require('../../assets/images/HomePage/Slice 846.png')}
                     />
                     <p>VENTURES</p>
-                    <img
+                    <div
                       className={
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
-                      src={require('../../assets/images/HomePage/Slice 844.png')}
-                    />
+                    ></div>
                   </div>
                 </div>
                 {/* 2页 */}
@@ -370,12 +383,11 @@ export default function HomePage() {
                       TIMING <br />
                       CAPITAL
                     </p>
-                    <img
+                    <div
                       className={
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
-                      src={require('../../assets/images/HomePage/Slice 844.png')}
-                    />
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -527,10 +539,10 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Managing Partner of PacBridge Capital Partners, Board
-                      Member of Imagia Health, E/M Group, and Linksys
-                      Technologies, 20+ years of investment banking experience
-                      with Credit Suisse, Morgan Stanley, and Merrill Lynch.
+                      Managing Partner of PacBridge Capital, Board Member of E/M
+                      Group, Linksys Technologies 20+ Years of Investment
+                      Banking Experience at Credit Suisse, Morgan Stanley, and
+                      Merrill Lynch.
                     </p>
                     <div
                       className={
@@ -576,9 +588,8 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Staff scientist at Lawrence Berkeley National Laboratory,
-                      PhD, Columbia University, specialized in cryptography and
-                      cybersecurity.
+                      Staff Scientist at Lawrence Berkeley National Laboratory
+                      PhD, Columbia University.
                     </p>
                     <div
                       className={
@@ -603,7 +614,7 @@ export default function HomePage() {
                           HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_span2
                         }
                       >
-                        Co-Founder & Chief Scientist
+                        Chief Scientist
                       </p>
                     </div>
                   </div>
@@ -631,9 +642,10 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Founder and CEO of Sana Semiconductors, Co-Founder of
-                      Tavanza, Former CTO of Redwood Venture Partners, PhD and
-                      Consulting Professor, Stanford University.
+                      Founder and CEO of SANA Semiconductors, Co-Founder of
+                      Tavanza, and Former CTO of Redwood Venture Partners
+                      Consulting Professor at Stanford University PhD, Stanford
+                      University.
                     </p>
                     <div
                       className={
@@ -679,8 +691,8 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Professor at UESTC, PhD, Purdue University, specialized in
-                      cybersecurity.
+                      Professor at UESTC PhD, Purdue University Specialist in
+                      Cybersecurity.
                     </p>
                     <div
                       className={
@@ -747,8 +759,8 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q3 2022</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              WWormholesChain Testnet, One-Click NFT Marketplace WormholesChain
-              Limino,WormholesChain Scan
+              WormholesChain Testnet, One-Click NFT Marketplace WormholesChain
+              Limino, WormholesChain Scan
             </p>
           </div>
           <img
@@ -756,7 +768,7 @@ export default function HomePage() {
             className={HomePage_ls.HomePageBox7_databox_d6}
           />
           <img
-            src={require('../../assets/images/HomePage/Slice 857.png')}
+            src={require('../../assets/images/HomePage/Slice 827bs.png')}
             className={HomePage_ls.HomePageBox7_databox_d7}
           />
           <div className={HomePage_ls.HomePageBox7_databox_d8}>
@@ -765,7 +777,7 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q4 2022</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              WormholesChain Cross Swap, WormholesChain Faucet WormholesChain
+              WormholesChain Cross Swap, WormholesChain Faucet, WormholesChain
               Evm Extend
             </p>
           </div>
@@ -785,7 +797,7 @@ export default function HomePage() {
             className={HomePage_ls.HomePageBox7_databox_d10}
           />
           <img
-            src={require('../../assets/images/HomePage/Slice 857.png')}
+            src={require('../../assets/images/HomePage/Slice 827bs.png')}
             className={HomePage_ls.HomePageBox7_databox_d11}
           />
           <div className={HomePage_ls.HomePageBox7_databox_d12}>
@@ -813,7 +825,7 @@ export default function HomePage() {
             className={HomePage_ls.HomePageBox7_databox_d14}
           />
           <img
-            src={require('../../assets/images/HomePage/Slice 857.png')}
+            src={require('../../assets/images/HomePage/Slice 827bs.png')}
             className={HomePage_ls.HomePageBox7_databox_d15}
           />
           <div className={HomePage_ls.HomePageBox7_databox_d16}>
@@ -826,7 +838,7 @@ export default function HomePage() {
             </p>
           </div>
           <img
-            src={require('../../assets/images/HomePage/Slice 857.png')}
+            src={require('../../assets/images/HomePage/Slice 827bs.png')}
             className={HomePage_ls.HomePageBox7_databox_d17}
           />
           <div className={HomePage_ls.HomePageBox7_databox_d18}>
@@ -835,12 +847,12 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q1 2023</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              GameFi, Web3 Hackathon Event WormholesChain Foundation Ecosystem
+              GameFi, Web3 Hackathon Event, WormholesChain Foundation Ecosystem
               Fund
             </p>
           </div>
           <img
-            src={require('../../assets/images/HomePage/Slice 857.png')}
+            src={require('../../assets/images/HomePage/Slice 827bs.png')}
             className={HomePage_ls.HomePageBox7_databox_d19}
           />
           <div className={HomePage_ls.HomePageBox7_databox_d20}>

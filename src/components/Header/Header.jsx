@@ -32,7 +32,18 @@ export default function Header() {
       setDappsopacity('none');
     }
   }
-
+  //git跳转链接
+  function githubwinopen() {
+    window.open('https://github.com/wormholes-org');
+  }
+  //twitter跳转
+  function twitterwinopen() {
+    window.open('https://twitter.com/WormholesChain');
+  }
+  //medium跳转
+  function mediumwinopen() {
+    window.open('https://medium.com/wormholeschain-network');
+  }
   return (
     <div className={Header_ls.Header}>
       <div className={Header_ls.HeaderBox}>
@@ -44,9 +55,18 @@ export default function Header() {
           <span>Economic</span>
           <span>Docs</span>
           <span>Interfaces</span>
-          <div className={Header_ls.HeaderBox2_center_img1}></div>
-          <div className={Header_ls.HeaderBox2_center_img2}></div>
-          <div className={Header_ls.HeaderBox2_center_img3}></div>
+          <div
+            onClick={githubwinopen}
+            className={Header_ls.HeaderBox2_center_img1}
+          ></div>
+          <div
+            onClick={twitterwinopen}
+            className={Header_ls.HeaderBox2_center_img2}
+          ></div>
+          <div
+            onClick={mediumwinopen}
+            className={Header_ls.HeaderBox2_center_img3}
+          ></div>
           {/* <img src={require('../../assets/images/Header/Slice 908.png')} />
           <img src={require('../../assets/images/Header/Slice 909.png')} />
           <img src={require('../../assets/images/Header/Slice 910.png')} /> */}

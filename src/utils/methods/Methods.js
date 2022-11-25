@@ -26,3 +26,9 @@ export function digitalreduction(data) {
     );
   }
 }
+//加逗号
+export function comma(data) {
+  if (data) {
+    return data.toLocaleString();
+  }
+}

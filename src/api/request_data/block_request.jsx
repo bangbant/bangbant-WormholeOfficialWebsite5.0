@@ -8,6 +8,24 @@ let host = 'https://api.wormholesscan.com';
 //         }}
 //     )
 // }
+//订阅
+export const subscriptionPost = (data) => {
+  return request.post(`${host}/subscription`, {
+    body: JSON.stringify({
+      email: data,
+    }),
+  });
+};
+
+//邮箱订阅列表查询
+export const subscriptionGet = (data) => {
+  return request.get(`${host}/subscription`, {
+    params: {
+      page: data.page,
+      page_size: data.page_size,
+    },
+  });
+};
 //erb价格查询
 export const erbprice = () => {
   return request.get(`${host}/erb_price`);
