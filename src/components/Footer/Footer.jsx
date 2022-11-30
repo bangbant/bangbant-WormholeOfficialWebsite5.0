@@ -235,6 +235,12 @@ export default function Footer() {
                 Multi-Dimensional Chain
               </Link>
               <Link
+                to={{ pathname: '/DRE', state: '' }}
+                className={Footer_ls.FooterBox_databoxLink}
+              >
+                DRE Consensus
+              </Link>
+              <Link
                 to={{ pathname: '/Wallet', state: '' }}
                 className={Footer_ls.FooterBox_databoxLink}
               >

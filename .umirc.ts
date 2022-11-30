@@ -78,9 +78,9 @@ export default defineConfig({
   },
   publicPath: './',
   runtimePublicPath: true,
-  history: {
-    type: 'hash',
-  },
+  // history: {
+  //   type: 'hash',
+  // },
   hash: true,
   links: [
     // href的图片你可以放在public里面，直接./图片名.png 就可以了，也可以是cdn链接

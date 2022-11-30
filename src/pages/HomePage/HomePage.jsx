@@ -297,7 +297,11 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className={HomePage_ls.HomePageBox3_videobox}>
+        <div
+          className={HomePage_ls.HomePageBox3_videobox}
+          name="event"
+          id="event"
+        >
           <div className={HomePage_ls.HomePageBox3_videobox_title}>
             <div className={HomePage_ls.HomePageBox3_videobox_line}>
               {/* 线 */}
