@@ -55,6 +55,9 @@ export default function Dapps() {
               <div className={Dapps_ls.DappsBox_centerbottom_falotbox_dright}>
                 <div
                   className={Dapps_ls.DappsBox_centerbottom_falotbox_dright_top}
+                  onClick={() => {
+                    window.open('https://www.limino.com/#/wallet', '_blank');
+                  }}
                 >
                   <p>Limino</p>
                   <span>
@@ -78,6 +81,9 @@ export default function Dapps() {
               <div className={Dapps_ls.DappsBox_centerbottom_falotbox_dright}>
                 <div
                   className={Dapps_ls.DappsBox_centerbottom_falotbox_dright_top}
+                  onClick={() => {
+                    window.open('https://ceres.money/', '_blank');
+                  }}
                 >
                   <p>Ceres Protocol</p>
                   <span>
@@ -101,6 +107,9 @@ export default function Dapps() {
               <div className={Dapps_ls.DappsBox_centerbottom_falotbox_dright}>
                 <div
                   className={Dapps_ls.DappsBox_centerbottom_falotbox_dright_top}
+                  onClick={() => {
+                    window.open('https://openrimsea.com/', '_blank');
+                  }}
                 >
                   <p>OpenRimSea</p>
                   <span>
@@ -125,6 +134,12 @@ export default function Dapps() {
               <div className={Dapps_ls.DappsBox_centerbottom_falotbox_dright}>
                 <div
                   className={Dapps_ls.DappsBox_centerbottom_falotbox_dright_top}
+                  onClick={() => {
+                    window.open(
+                      'https://hub.wormholes.com/c0x97807fd98c40e0237aa1f13cf3e7cedc5f37f23b/#/',
+                      '_blank',
+                    );
+                  }}
                 >
                   <p>Meteorite</p>
                   <span>

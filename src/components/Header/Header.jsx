@@ -168,6 +168,12 @@ export default function Header() {
                   Multi-Dimensional Chain
                 </Link>
                 <Link
+                  to={{ pathname: '/DRE', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
+                  DRE Consensus
+                </Link>
+                <Link
                   to={{ pathname: '/Wallet', state: '' }}
                   className={Header_ls.HeaderBox3_right_spanblock_link}
                 >

@@ -1,6 +1,14 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  chainWebpack(config) {
+    config.module
+      .rule('html-loader')
+      .test(/\.html$/)
+      .exclude.end()
+      .use('html-loader')
+      .loader('html-loader');
+  },
   nodeModulesTransform: {
     type: 'none',
   },
@@ -41,6 +49,10 @@ export default defineConfig({
         {
           path: '/AboutSNFT',
           component: './AboutSNFT/AboutSNFT.jsx',
+        },
+        {
+          path: '/DRE',
+          component: './DRE/DRE.jsx',
         },
       ],
     },
