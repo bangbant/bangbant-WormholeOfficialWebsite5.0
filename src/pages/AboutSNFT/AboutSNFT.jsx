@@ -80,6 +80,11 @@ export default function AboutSNFT() {
               style={{
                 color: '#a486fa',
               }}
+              onClick={() => {
+                window.open(
+                  'https://market-2.gitbook.io/get-s-nft-by-staking-erb-on-wormholeschain/',
+                );
+              }}
             >
               More
             </div>

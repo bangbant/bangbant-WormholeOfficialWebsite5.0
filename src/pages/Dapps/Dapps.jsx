@@ -21,7 +21,14 @@ export default function Dapps() {
                 <span>WormholesChain</span>&nbsp; ecosystem rights.
               </p>
             </div>
-            <div className={Dapps_ls.DappsBox_titletextbox_right}>
+            <div
+              className={Dapps_ls.DappsBox_titletextbox_right}
+              onClick={() => {
+                window.open(
+                  'https://hub.wormholes.com/c0x97807fd98c40e0237aa1f13cf3e7cedc5f37f23b/#/',
+                );
+              }}
+            >
               {/* 箭头 */}
             </div>
           </div>
@@ -163,7 +170,15 @@ export default function Dapps() {
                 Foundation Grant
               </p>
               <span>Let us know if you have any questions!</span>
-              <div>Apply for a Venture Grant</div>
+              <div
+                onClick={() => {
+                  window.open(
+                    'https://wormholes.com/websetForm/#/ecosystemDevelopment',
+                  );
+                }}
+              >
+                Apply for a Venture Grant
+              </div>
             </div>
           </div>
         </div>

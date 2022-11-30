@@ -1,6 +1,7 @@
 import Header_ls from './Header.less';
 import React, { useState, useEffect } from 'react';
 import { history, Link } from 'umi';
+import { message } from 'antd';
 export default function Header() {
   //Basic
   const [basicopacity, setBasicopacity] = useState('none');
@@ -10,6 +11,22 @@ export default function Header() {
   const [economyopacity, setEconomyopacity] = useState('none');
   //Dapps
   const [dappsopacity, setDappsopacity] = useState('none');
+  const [messageApi, contextHolder] = message.useMessage();
+  function comingsoon() {
+    messageApi.open({
+      type: 'warning',
+      content: 'Coming Soon !',
+      icon: (
+        <img
+          style={{ width: '20px', height: '20px', margin: '-5px 20px 0 0' }}
+          src={require('../../assets/images/Header/gantanhao.png')}
+        />
+      ),
+    });
+  }
+  message.config({
+    maxCount: 1,
+  });
   function navigationOver(data) {
     if (data == 1) {
       setBasicopacity('block');
@@ -46,15 +63,28 @@ export default function Header() {
   }
   return (
     <div className={Header_ls.Header}>
+      {contextHolder}
       <div className={Header_ls.HeaderBox}>
         <img src={require('../../assets/images/Header/Slice 817.png')} />
-        <span>Mirror universe public testnet No.2</span>
+        <span>Meteorite Effect Event NO.1</span>
       </div>
       <div className={Header_ls.HeaderBox2}>
         <div className={Header_ls.HeaderBox2_center}>
-          <span>Economic</span>
-          <span>Docs</span>
-          <span>Interfaces</span>
+          <span onClick={comingsoon}>Economic</span>
+          <span
+            onClick={() => {
+              window.open('https://www.wormholes.com/docs/#/');
+            }}
+          >
+            Docs
+          </span>
+          <span
+            onClick={() => {
+              window.open('https://www.wormholes.com/docs/interface/');
+            }}
+          >
+            Interfaces
+          </span>
           <div
             onClick={githubwinopen}
             className={Header_ls.HeaderBox2_center_img1}
@@ -100,12 +130,17 @@ export default function Header() {
                 >
                   Overview
                 </Link>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <span
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                  onClick={() => {
+                    window.open('https://www.wormholes.com/docs/Architecture/');
+                  }}
+                >
                   Architecture
                 </span>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                {/* <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Subchain System
-                </span>
+                </span> */}
                 <Link
                   to={{ pathname: '/Join', state: '' }}
                   className={Header_ls.HeaderBox3_right_spanblock_link}
@@ -138,7 +173,12 @@ export default function Header() {
                 >
                   Test Wallet
                 </Link>
-                <span className={Header_ls.HeaderBox3_right_spanblock_link}>
+                <span
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                  onClick={() => {
+                    window.open('https://www.wormholesscan.com/#/');
+                  }}
+                >
                   Test Explorer
                 </span>
               </div>
@@ -154,7 +194,7 @@ export default function Header() {
                 style={{
                   display: economyopacity,
                   width: '220px',
-                  left: '-50px',
+                  left: '-10px',
                 }}
                 onMouseOut={navigationOut.bind(this, 3)}
                 onMouseOver={navigationOver.bind(this, 3)}

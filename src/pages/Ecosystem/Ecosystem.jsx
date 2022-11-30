@@ -10,8 +10,8 @@ export default function Ecosystem() {
           </div>
           <div className={styles.topRight}>
             <div className={styles.topRightBold}>
-              The principal cryptocurrency<br></br>of WormholesChain is the
-              WormholesChain ERB.
+              The principal cryptocurrency of
+              <br /> WormholesChain is the WormholesChain ERB.
             </div>
             <div className={styles.topRightBolder}>
               WormholesChain&nbsp;<span>Ecosystem</span>
@@ -95,7 +95,11 @@ export default function Ecosystem() {
             <div className={styles.in}>
               <div className={styles.round}>
                 <div className={styles.roundButton}>
-                  <div className={styles.roundText}>Learn More</div>
+                  <div className={styles.roundText}>
+                    <img
+                      src={require('../../assets/images/ecosystem/Frame.png')}
+                    />
+                  </div>
                 </div>
               </div>
               <div className={styles.intop1}>

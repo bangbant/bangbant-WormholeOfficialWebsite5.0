@@ -13,7 +13,7 @@ export default function WormholesOverview() {
             necessary tradeoff between scalability, security, and
             decentralization, by building the technology to achieve the ideal
             balance between these three metrics, creating a highly scalable and
-            secure blockchain system that doesn’t sacrifice decentralization.
+            secure blockchain system that doesn't sacrifice decentralization.
           </p>
           <div className={WormholesOverview_ls.WormholesOverviewBox_bockbox}>
             <div
@@ -43,6 +43,11 @@ export default function WormholesOverview() {
                 className={
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_button
                 }
+                onClick={() => {
+                  window.open(
+                    'https://www.wormholes.com/docs/Architecture/wormhole.html#dre-consensus-protocol',
+                  );
+                }}
               >
                 <p>More</p>
                 <span>
@@ -76,6 +81,11 @@ export default function WormholesOverview() {
                 className={
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_button
                 }
+                onClick={() => {
+                  window.open(
+                    'https://www.wormholes.com/docs/Architecture/wormhole.html#multi-dimensional-blockchain-compatibility',
+                  );
+                }}
               >
                 <p>More</p>
                 <span>
@@ -115,6 +125,11 @@ export default function WormholesOverview() {
                 className={
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_button
                 }
+                onClick={() => {
+                  window.open(
+                    'https://www.wormholes.com/docs/Architecture/wormhole.html#wormholes-network',
+                  );
+                }}
               >
                 <p>More</p>
                 <span>
@@ -145,6 +160,11 @@ export default function WormholesOverview() {
                 className={
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_button
                 }
+                onClick={() => {
+                  window.open(
+                    'https://www.wormholes.com/docs/Overview/wormhole.html#wormholes-ecosystem',
+                  );
+                }}
               >
                 <p>More</p>
                 <span>
@@ -178,6 +198,11 @@ export default function WormholesOverview() {
                 className={
                   WormholesOverview_ls.WormholesOverviewBox_bockbox_button
                 }
+                onClick={() => {
+                  window.open(
+                    'https://www.wormholes.com/docs/WormholesExchange/',
+                  );
+                }}
               >
                 <p>More</p>
                 <span>

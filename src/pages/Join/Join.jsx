@@ -60,7 +60,14 @@ export default function Join() {
             <span>WormholesChain</span>
             <br></br>Global Community Team
           </div>
-          <div className={styles.Button}>Join</div>
+          <div
+            className={styles.Button}
+            onClick={() => {
+              window.open('https://wormholes.com/websetForm/#/joinWormholes');
+            }}
+          >
+            Join
+          </div>
         </div>
       </div>
     </div>

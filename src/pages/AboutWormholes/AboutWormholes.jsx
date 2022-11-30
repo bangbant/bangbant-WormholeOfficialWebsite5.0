@@ -36,7 +36,7 @@ export default function AboutWormholes() {
               blockchains. Each parallel blockchain is coupled with the previous
               blocks of other chains at the same or different block height. In a
               general blockchain data structure, ordered blocks are linked
-              “back”, each referring to the previous block on the chain. Each
+              "back", each referring to the previous block on the chain. Each
               block contains the hash of its parent inside its own header. The
               sequence of hashes linking each block to its parent creates a
               chain going back all the way to the first block ever created,

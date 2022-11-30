@@ -3,11 +3,28 @@ import React, { useState, useEffect } from 'react';
 import { total } from '../../api/request_data/block_request';
 import { history, Link } from 'umi';
 import { comma } from '../../utils/methods/Methods';
+import { message } from 'antd';
 export default function HomePage() {
   const [imgsomrewidth, setImgsomrewidth] = useState('0px');
   const [imgbigwidth, setImgbigwidth] = useState('0px');
   //总数
   const [totaldata, setTotaldata] = useState({});
+  const [messageApi, contextHolder] = message.useMessage();
+  function comingsoon() {
+    messageApi.open({
+      type: 'warning',
+      content: 'Coming Soon !',
+      icon: (
+        <img
+          style={{ width: '20px', height: '20px', margin: '-5px 20px 0 0' }}
+          src={require('../../assets/images/Header/gantanhao.png')}
+        />
+      ),
+    });
+  }
+  message.config({
+    maxCount: 1,
+  });
   useEffect(() => {
     total_q();
   }, []);
@@ -44,6 +61,7 @@ export default function HomePage() {
   }
   return (
     <div className={HomePage_ls.HomePage}>
+      {contextHolder}
       <div className={HomePage_ls.HomePageBox}>
         <div className={HomePage_ls.HomePageBox_center}>
           <p>The First Truly Decentralized POS</p>
@@ -92,11 +110,21 @@ export default function HomePage() {
           <div className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox}>
             <div
               className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox_top2}
+              onClick={() => {
+                window.open(
+                  'https://medium.com/wormholeschain-network/mandatory-reading-for-validators-of-wormholeschain-d17c2b27a885',
+                );
+              }}
             >
-              <p>Learn about becoming a Validator</p>
+              <p>Learn about Validator</p>
             </div>
             <div
               className={HomePage_ls.HomePageBox_Featuresbox_divbuttonbox_top1}
+              onClick={() => {
+                window.open(
+                  'https://www.wormholes.com/docs/install/run/index.html#spin-up-your-own-wormholes-node',
+                );
+              }}
             >
               <p>Become a Validator</p>
             </div>
@@ -115,10 +143,24 @@ export default function HomePage() {
               rewarded to WormholesChain S-NFT Nodes; they receive 4/11 of the
               Mainnet block rewards.
             </p>
-            <div className={HomePage_ls.HomePageBox2_box_button1}>
+            <div
+              className={HomePage_ls.HomePageBox2_box_button1}
+              onClick={() => {
+                window.open(
+                  'https://medium.com/wormholeschain-network/mandatory-reading-for-s-nft-node-of-wormholeschain-a4c0c3254256',
+                );
+              }}
+            >
               Mandatory reading for S-NFT Nodes
             </div>
-            <div className={HomePage_ls.HomePageBox2_box_button2}>
+            <div
+              className={HomePage_ls.HomePageBox2_box_button2}
+              onClick={() => {
+                window.open(
+                  'https://market-2.gitbook.io/get-s-nft-by-staking-erb-on-wormholeschain/',
+                );
+              }}
+            >
               Become a WormholesChain S-NFT Node
             </div>
             <div className={HomePage_ls.HomePageBox2_box_gifbox}>
@@ -200,18 +242,23 @@ export default function HomePage() {
               <p>Total Transactions</p>
             </div>
           </div>
-          <div className={HomePage_ls.HomePageBox4_button}>
+          <div
+            className={HomePage_ls.HomePageBox4_button}
+            onClick={() => {
+              window.open('https://www.wormholesscan.com/#/');
+            }}
+          >
             View mainnet data
           </div>
-          <img
-            className={HomePage_ls.HomePageBox4_img1}
-            src={require('../../assets/images/HomePage/Slice 837.png')}
-          />
-          <img
-            className={HomePage_ls.HomePageBox4_img2}
-            src={require('../../assets/images/HomePage/Slice 838.png')}
-          />
         </div>
+        <img
+          className={HomePage_ls.HomePageBox4_img1}
+          src={require('../../assets/images/HomePage/Slice 837.png')}
+        />
+        <img
+          className={HomePage_ls.HomePageBox4_img2}
+          src={require('../../assets/images/HomePage/Slice 838.png')}
+        />
       </div>
       <div className={HomePage_ls.HomePageBox5}>
         <div className={HomePage_ls.HomePageBox3_databox}>
@@ -256,26 +303,37 @@ export default function HomePage() {
               {/* 线 */}
             </div>
             <p>
-              WormholesChain&nbsp;
-              <span>Event</span>
+              <span>WormholesChain</span>&nbsp; Event
             </p>
-            <div className={HomePage_ls.HomePageBox3_videobox_button}>Join</div>
+            <div
+              className={HomePage_ls.HomePageBox3_videobox_button}
+              onClick={() => {
+                window.open(
+                  'https://market-2.gitbook.io/meteorite-effect-event/',
+                );
+              }}
+            >
+              Join
+            </div>
           </div>
           <div className={HomePage_ls.HomePageBox3_video}>
-            {/* <img src={require('../../assets/gif/4.gif')} /> */}
+            <div className={HomePage_ls.HomePageBox3_video_gif}>
+              <p>Meteorite Effect Event NO.1</p>
+              <span>Ongoing</span>
+            </div>
           </div>
         </div>
       </div>
       <div className={HomePage_ls.HomePageBox6}>
+        <img
+          src={require('../../assets/images/HomePage/Slice 838.png')}
+          className={HomePage_ls.HomePageBox6_leftimg}
+        />
+        <img
+          src={require('../../assets/images/HomePage/Slice 837.png')}
+          className={HomePage_ls.HomePageBox6_rightimg}
+        />
         <div className={HomePage_ls.HomePageBox6_center}>
-          <img
-            src={require('../../assets/images/HomePage/Slice 838.png')}
-            className={HomePage_ls.HomePageBox6_leftimg}
-          />
-          <img
-            src={require('../../assets/images/HomePage/Slice 837.png')}
-            className={HomePage_ls.HomePageBox6_rightimg}
-          />
           <p className={HomePage_ls.HomePageBox6_title}>
             <span>Main</span>&nbsp; Partners and&nbsp;
             <span>Team</span> Members
@@ -305,6 +363,9 @@ export default function HomePage() {
                     className={
                       HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_d
                     }
+                    onClick={() => {
+                      window.open('http://mandracapital.com/');
+                    }}
                   >
                     <img
                       className={
@@ -327,6 +388,9 @@ export default function HomePage() {
                     className={
                       HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_d
                     }
+                    onClick={() => {
+                      window.open('https://www.emgroup.com/');
+                    }}
                   >
                     <img
                       className={
@@ -346,6 +410,9 @@ export default function HomePage() {
                     className={
                       HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_d
                     }
+                    onClick={() => {
+                      window.open('https://liquid2.vc/');
+                    }}
                   >
                     <img
                       className={
@@ -387,6 +454,7 @@ export default function HomePage() {
                       className={
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
+                      style={{ opacity: 0 }}
                     ></div>
                   </div>
                 </div>

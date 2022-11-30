@@ -207,12 +207,17 @@ export default function Footer() {
               >
                 Overview
               </Link>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <span
+                className={Footer_ls.FooterBox_databoxLink}
+                onClick={() => {
+                  window.open('https://www.wormholes.com/docs/Architecture/');
+                }}
+              >
                 Architecture
               </span>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              {/* <span className={Footer_ls.FooterBox_databoxLink}>
                 Subchain System
-              </span>
+              </span> */}
               <Link
                 to={{ pathname: '/Join', state: '' }}
                 className={Footer_ls.FooterBox_databoxLink}
@@ -234,7 +239,12 @@ export default function Footer() {
               >
                 Test Wallet
               </Link>
-              <span className={Footer_ls.FooterBox_databoxLink}>
+              <span
+                className={Footer_ls.FooterBox_databoxLink}
+                onClick={() => {
+                  window.open('https://www.wormholesscan.com/#/');
+                }}
+              >
                 Test Explorer
               </span>
             </div>
