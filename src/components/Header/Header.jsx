@@ -70,7 +70,7 @@ export default function Header() {
       </div>
       <div className={Header_ls.HeaderBox2}>
         <div className={Header_ls.HeaderBox2_center}>
-          <span onClick={comingsoon}>Economic</span>
+          <span onClick={comingsoon}>Economics</span>
           <span
             onClick={() => {
               window.open('https://www.wormholes.com/docs/#/');
