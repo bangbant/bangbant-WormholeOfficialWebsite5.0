@@ -14,7 +14,7 @@ export default function AboutSNFT() {
           <div className={styles.topRightLight}>
             Distinct from smart-contract based NFTs, S-NFTs are a native
             chain-layer non-fungible asset on WormholesChain. S-NFTs are
-            rewarded to WormholesChain S-NFT Nodes.
+            rewarded to WormholesChain S-NFT Miner.
           </div>
         </div>
       </div>

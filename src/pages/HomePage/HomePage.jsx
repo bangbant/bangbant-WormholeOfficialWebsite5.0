@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className={HomePage_ls.HomePageBox_center}>
           <p>The First Truly Decentralized POS</p>
           <p>
-            <span>Multi-Dimensional&nbsp;</span>
+            <span>&nbsp;Multi-Dimensional&nbsp;</span>
             Chain in
             <span>&nbsp;Web3</span>.
           </p>
@@ -134,13 +134,13 @@ export default function HomePage() {
       <div className={HomePage_ls.HomePageBox2}>
         <div className={HomePage_ls.HomePageBox2_center}>
           <p className={HomePage_ls.HomePageBox2_title}>
-            <span>S-NFT</span> Nodes
+            <span>S-NFT</span> Miner
           </p>
           <div className={HomePage_ls.HomePageBox2_box}>
             <p className={HomePage_ls.HomePageBox2_box_data}>
               Distinct from smart-contract based NFTs, S-NFTs are a native
               chain-layer non-fungible asset on WormholesChain. S-NFTs are
-              rewarded to WormholesChain S-NFT Nodes; they receive 4/11 of the
+              rewarded to WormholesChain S-NFT Miner; they receive 4/11 of the
               Mainnet block rewards.
             </p>
             <div
@@ -151,7 +151,7 @@ export default function HomePage() {
                 );
               }}
             >
-              Mandatory reading for S-NFT Nodes
+              Mandatory reading for S-NFT Miner
             </div>
             <div
               className={HomePage_ls.HomePageBox2_box_button2}
@@ -161,7 +161,7 @@ export default function HomePage() {
                 );
               }}
             >
-              Become a WormholesChain S-NFT Node
+              Become a WormholesChain S-NFT Miner
             </div>
             <div className={HomePage_ls.HomePageBox2_box_gifbox}>
               <img src={require('../../assets/gif/3.gif')} />

@@ -160,6 +160,7 @@ export default function Footer() {
                 className={Footer_ls.FooterBox_input}
                 placeholder="Enter Email"
                 id="combutton"
+                autocomplete="off"
               />
               <div className={Footer_ls.FooterBox_button} onClick={comclick}>
                 <div className={Footer_ls.FooterBox_buttontext}>SUBSCRIBE</div>
