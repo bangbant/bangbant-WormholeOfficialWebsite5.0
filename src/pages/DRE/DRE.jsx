@@ -224,13 +224,13 @@ export default function DRE() {
         <div className={styles.text6} id="fixtext">
           Time out
         </div>
-        <div className={styles.text7} id="fixtext">
+        <div className={styles.text9} id="fixtext">
           Time out
         </div>
         <div className={styles.text8} id="fixtext">
           Broadcasts<br></br>COMMIT<br></br>message
         </div>
-        <div className={styles.text9} id="fixtext">
+        <div className={styles.text7} id="fixtext">
           commit success
         </div>
       </div>
