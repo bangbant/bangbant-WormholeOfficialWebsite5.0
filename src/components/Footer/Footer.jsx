@@ -41,7 +41,6 @@ export default function Footer() {
   }
   function CloseOutlinedclick() {
     setVisible(false);
-    console.log(11);
   }
   function subscribe() {
     if (checkeddata == true) {
@@ -76,7 +75,6 @@ export default function Footer() {
   function Youtube() {
     window.open('https://www.youtube.com/channel/UCB3-3LhjxsZk-vm47qwydgg');
   }
-  //ins
   //ins
   function ins() {
     window.open('https://www.instagram.com/wormholeschain/');

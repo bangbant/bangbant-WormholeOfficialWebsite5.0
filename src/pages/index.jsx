@@ -2,6 +2,7 @@ import styles from './index.less';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import HeaderApp from '../components/HeaderApp/HeaderApp';
+import FooterApp from '../components/FooterApp/FooterApp';
 import HomePageApp from './HomePageApp/HomePageApp';
 import React, { useState, useEffect } from 'react';
 
@@ -59,10 +60,11 @@ export default function IndexPage(props) {
           <Footer />
         </div>
       ) : (
-        <>
+        <div className={styles.boxApp}>
           <HeaderApp />
           {window.location.pathname == '/' ? <HomePageApp /> : props.children}
-        </>
+          <FooterApp />
+        </div>
       )}
     </>
   );
