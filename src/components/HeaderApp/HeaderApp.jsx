@@ -3,6 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { history, Link } from 'umi';
 import { UnorderedListOutlined, CloseOutlined } from '@ant-design/icons';
 export default function HeaderApp() {
+  const [icondata, setIcondata] = useState(0);
+  function iconclick(data) {
+    setIcondata(data);
+  }
   return (
     <>
       <div className={HeaderApp_ls.HeaderAppBox}>
@@ -20,13 +24,21 @@ export default function HeaderApp() {
               />
               <span>WormholesChain</span>
             </div>
-            {}
-            <span className={HeaderApp_ls.HeaderAppBox_Navigation_right}>
-              <UnorderedListOutlined />
-            </span>
-            <span className={HeaderApp_ls.HeaderAppBox_Navigation_right}>
-              <CloseOutlined />
-            </span>
+            {icondata == 0 ? (
+              <span
+                className={HeaderApp_ls.HeaderAppBox_Navigation_right}
+                onClick={iconclick.bind(this, 1)}
+              >
+                <UnorderedListOutlined />
+              </span>
+            ) : (
+              <span
+                className={HeaderApp_ls.HeaderAppBox_Navigation_right}
+                onClick={iconclick.bind(this, 0)}
+              >
+                <CloseOutlined />
+              </span>
+            )}
           </div>
         </div>
       </div>
