@@ -223,7 +223,7 @@ export default function Footer() {
                 to={{ pathname: '/Join', state: '' }}
                 className={Footer_ls.FooterBox_databoxLink}
               >
-                Join Wormholes
+                Join WormholesChain
               </Link>
             </div>
             <div>

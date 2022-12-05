@@ -66,7 +66,7 @@ export default function Header() {
       {contextHolder}
       <div className={Header_ls.HeaderBox}>
         <img src={require('../../assets/images/Header/Slice 817.png')} />
-        <a href="#event">Meteorite Effect Event NO.1</a>
+        <a href="/#event">Meteorite Effect Event NO.1</a>
       </div>
       <div className={Header_ls.HeaderBox2}>
         <div className={Header_ls.HeaderBox2_center}>
@@ -126,7 +126,7 @@ export default function Header() {
               Basic
               <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ display: basicopacity }}
+                style={{ display: basicopacity, width: '220px' }}
                 onMouseOut={navigationOut.bind(this, 1)}
                 onMouseOver={navigationOver.bind(this, 1)}
               >
@@ -151,7 +151,7 @@ export default function Header() {
                   to={{ pathname: '/Join', state: '' }}
                   className={Header_ls.HeaderBox3_right_spanblock_link}
                 >
-                  Join Wormholes
+                  Join WormholesChain
                 </Link>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Header() {
               Technology
               <div
                 className={Header_ls.HeaderBox3_right_spanblock}
-                style={{ display: technologyopacity, width: '198px' }}
+                style={{ display: technologyopacity, width: '220px' }}
                 onMouseOut={navigationOut.bind(this, 2)}
                 onMouseOver={navigationOver.bind(this, 2)}
               >

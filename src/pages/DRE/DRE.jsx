@@ -37,7 +37,16 @@ export default function DRE() {
               <img src={require('../../assets/images/DRE/box2.png')}></img>
               <div className={styles.center}>
                 <div className={styles.titleBolder}>Random drop point</div>
-                <div className={styles.titleLight}>More Detail</div>
+                <div
+                  className={styles.titleLight}
+                  onClick={() => {
+                    window.open(
+                      'https://www.wormholes.com/docs/Architecture/wormhole.html#dre-consensus-protocol',
+                    );
+                  }}
+                >
+                  More Detail
+                </div>
               </div>
             </div>
           </div>

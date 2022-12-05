@@ -54,6 +54,10 @@ export default defineConfig({
           path: '/DRE',
           component: './DRE/DRE.jsx',
         },
+        {
+          path: '/MandraCapital',
+          component: './MandraCapital/MandraCapital.jsx',
+        },
       ],
     },
   ],

@@ -219,25 +219,25 @@ export default function HomePage() {
           <div className={HomePage_ls.HomePageBox4_databox}>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                {comma(totaldata.totalBlock - 1)}
+                {comma(totaldata.totalBlock - 1) || 0}
               </div>
               <p>Block Height</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                {totaldata.avgBlockTime} ms
+                {totaldata.avgBlockTime || 0} ms
               </div>
               <p>Block Time</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                {comma(totaldata.totalSNFT)}
+                {comma(totaldata.totalSNFT) || 0}
               </div>
               <p>Number of S-NFTs</p>
             </div>
             <div className={HomePage_ls.HomePageBox4_databox_block}>
               <div className={HomePage_ls.HomePageBox4_databox_blockimg}>
-                {comma(totaldata.totalTransaction)}
+                {comma(totaldata.totalTransaction) || 0}
               </div>
               <p>Total Transactions</p>
             </div>
@@ -297,6 +297,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+        {/* https://market-2.gitbook.io/meteorite-effect-event/ */}
         <div
           className={HomePage_ls.HomePageBox3_videobox}
           name="event"
@@ -306,24 +307,64 @@ export default function HomePage() {
             <div className={HomePage_ls.HomePageBox3_videobox_line}>
               {/* 线 */}
             </div>
-            <p>
-              <span>WormholesChain</span>&nbsp; Event
-            </p>
-            <div
-              className={HomePage_ls.HomePageBox3_videobox_button}
-              onClick={() => {
-                window.open(
-                  'https://market-2.gitbook.io/meteorite-effect-event/',
-                );
-              }}
-            >
-              Join
-            </div>
+            <p>WormholesChain Event</p>
           </div>
           <div className={HomePage_ls.HomePageBox3_video}>
-            <div className={HomePage_ls.HomePageBox3_video_gif}>
-              <p>Meteorite Effect Event NO.1</p>
-              <span>Ongoing</span>
+            <div
+              className={HomePage_ls.HomePageBox3_video_block}
+              style={{ backgroundColor: '#F0F0F3' }}
+            >
+              <p className={HomePage_ls.HomePageBox3_video_block_title}>
+                Mirror Universe Public Test NO.1
+              </p>
+              <p className={HomePage_ls.HomePageBox3_video_block_text}>
+                WormhoelsChain solves the security and fairness issue through
+                Dynamic Random Election (DRE) Consensus, which implements the
+                first genuinely decentralized POS public chain in Web3.
+              </p>
+              <span>Ended</span>
+            </div>
+            <div
+              className={HomePage_ls.HomePageBox3_video_block}
+              style={{ backgroundColor: '#A486FA' }}
+            >
+              <p
+                className={HomePage_ls.HomePageBox3_video_block_title}
+                style={{ color: '#FFFFFF' }}
+              >
+                Meteorite Effect Event NO.1
+              </p>
+              <p
+                className={HomePage_ls.HomePageBox3_video_block_text}
+                style={{ color: '#E3E3E3' }}
+              >
+                ERB and S-NFT of WormholesChain will take you to experience
+                different economic models.
+              </p>
+              <span
+                style={{ color: '#FFFFFF', cursor: 'pointer' }}
+                onClick={() => {
+                  window.open(
+                    'https://market-2.gitbook.io/meteorite-effect-event/',
+                  );
+                }}
+              >
+                Ongoing
+              </span>
+            </div>
+            <div
+              className={HomePage_ls.HomePageBox3_video_block}
+              style={{ backgroundColor: '#FFFFFF' }}
+            >
+              <p className={HomePage_ls.HomePageBox3_video_block_title}>
+                Wormholes LightYear Public Test NO.1
+              </p>
+              <p className={HomePage_ls.HomePageBox3_video_block_text}>
+                WormhoelsChain solves the security and fairness issue through
+                Dynamic Random Election (DRE) Consensus, which implements the
+                first genuinely decentralized POS public chain in Web3.
+              </p>
+              <span>Coming soon</span>
             </div>
           </div>
         </div>
@@ -363,13 +404,11 @@ export default function HomePage() {
                   }
                 >
                   {/* 1 */}
-                  <div
+                  <Link
                     className={
                       HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_d
                     }
-                    onClick={() => {
-                      window.open('http://mandracapital.com/');
-                    }}
+                    to={{ pathname: '/MandraCapital', state: '' }}
                   >
                     <img
                       className={
@@ -386,7 +425,7 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox1_centerboxlong_block_dimg2
                       }
                     ></div>
-                  </div>
+                  </Link>
                   {/* 2 */}
                   <div
                     className={
@@ -906,7 +945,8 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q4 2022</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              NFT Ecosystem Development, dApp Developer Events
+              NFT Ecosystem Development, dApp
+              <br /> Developer Events
             </p>
           </div>
           <img
@@ -920,6 +960,7 @@ export default function HomePage() {
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q1 2023</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
               GameFi, Web3 Hackathon Event, WormholesChain Foundation Ecosystem
+              <br />
               Fund
             </p>
           </div>

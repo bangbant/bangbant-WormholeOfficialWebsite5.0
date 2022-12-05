@@ -71,7 +71,7 @@
     width: 397px;
     font-size: 20px;
     font-family: Manrope-SemiBold;
-    line-height: 26px;
+    line-height: 24px;
     margin: 0px 0 0 82px;
   }
   div {
@@ -106,7 +106,7 @@
     width: 350px;
     font-size: 20px;
     font-family: Manrope-SemiBold;
-    line-height: 26px;
+    line-height: 24px;
     margin: 0px 0 0 89px;
   }
   div {
@@ -442,12 +442,13 @@
 .HomePageBox3_videobox_title {
   width: 1220px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   .HomePageBox3_videobox_line {
     width: 92px;
     height: 7px;
     background-color: #000000;
+    margin-right: 20px;
   }
   .HomePageBox3_videobox_button {
     width: 291px;
@@ -477,33 +478,41 @@
 }
 .HomePageBox3_video {
   width: 1220px;
-  height: 751px;
-  background-image: url('../../assets/images/HomePage/Slice\ 821.png');
-  background-size: 100% 100%;
-  padding: 120px 0 0 100px;
-}
-.HomePageBox3_video_gif {
-  width: 1020px;
-  height: 530px;
-  background-image: url('../../assets/images/HomePage/FFFF1B3FC9EA16D9739CAAB73681389C.png');
-  background-size: 100% 100%;
-  position: relative;
+  height: 415px;
+  margin: auto;
+  margin-top: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-size: 32px;
-    color: #a486fa;
-    font-family: Manrope-Bold;
-    text-decoration: underline;
+  justify-content: flex-start;
+  box-shadow: 20px 20px 30px 0px #e0e0e0, -20px -20px 30px 0px #ffffff;
+}
+.HomePageBox3_video_block {
+  width: 408px;
+  height: 415px;
+  padding: 85px 0 0 31px;
+  position: relative;
+  text-align: left;
+
+  .HomePageBox3_video_block_title {
+    font-size: 20px;
+    color: #000000;
+    font-family: Gilroy-ExtraBold;
+    margin: 0;
+  }
+  .HomePageBox3_video_block_text {
+    width: 310px;
+    font-size: 16px;
+    color: #525252;
+    font-family: Manrope-Regular;
+    margin-top: 30px;
   }
   span {
-    position: absolute;
-    right: 23px;
-    bottom: 26px;
-    font-size: 20px;
-    color: #838383;
+    font-size: 24px;
+    color: #525252;
     font-family: Manrope-Regular;
+    margin: 0;
+    position: absolute;
+    left: 31px;
+    bottom: 70px;
   }
 }
 .HomePageBox6 {
@@ -512,6 +521,7 @@
   background-image: url('../../assets/images/HomePage/Slice\ 822.png');
   background-size: 100% 100%;
   position: relative;
+  margin-top: 100px;
   .HomePageBox6_leftimg {
     position: absolute;
     bottom: 130px;
@@ -603,6 +613,7 @@
   background-image: url('../../assets/images/HomePage/Slice\ 842.png');
   box-shadow: 20px 20px 30px 0px #e0e0e0, -20px -20px 30px 0px #ffffff;
   background-size: 100% 100%;
+  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
