@@ -72,12 +72,15 @@ export default function HeaderApp() {
         </div>
         <div className={HeaderApp_ls.HeaderAppBox_Navigation}>
           <div className={HeaderApp_ls.HeaderAppBox_Navigation_center}>
-            <div className={HeaderApp_ls.HeaderAppBox_Navigation_left}>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_Navigation_left}
+              to={{ pathname: '/', state: '' }}
+            >
               <img
                 src={require('../../assets/images/HeaderApp/Frame@2x.png')}
               />
               <span>WormholesChain</span>
-            </div>
+            </Link>
             {icondata == 0 ? (
               <span
                 className={HeaderApp_ls.HeaderAppBox_Navigation_right}
