@@ -27,24 +27,48 @@ export default defineConfig({
           component: './Wallet/Wallet.jsx',
         },
         {
+          path: '/WalletApp',
+          component: './WalletApp/WalletApp.jsx',
+        },
+        {
           path: '/Join',
           component: './Join/Join.jsx',
+        },
+        {
+          path: '/JoinApp',
+          component: './JoinApp/JoinApp.jsx',
         },
         {
           path: '/AboutERB',
           component: './AboutERB/AboutERB.jsx',
         },
         {
+          path: '/AboutERBApp',
+          component: './AboutERBApp/AboutERBApp.jsx',
+        },
+        {
           path: '/WormholesOverview',
           component: './WormholesOverview/WormholesOverview.jsx',
+        },
+        {
+          path: '/WormholesOverviewApp',
+          component: './WormholesOverviewApp/WormholesOverviewApp.jsx',
         },
         {
           path: '/AboutWormholes',
           component: './AboutWormholes/AboutWormholes.jsx',
         },
         {
+          path: '/AboutWormholesApp',
+          component: './AboutWormholesApp/AboutWormholesApp.jsx',
+        },
+        {
           path: '/Dapps',
           component: './Dapps/Dapps.jsx',
+        },
+        {
+          path: '/DappsApp',
+          component: './DappsApp/DappsApp.jsx',
         },
         {
           path: '/AboutSNFT',
@@ -61,6 +85,10 @@ export default defineConfig({
         {
           path: '/MandraCapital',
           component: './MandraCapital/MandraCapital.jsx',
+        },
+        {
+          path: '/MandraCapitalApp',
+          component: './MandraCapitalApp/MandraCapitalApp.jsx',
         },
       ],
     },
