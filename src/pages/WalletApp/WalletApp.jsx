@@ -41,9 +41,11 @@ export default function WalletApp() {
           </div>
           <div className={styles.flexBox}>
             <div className={styles.middelLeft}>
-              <img
-                src={require('../../assets/images/Wallet/rightimg.png')}
-              ></img>
+              <div className={styles.imgbox}>
+                <img
+                  src={require('../../assets/images/Wallet/leftimgapp.png')}
+                ></img>
+              </div>
               <div className={styles.title}>
                 Stake ERB on<br></br>WormholesChain
               </div>
@@ -66,9 +68,11 @@ export default function WalletApp() {
               </div>
             </div>
             <div className={styles.middelRight}>
-              <img
-                src={require('../../assets/images/Wallet/leftimg.png')}
-              ></img>
+              <div className={styles.imgbox}>
+                <img
+                  src={require('../../assets/images/Wallet/rightimgapp.png')}
+                ></img>
+              </div>
               <div className={styles.title}>
                 Open an NFT
                 <br /> Marketplace

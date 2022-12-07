@@ -115,6 +115,59 @@ export default function AboutERBApp() {
           </div>
         </div>
       </div>
+      <div className={styles.MainPartners_smbox}>
+        <div className={styles.MainPartners_smbox_long}>
+          <div className={styles.boxitem}>
+            <div className={styles.title}>What is Staking?</div>
+            <div className={styles.text}>
+              The ERB staking system creates the primary incentive for users and
+              nodes to validate transactions properly, maintaining the security
+              and stability of the WormholesChain ecosystem.
+            </div>
+          </div>
+          <div className={styles.boxitem}>
+            <div className={styles.title}>Why Stake?</div>
+            <div className={styles.text}>
+              Staking allows validator nodes to join the WormholesChain network
+              by locking a quantity of their mainnet ERBs for a specified amount
+              of time. The network takes the number of ERBs staked by the node
+              as one of the determiners of the level of trust in the node,
+              preventing some nodes from operating WormholesChain mainnet nodes
+              inappropriately to control and break network rules. Staking ERBs
+              increases the cost of misbehavior for rule-breakers and protects
+              the entire network from the possibility of manipulation by
+              specific nodes.
+            </div>
+          </div>
+          <div className={styles.boxitem}>
+            <div className={styles.title}>
+              Voting and<br></br>Governance
+            </div>
+            <div className={styles.text}>
+              The ERB plays a crucial role in voting and participating in
+              governance throughout the community.
+            </div>
+          </div>
+          <div className={styles.boxitem}>
+            <div className={styles.title}>
+              Crypto Asset<br></br>Exchange
+            </div>
+            <div className={styles.text}>
+              ERB, as the underlying native fungible token of the
+              WormholesChain, can be used as a medium of value exchange with any
+              other crypto assets throughout the network.
+            </div>
+          </div>
+          <div className={styles.boxitem}>
+            <div className={styles.title}>NFT Exchange Staking</div>
+            <div className={styles.text}>
+              Users can open an NFT exchange by staking a prespecified amount of
+              ERB; this also entitles them to a pro-rata share of the mainnet
+              validation rewards.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
