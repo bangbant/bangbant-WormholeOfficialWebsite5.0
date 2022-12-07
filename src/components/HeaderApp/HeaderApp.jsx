@@ -112,13 +112,28 @@ export default function HeaderApp(props) {
           className={HeaderApp_ls.HeaderAppBox_dropdown}
           style={{ marginTop: icondata == 0 ? '-406px' : '0px' }}
         >
-          <div className={HeaderApp_ls.HeaderAppBox_dropdown_block}>
+          <div
+            className={HeaderApp_ls.HeaderAppBox_dropdown_block}
+            onClick={() => {
+              window.open('https://www.wormholes.com/docs/economic/');
+            }}
+          >
             <p>Economics</p>
           </div>
-          <div className={HeaderApp_ls.HeaderAppBox_dropdown_block}>
+          <div
+            className={HeaderApp_ls.HeaderAppBox_dropdown_block}
+            onClick={() => {
+              window.open('https://www.wormholes.com/docs/#/');
+            }}
+          >
             <p>Docs</p>
           </div>
-          <div className={HeaderApp_ls.HeaderAppBox_dropdown_block}>
+          <div
+            className={HeaderApp_ls.HeaderAppBox_dropdown_block}
+            onClick={() => {
+              window.open('https://www.wormholes.com/docs/interface/');
+            }}
+          >
             <p>Interfaces</p>
           </div>
           <div
@@ -137,21 +152,32 @@ export default function HeaderApp(props) {
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
             style={{
-              height: basicicon == 0 || icondata == 0 ? '0px' : '188px',
+              height: basicicon == 0 || icondata == 0 ? '0px' : '141px',
             }}
           >
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/WormholesOverviewApp', state: '' }}
+            >
               Overview
-            </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            </Link>
+            <div
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              onClick={() => {
+                window.open('https://www.wormholes.com/docs/Architecture/');
+              }}
+            >
               Architecture
             </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            {/* <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Subchain System
-            </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            </div> */}
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/JoinApp', state: '' }}
+            >
               Join WormholesChain
-            </div>
+            </Link>
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block}
@@ -173,16 +199,30 @@ export default function HeaderApp(props) {
               height: technologyicon == 0 || icondata == 0 ? '0px' : '188px',
             }}
           >
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/AboutWormholesApp', state: '' }}
+            >
               Multi-Dimensional Chain
-            </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            </Link>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/DREApp', state: '' }}
+            >
               DRE Consensus
-            </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            </Link>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/WalletApp', state: '' }}
+            >
               Test Wallet
-            </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            </Link>
+            <div
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              onClick={() => {
+                window.open('https://www.wormholesscan.com/#/');
+              }}
+            >
               Test Explorer
             </div>
           </div>
@@ -212,9 +252,12 @@ export default function HeaderApp(props) {
             >
               Ecosystem Economy
             </Link>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/AboutERBApp', state: '' }}
+            >
               Mainnet Native ERB
-            </div>
+            </Link>
             <Link
               to={{ pathname: '/AboutSNFTApp', state: '' }}
               className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
@@ -239,9 +282,12 @@ export default function HeaderApp(props) {
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
             style={{ height: dappsicon == 0 || icondata == 0 ? '0px' : '47px' }}
           >
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/DappsApp', state: '' }}
+            >
               Meteorite Exchange
-            </div>
+            </Link>
           </div>
         </div>
       </div>

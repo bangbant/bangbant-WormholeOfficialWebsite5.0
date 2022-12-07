@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import HeaderApp from '../components/HeaderApp/HeaderApp';
 import FooterApp from '../components/FooterApp/FooterApp';
 import HomePageApp from './HomePageApp/HomePageApp';
+import Notification from '../components/Notification/Notification';
 import React, { useState, useEffect } from 'react';
 import PubSub from 'pubsub-js';
 import { Helmet } from 'umi';
@@ -63,6 +64,7 @@ export default function IndexPage(props) {
       </div> */}
       {getDevice() == 'pc' ? (
         <div className={styles.box}>
+          <Notification />
           <Header />
           {props.children}
           <Footer />

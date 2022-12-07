@@ -98,6 +98,10 @@ export default defineConfig({
           path: '/AboutSNFTApp',
           component: './AboutSNFTApp/AboutSNFTApp.jsx',
         },
+        {
+          path: '/PrivacyPolicy',
+          component: './PrivacyPolicy/PrivacyPolicy.jsx',
+        },
       ],
     },
   ],

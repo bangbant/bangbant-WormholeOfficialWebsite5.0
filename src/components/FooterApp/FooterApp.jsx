@@ -47,6 +47,34 @@ export default function FooterApp() {
       setTs(true);
     }
   }
+  //git跳转链接
+  function githubwinopen() {
+    window.open('https://github.com/wormholes-org');
+  }
+  //discord跳转
+  function discordwinopen() {
+    window.open('https://discord.gg/N4ksH6tqRX');
+  }
+  //twitter跳转
+  function twitterwinopen() {
+    window.open('https://twitter.com/WormholesChain');
+  }
+  //medium跳转
+  function mediumwinopen() {
+    window.open('https://medium.com/wormholeschain-network');
+  }
+  //Telegram
+  function Telegram() {
+    window.open('https://t.me/wormholes_chain');
+  }
+  //Youtube
+  function Youtube() {
+    window.open('https://www.youtube.com/channel/UCB3-3LhjxsZk-vm47qwydgg');
+  }
+  //ins
+  function ins() {
+    window.open('https://www.instagram.com/wormholeschain/');
+  }
   return (
     <>
       <div className={FooterApp_ls.FooterAppBox} id="app">
@@ -136,22 +164,31 @@ export default function FooterApp() {
           {/* icon */}
           <div className={FooterApp_ls.FooterAppBox_iconbox}>
             <img
+              onClick={githubwinopen}
               src={require('../../assets/images/FooterApp/Group 712@2x.png')}
             />
             <img
+              onClick={discordwinopen}
               src={require('../../assets/images/FooterApp/Group 709@2x.png')}
             />
             <img
+              onClick={twitterwinopen}
               src={require('../../assets/images/FooterApp/Group 710@2x.png')}
             />
             <img
+              onClick={Telegram}
               src={require('../../assets/images/FooterApp/Slice 583@2x.png')}
             />
             <img
+              onClick={mediumwinopen}
               src={require('../../assets/images/FooterApp/Group 711@2x.png')}
             />
-            <img src={require('../../assets/images/FooterApp/Frame@2x.png')} />
             <img
+              onClick={ins}
+              src={require('../../assets/images/FooterApp/Frame@2x.png')}
+            />
+            <img
+              onClick={Youtube}
               src={require('../../assets/images/FooterApp/Frame@2xbs.png')}
             />
           </div>
@@ -159,45 +196,56 @@ export default function FooterApp() {
           <div className={FooterApp_ls.FooterAppBox_Navigationbox}>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Basic</p>
-              <span
+              <Link
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+                to={{ pathname: '/WormholesOverviewApp', state: '' }}
               >
                 Overview
-              </span>
+              </Link>
               <span
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+                onClick={() => {
+                  window.open('https://www.wormholes.com/docs/Architecture/');
+                }}
               >
                 Architecture
               </span>
-              <span
+              {/* <span
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Subchain System
-              </span>
-              <span
+              </span> */}
+              <Link
+                to={{ pathname: '/JoinApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Join WormholesChain
-              </span>
+              </Link>
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Technology</p>
-              <span
+              <Link
+                to={{ pathname: '/AboutWormholesApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Multi-Dimensional Chain
-              </span>
-              <span
+              </Link>
+              <Link
+                to={{ pathname: '/DREApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 DRE Consensus
-              </span>
-              <span
+              </Link>
+              <Link
+                to={{ pathname: '/Wallet', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Test Wallet
-              </span>
+              </Link>
               <span
+                onClick={() => {
+                  window.open('https://www.wormholesscan.com/#/');
+                }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Test Explorer
@@ -211,11 +259,12 @@ export default function FooterApp() {
               >
                 Ecosystem Economy
               </Link>
-              <span
+              <Link
+                to={{ pathname: '/AboutERBApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Mainnet Native ERB
-              </span>
+              </Link>
               <Link
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
                 to={{ pathname: '/AboutSNFTApp', state: '' }}
@@ -225,11 +274,12 @@ export default function FooterApp() {
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Dapps</p>
-              <span
+              <Link
+                to={{ pathname: '/DappsApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Meteorite Exchange
-              </span>
+              </Link>
             </div>
           </div>
         </div>
