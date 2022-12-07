@@ -310,187 +310,209 @@ export default function HomePageApp() {
             </div>
           </div>
           {/* 小滑动 */}
-          <div className={HomePageApp_ls.MainPartners_smbox}>
-            <div className={HomePageApp_ls.MainPartners_smbox_long}>
-              <div>
-                <img
-                  src={require('../../assets/images/HomePageApp/Group 766.png')}
-                />
-                <p>
-                  MANDRA
-                  <br />
-                  CAPITAL
-                </p>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 972.png')}
-                />
-              </div>
-              <div>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 823.png')}
-                />
-                <p>E/M GROUP</p>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 972.png')}
-                />
-              </div>
-              <div>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 821.png')}
-                />
-                <p>VENTURES</p>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 972.png')}
-                />
-              </div>
-              <div>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 951.png')}
-                />
-                <p>
-                  TIMING
-                  <br />
-                  CAPITAL
-                </p>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 972.png')}
-                />
+          <div className={HomePageApp_ls.MainPartners_smboxyc}>
+            <div className={HomePageApp_ls.MainPartners_smbox}>
+              <div className={HomePageApp_ls.MainPartners_smbox_long}>
+                <div>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Group 766.png')}
+                    style={{ width: '45.57px', height: '46.21px' }}
+                  />
+                  <p>
+                    MANDRA
+                    <br />
+                    CAPITAL
+                  </p>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 972.png')}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 823.png')}
+                    style={{ width: '35.58px', height: '36.31px' }}
+                  />
+                  <p>E/M GROUP</p>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 972.png')}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 821.png')}
+                    style={{ width: '28.73px', height: '36px' }}
+                  />
+                  <p>VENTURES</p>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 972.png')}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 951.png')}
+                    style={{ width: '40.43px', height: '36.18px' }}
+                  />
+                  <p>
+                    TIMING
+                    <br />
+                    CAPITAL
+                  </p>
+                  <img
+                    src={require('../../assets/images/HomePageApp/Slice 972.png')}
+                  />
+                </div>
               </div>
             </div>
           </div>
+
           {/* 大滑动 */}
-          <div className={HomePageApp_ls.MainPartners_bigbox}>
-            <div className={HomePageApp_ls.MainPartners_bigbox_long}>
-              {/* 1 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Co-Founder of Chronicled, Zanbato, CrossCoin Ventures, and
-                  Elastic Path Consulting Professor at Stanford University PhD,
-                  Stanford University.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+          <div className={HomePageApp_ls.MainPartners_bigboxyc}>
+            <div className={HomePageApp_ls.MainPartners_bigbox}>
+              <div className={HomePageApp_ls.MainPartners_bigbox_long}>
+                {/* 1 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 796@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    Dr. Ryan Orr
-                    <br />
-                    <span>Chairman</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Co-Founder of Chronicled, Zanbato, CrossCoin Ventures, and
+                    Elastic Path Consulting Professor at Stanford University
+                    PhD, Stanford University.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 796@2x.png')}
+                    />
+                    <p>
+                      Dr. Ryan Orr
+                      <br />
+                      <span>Chairman</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* 2 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Board Member of Mapletree Fund, National Museum of Singapore,
-                  30+ Years of Investment Banking and Law Experience at Goldman
-                  Sachs, Milbank Tweed, and Paul Weiss BA, Cambridge University,
-                  LLM, Harvard University.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+                {/* 2 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 800@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    John Koh
-                    <br />
-                    <span>Advisor</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Board Member of Mapletree Fund, National Museum of
+                    Singapore, 30+ Years of Investment Banking and Law
+                    Experience at Goldman Sachs, Milbank Tweed, and Paul Weiss
+                    BA, Cambridge University, LLM, Harvard University.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 800@2x.png')}
+                    />
+                    <p>
+                      John Koh
+                      <br />
+                      <span>Advisor</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* 3 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Managing Partner of PacBridge Capital, Board Member of E/M
-                  Group, Linksys Technologies 20+ Years of Investment Banking
-                  Experience at Credit Suisse, Morgan Stanley, and Merrill
-                  Lynch.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+                {/* 3 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 798@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    Sheldon Trainor
-                    <br />
-                    <span>Strategy Advisor</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Managing Partner of PacBridge Capital, Board Member of E/M
+                    Group, Linksys Technologies 20+ Years of Investment Banking
+                    Experience at Credit Suisse, Morgan Stanley, and Merrill
+                    Lynch.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 798@2x.png')}
+                    />
+                    <p>
+                      Sheldon Trainor
+                      <br />
+                      <span>Strategy Advisor</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* 4 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Staff Scientist at Lawrence Berkeley National Laboratory PhD,
-                  Columbia University.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+                {/* 4 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 797@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    Dr. Tai
-                    <br />
-                    <span>Chief Scientist</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Staff Scientist at Lawrence Berkeley National Laboratory
+                    PhD, Columbia University.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 797@2x.png')}
+                    />
+                    <p>
+                      Dr. Tai
+                      <br />
+                      <span>Chief Scientist</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* 5 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Founder and CEO of SANA Semiconductors, Co-Founder of Tavanza,
-                  and Former CTO of Redwood Venture Partners Consulting
-                  Professor at Stanford University PhD, Stanford University.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+                {/* 5 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 79@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    Dr. Mehdi Soltan
-                    <br />
-                    <span>Technical Advisor</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Founder and CEO of SANA Semiconductors, Co-Founder of
+                    Tavanza, and Former CTO of Redwood Venture Partners
+                    Consulting Professor at Stanford University PhD, Stanford
+                    University.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 79@2x.png')}
+                    />
+                    <p>
+                      Dr. Mehdi Soltan
+                      <br />
+                      <span>Technical Advisor</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* 6 */}
-              <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
-                <img
-                  src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
-                  className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
-                />
-                <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                  Professor at UESTC PhD, Purdue University Specialist in
-                  Cybersecurity.
-                </p>
-                <div className={HomePageApp_ls.MainPartners_bigbox_long_bottom}>
+                {/* 6 */}
+                <div className={HomePageApp_ls.MainPartners_bigbox_long_block}>
                   <img
-                    src={require('../../assets/images/HomePageApp/Slice 799@2x.png')}
+                    src={require('../../assets/images/HomePageApp/Slice 847@2x.png')}
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
-                  <p>
-                    Dr. Ting Chen
-                    <br />
-                    <span>Consulting Scientist</span>
+                  <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
+                    Professor at UESTC PhD, Purdue University Specialist in
+                    Cybersecurity.
                   </p>
+                  <div
+                    className={HomePageApp_ls.MainPartners_bigbox_long_bottom}
+                  >
+                    <img
+                      src={require('../../assets/images/HomePageApp/Slice 799@2x.png')}
+                    />
+                    <p>
+                      Dr. Ting Chen
+                      <br />
+                      <span>Consulting Scientist</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -90,6 +90,14 @@ export default defineConfig({
           path: '/MandraCapitalApp',
           component: './MandraCapitalApp/MandraCapitalApp.jsx',
         },
+        {
+          path: '/EcosystemApp',
+          component: './EcosystemApp/EcosystemApp.jsx',
+        },
+        {
+          path: '/AboutSNFTApp',
+          component: './AboutSNFTApp/AboutSNFTApp.jsx',
+        },
       ],
     },
   ],

@@ -6,7 +6,8 @@ import {
   CloseOutlined,
   DownOutlined,
 } from '@ant-design/icons';
-export default function HeaderApp() {
+import PubSub from 'pubsub-js';
+export default function HeaderApp(props) {
   const [icondata, setIcondata] = useState(0);
   const [basic, setBasic] = useState(0);
   const [technology, setTechnology] = useState(0);
@@ -16,6 +17,14 @@ export default function HeaderApp() {
   const [technologyicon, setTechnologyicon] = useState(0);
   const [ecosystemicon, setEcosystemicon] = useState(0);
   const [dappsicon, setDappsicon] = useState(0);
+  useEffect(() => {
+    setIcondata(0);
+  }, [props.props.location.pathname]);
+  useEffect(() => {
+    PubSub.subscribe('NavigationStowdata', (msg, index) => {
+      setIcondata(index);
+    });
+  }, []);
   function iconclick(data) {
     setIcondata(data);
   }
@@ -127,7 +136,9 @@ export default function HeaderApp() {
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
-            style={{ height: basicicon == 0 ? '0px' : '188px' }}
+            style={{
+              height: basicicon == 0 || icondata == 0 ? '0px' : '188px',
+            }}
           >
             <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Overview
@@ -158,7 +169,9 @@ export default function HeaderApp() {
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
-            style={{ height: technologyicon == 0 ? '0px' : '188px' }}
+            style={{
+              height: technologyicon == 0 || icondata == 0 ? '0px' : '188px',
+            }}
           >
             <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Multi-Dimensional Chain
@@ -189,17 +202,25 @@ export default function HeaderApp() {
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
-            style={{ height: ecosystemicon == 0 ? '0px' : '141px' }}
+            style={{
+              height: ecosystemicon == 0 || icondata == 0 ? '0px' : '141px',
+            }}
           >
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              to={{ pathname: '/EcosystemApp', state: '' }}
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+            >
               Ecosystem Economy
-            </div>
+            </Link>
             <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Mainnet Native ERB
             </div>
-            <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
+            <Link
+              to={{ pathname: '/AboutSNFTApp', state: '' }}
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+            >
               Mainnet Native S-NFT
-            </div>
+            </Link>
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block}
@@ -216,7 +237,7 @@ export default function HeaderApp() {
           </div>
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
-            style={{ height: dappsicon == 0 ? '0px' : '47px' }}
+            style={{ height: dappsicon == 0 || icondata == 0 ? '0px' : '47px' }}
           >
             <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Meteorite Exchange

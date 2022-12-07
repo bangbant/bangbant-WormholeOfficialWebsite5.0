@@ -159,27 +159,77 @@ export default function FooterApp() {
           <div className={FooterApp_ls.FooterAppBox_Navigationbox}>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Basic</p>
-              <span>Overview</span>
-              <span>Architecture</span>
-              <span>Subchain System</span>
-              <span>Join WormholesChain</span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Overview
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Architecture
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Subchain System
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Join WormholesChain
+              </span>
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Technology</p>
-              <span>Multi-Dimensional Chain</span>
-              <span>DRE Consensus</span>
-              <span>Test Wallet</span>
-              <span>Test Explorer</span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Multi-Dimensional Chain
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                DRE Consensus
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Test Wallet
+              </span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Test Explorer
+              </span>
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Ecosystem</p>
-              <span>Ecosystem Economy</span>
-              <span>Mainnet Native ERB</span>
-              <span>Mainnet Native S-NFT</span>
+              <Link
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+                to={{ pathname: '/EcosystemApp', state: '' }}
+              >
+                Ecosystem Economy
+              </Link>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Mainnet Native ERB
+              </span>
+              <Link
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+                to={{ pathname: '/AboutSNFTApp', state: '' }}
+              >
+                Mainnet Native S-NFT
+              </Link>
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>
               <p>Dapps</p>
-              <span>Meteorite Exchange</span>
+              <span
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Meteorite Exchange
+              </span>
             </div>
           </div>
         </div>

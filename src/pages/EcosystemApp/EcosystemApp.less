@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  background-color: #f0f0f3;
+  padding-top: 75px;
+  .content {
+    width: 340px;
+    margin: 0 auto;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .topLeft {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 10px;
+        padding-top: 20px;
+        .line {
+          width: 30px;
+          height: 2px;
+          background-color: #000000;
+        }
+      }
+      .topRight {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        .topRightBold {
+          font-size: 16px;
+          font-family: Gilroy-ExtraBold;
+          color: #000000;
+          line-height: 22px;
+        }
+        .topRightBolder {
+          margin-top: 5px;
+          font-family: Gilroy-ExtraBold;
+          font-size: 24px;
+          color: #000000;
+          line-height: 26px;
+          span {
+            color: #a486fa;
+          }
+        }
+        .topRightLight {
+          font-family: Manrope-Regular;
+          margin-top: 5px;
+          font-size: 14px;
+          color: #000000;
+          line-height: 16px;
+        }
+        .button {
+          width: 155px;
+          height: 42px;
+          text-align: center;
+          line-height: 42px;
+          font-family: Manrope-ExtraBold;
+          margin-top: 35px;
+          font-size: 14px;
+          color: #a486fa;
+          box-shadow: 10px 10px 15px 0px #e0e0e0, -10px -10px 15px 0px #ffffff;
+        }
+      }
+    }
+  }
+}
+.turntableBox {
+  width: 340px;
+  height: 700px;
+  margin: auto;
+  margin-top: 50px;
+  user-select: none;
+}
+.turntable {
+  width: 700px;
+  height: 700px;
+  background-image: url('../../assets/images/EcosystemApp/Slice\ 1121@2x.png');
+  background-size: 100% 100%;
+  border-radius: 50%;
+  animation: rainbow 20s backwards linear infinite running;
+  user-select: none;
+  position: relative;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  font-family: Manrope-SemiBold;
+  p {
+    // animation: rainbowtext 20s backwards linear infinite running;
+  }
+}
+@keyframes rainbow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.turntable_p1 {
+  width: 137px;
+  position: absolute;
+  top: 80px;
+  left: 255px;
+  transform: rotate(180deg);
+}
+.turntable_p2 {
+  width: 140px;
+  position: absolute;
+  top: 155px;
+  left: 468px;
+  transform: rotate(-120deg);
+}
+@keyframes rainbowtext {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.turntable_p6 {
+  width: 138px;
+  position: absolute;
+  top: 210px;
+  left: 100px;
+  transform: rotate(115deg);
+}
+.turntable_p5 {
+  width: 140px;
+  position: absolute;
+  top: 410px;
+  left: 100px;
+  transform: rotate(65deg);
+}
+.turntable_p4 {
+  width: 130px;
+  position: absolute;
+  top: 505px;
+  left: 300px;
+}
+.turntable_p3 {
+  width: 137px;
+  position: absolute;
+  top: 390px;
+  left: 480px;
+  transform: rotate(-65deg);
+}

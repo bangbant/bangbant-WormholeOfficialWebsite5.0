@@ -5,7 +5,7 @@ import HeaderApp from '../components/HeaderApp/HeaderApp';
 import FooterApp from '../components/FooterApp/FooterApp';
 import HomePageApp from './HomePageApp/HomePageApp';
 import React, { useState, useEffect } from 'react';
-
+import PubSub from 'pubsub-js';
 import { Helmet } from 'umi';
 export default function IndexPage(props) {
   const [wormholes, setWormholes] = useState('WormholesChain Official Website');
@@ -42,6 +42,9 @@ export default function IndexPage(props) {
       )}`,
     );
   }, [props.location.pathname]);
+  function NavigationStow() {
+    PubSub.publish('NavigationStowdata', 0);
+  }
   return (
     <>
       <Helmet encodeSpecialCharacters={false}>
@@ -53,6 +56,11 @@ export default function IndexPage(props) {
           type="images/ico"
         />
       </Helmet>
+      {/* <div className={styles.box}>
+        <Header />
+        {props.children}
+        <Footer />
+      </div> */}
       {getDevice() == 'pc' ? (
         <div className={styles.box}>
           <Header />
@@ -61,8 +69,10 @@ export default function IndexPage(props) {
         </div>
       ) : (
         <div className={styles.boxApp}>
-          <HeaderApp />
-          {window.location.pathname == '/' ? <HomePageApp /> : props.children}
+          <HeaderApp props={props} />
+          <div onClick={NavigationStow}>
+            {window.location.pathname == '/' ? <HomePageApp /> : props.children}
+          </div>
           <FooterApp />
         </div>
       )}
