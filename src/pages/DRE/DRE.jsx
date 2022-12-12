@@ -21,7 +21,7 @@ export default function DRE() {
         </div>
         <div className={styles.box2}>
           <div className={styles.titleNum}>02</div>
-          <div className={styles.titleBolder}>Random drop point</div>
+          <div className={styles.titleBolder}>Random Drop Point</div>
           <div className={styles.titleLight}>
             The concatenation algorithm randomly obtains the information of
             three validators
@@ -36,7 +36,7 @@ export default function DRE() {
             <div className={styles.img}>
               <img src={require('../../assets/images/DRE/box2.png')}></img>
               <div className={styles.center}>
-                <div className={styles.titleBolder}>Random drop point</div>
+                <div className={styles.titleBolder}>Random Drop Point</div>
                 <div
                   className={styles.titleLight}
                   onClick={() => {
@@ -45,7 +45,7 @@ export default function DRE() {
                     );
                   }}
                 >
-                  More Detail
+                  More Details
                 </div>
               </div>
             </div>
@@ -55,12 +55,13 @@ export default function DRE() {
           <div className={styles.titleNum}>03</div>
           <div className={styles.titleBolder}>Select Validator</div>
           <div className={styles.titleLight}>
-            Pick the coolest 11 validators<br></br>based on the drop point
+            Pick the 11 validators with the greatest voting weight coefficient
+            based on the drop point
           </div>
         </div>
         <div className={styles.box4}>
           <div className={styles.titleNum}>04</div>
-          <div className={styles.titleBolder}>Block of generation</div>
+          <div className={styles.titleBolder}>Block Generation</div>
           <div className={styles.titleLight}>1. Package Transactions</div>
           <div className={styles.titleLight}>2. Distribute Rewards</div>
           <div className={styles.border}>
@@ -90,8 +91,9 @@ export default function DRE() {
             <div className={styles.borderTitle}>
               <div className={styles.circle}></div>
               <div className={styles.titleLight}>
-                Select four exchanges<br></br>at random from the list<br></br>of
-                exchanges
+                Select four S-NFT miners
+                <br /> at random from the
+                <br /> list of S-NFT miners
               </div>
             </div>
             <div className={styles.flexBox}>
@@ -116,7 +118,7 @@ export default function DRE() {
         </div>
         <div className={styles.box5}>
           <div className={styles.titleNum}>05</div>
-          <div className={styles.titleBolder}>Pre-prepared</div>
+          <div className={styles.titleBolder}>Pre-Prepared</div>
           <div className={styles.flexBox}>
             <img src={require('../../assets/images/DRE/mansel.png')}></img>
             <img src={require('../../assets/images/DRE/mansel.png')}></img>
@@ -170,7 +172,7 @@ export default function DRE() {
           <div className={styles.titleNum}>08</div>
           <div className={styles.titleBolder}>Insert Block</div>
           <div className={styles.titleLight}>
-            Insert success. Final Committed
+            Insert success; final committed
           </div>
         </div>
         <div className={styles.box9}>
@@ -240,7 +242,7 @@ export default function DRE() {
           Broadcasts<br></br>COMMIT<br></br>message
         </div>
         <div className={styles.text7} id="fixtext">
-          commit success
+          Commit success
         </div>
       </div>
     </div>

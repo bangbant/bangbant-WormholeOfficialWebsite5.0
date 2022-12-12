@@ -4,12 +4,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 export default function MandraCapital(props) {
-  const [capitaldata, setCapitaldata] = useState(props.location.state || 1);
-  const [blockleft, setBlockleft] = useState(0);
-  const [bottomboxcolor1, setBottomboxcolor1] = useState('#A486FA');
-  const [bottomboxcolor2, setBottomboxcolor2] = useState('#B7B7B9');
-  const [bottomboxcolor3, setBottomboxcolor3] = useState('#B7B7B9');
-  const { current, setCurrent } = useState(0);
   const [blockArr, setBlockArr] = useState([
     {
       index: 0,
@@ -40,85 +34,6 @@ export default function MandraCapital(props) {
       active: false,
     },
   ]);
-  useEffect(() => {
-    if (blockleft == 0) {
-      setBottomboxcolor1('#A486FA');
-      setBottomboxcolor2('#B7B7B9');
-      setBottomboxcolor3('#B7B7B9');
-    } else if (blockleft == -1200) {
-      setBottomboxcolor1('#B7B7B9');
-      setBottomboxcolor2('#A486FA');
-      setBottomboxcolor3('#B7B7B9');
-    } else {
-      setBottomboxcolor1('#B7B7B9');
-      setBottomboxcolor2('#B7B7B9');
-      setBottomboxcolor3('#A486FA');
-    }
-  }, [blockleft]);
-  function bottomboxclick(data) {
-    if (capitaldata == 1) {
-      if (data == 1) {
-        setBottomboxcolor1('#A486FA');
-        setBottomboxcolor2('#B7B7B9');
-        setBottomboxcolor3('#B7B7B9');
-        setBlockleft(0);
-      } else if (data == 2) {
-        setBottomboxcolor1('#B7B7B9');
-        setBottomboxcolor2('#A486FA');
-        setBottomboxcolor3('#B7B7B9');
-        setBlockleft(-1200);
-      } else {
-        setBottomboxcolor1('#B7B7B9');
-        setBottomboxcolor2('#B7B7B9');
-        setBottomboxcolor3('#A486FA');
-        setBlockleft(-2400);
-      }
-    } else {
-      if (data == 1) {
-        setBottomboxcolor1('#A486FA');
-        setBottomboxcolor2('#B7B7B9');
-        setBottomboxcolor3('#B7B7B9');
-        setBlockleft(0);
-      } else if (data == 2) {
-        setBottomboxcolor1('#B7B7B9');
-        setBottomboxcolor2('#A486FA');
-        setBottomboxcolor3('#B7B7B9');
-        setBlockleft(-1200);
-      }
-    }
-  }
-  function Capitalclick(data) {
-    setCapitaldata(data);
-    setBlockleft(0);
-  }
-  //左翻
-  function leftclick() {
-    if (capitaldata == 1) {
-      if (blockleft == -2400) {
-        setBlockleft(-1200);
-      } else if (blockleft == -1200) {
-        setBlockleft(0);
-      }
-    } else {
-      if (blockleft == -1200) {
-        setBlockleft(0);
-      }
-    }
-  }
-  //右翻
-  function rightclick() {
-    if (capitaldata == 1) {
-      if (blockleft == 0) {
-        setBlockleft(-1200);
-      } else if (blockleft == -1200) {
-        setBlockleft(-2400);
-      }
-    } else {
-      if (blockleft == 0) {
-        setBlockleft(-1200);
-      }
-    }
-  }
   const inputElement = useRef();
   const settings = {
     dots: false,

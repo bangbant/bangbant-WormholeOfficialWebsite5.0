@@ -77,7 +77,9 @@ export default function HeaderApp(props) {
           <img
             src={require('../../assets/images/HeaderApp/Slice 817@2x.png')}
           />
-          <span>Meteorite Effect Event NO.1</span>
+          <a className={HeaderApp_ls.HeaderAppBox_Notice_a} href="/#eventApp">
+            Meteorite Effect Event NO.1
+          </a>
         </div>
         <div className={HeaderApp_ls.HeaderAppBox_Navigation}>
           <div className={HeaderApp_ls.HeaderAppBox_Navigation_center}>
@@ -152,7 +154,7 @@ export default function HeaderApp(props) {
           <div
             className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox}
             style={{
-              height: basicicon == 0 || icondata == 0 ? '0px' : '141px',
+              height: basicicon == 0 || icondata == 0 ? '0px' : '188px',
             }}
           >
             <Link
@@ -172,6 +174,12 @@ export default function HeaderApp(props) {
             {/* <div className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}>
               Subchain System
             </div> */}
+            <Link
+              className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
+              to={{ pathname: '/PrivacyPolicyApp', state: '' }}
+            >
+              Privacy Policy
+            </Link>
             <Link
               className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
               to={{ pathname: '/JoinApp', state: '' }}

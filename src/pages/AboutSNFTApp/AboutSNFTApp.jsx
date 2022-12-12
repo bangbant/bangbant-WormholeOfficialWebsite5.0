@@ -1,6 +1,44 @@
 import AboutSNFTApp_ls from './AboutSNFTApp.less';
-
+import React, { useState, useEffect, useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 export default function AboutSNFTApp() {
+  const [blockArr, setBlockArr] = useState([
+    {
+      index: 0,
+      active: true,
+    },
+    {
+      index: 1,
+      active: false,
+    },
+    {
+      index: 2,
+      active: false,
+    },
+  ]);
+  const inputElement = useRef();
+  const settings = {
+    dots: false,
+    infinite: false,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    afterChange: (index) => {
+      console.log('afterChange', index);
+      let arr = [...blockArr];
+      arr.forEach((item, Arrindex) => {
+        if (Arrindex == index) {
+          item.active = true;
+        } else {
+          item.active = false;
+        }
+      });
+      setBlockArr(arr);
+    },
+  };
   return (
     <>
       <div className={AboutSNFTApp_ls.AboutSNFTAppBox}>
@@ -12,7 +50,7 @@ export default function AboutSNFTApp() {
         <p className={AboutSNFTApp_ls.AboutSNFTAppBox_text}>
           Distinct from smart-contract based NFTs, S-NFTs are a native
           chain-layer non-fungible asset on WormholesChain. S-NFTs are rewarded
-          to WormholesChain S-NFT Miner.
+          to WormholesChain S-NFT Miners.
         </p>
         <img
           className={AboutSNFTApp_ls.AboutSNFTAppBox_titleimg1}
@@ -90,7 +128,96 @@ export default function AboutSNFTApp() {
           Right and interest
           <br /> nature of&nbsp;<span>S-NFT</span>
         </p>
-        <div className={AboutSNFTApp_ls.AboutSNFTAppBox_turntableBox}>
+
+        <div className={AboutSNFTApp_ls.TouchcarouselBox}>
+          <Slider ref={inputElement} {...settings}>
+            <div>
+              <div className={AboutSNFTApp_ls.TouchcarouselBox_block}>
+                <div className={AboutSNFTApp_ls.TouchcarouselBox_block_d}>
+                  <img
+                    src={require('../../assets/images/AboutSNFTApp/Slice 1022@2x.png')}
+                  />
+                  <p>
+                    Trading rights and interests: S-NFTs, like ordinary NFTs,
+                    have attributes and are freely tradable on primary and
+                    secondary markets.
+                  </p>
+                </div>
+                <div className={AboutSNFTApp_ls.TouchcarouselBox_block_d}>
+                  <img
+                    src={require('../../assets/images/AboutSNFTApp/Slice 1023@2x.png')}
+                  />
+                  <p>
+                    Voting rights and interests: holders of S-NFTs can vote for
+                    each S-NFT issue. The voter with the highest S-NFT voting
+                    weight will be selected as the creator of the next issue of
+                    S-NFTs and will receive 10% royalties on all S-NFT
+                    transactions from that issue.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={AboutSNFTApp_ls.TouchcarouselBox_block}>
+                <div className={AboutSNFTApp_ls.TouchcarouselBox_block_d}>
+                  <img
+                    src={require('../../assets/images/AboutSNFTApp/Slice 1024@2x.png')}
+                  />
+                  <p>
+                    Content rights and interests: different levels of S-NFTs can
+                    become tickets that allowed their owner to watch different
+                    digital content. Content creators will upload their digital
+                    work through the platform, with good content generating
+                    strong asset appreciation and royalties for creators.
+                  </p>
+                </div>
+                <div className={AboutSNFTApp_ls.TouchcarouselBox_block_d}>
+                  <img
+                    src={require('../../assets/images/AboutSNFTApp/Slice 1020@2x.png')}
+                  />
+                  <p>
+                    Staking rights and interests: S-NFTs can be staked into a
+                    decentralized exchange to get assets on the many
+                    WormholesChain subchains.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={AboutSNFTApp_ls.TouchcarouselBox_block}>
+                <div className={AboutSNFTApp_ls.TouchcarouselBox_block_d}>
+                  <img
+                    src={require('../../assets/images/AboutSNFTApp/Slice 1021@2x.png')}
+                  />
+                  <p>
+                    Exchange rights and interests: exchange S-NFTs at differing
+                    exchange rates depending on the level of the S-NFTs.
+                    First-level S-NFTs can be exchanged for 0.095 ERBs,
+                    second-level for 0.143, third-level for 0.271, and
+                    fourth-level for 0.65 ERBs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Slider>
+        </div>
+        <div className={AboutSNFTApp_ls.dotBox}>
+          {blockArr.map((item, index) => {
+            return (
+              <div
+                className={AboutSNFTApp_ls.dot}
+                style={{
+                  background: item.active ? '#a486fa' : 'rgba(0,0,0,0.23)',
+                }}
+                onClick={(index) => {
+                  console.log(item, inputElement.current);
+                  inputElement.current.slickGoTo(item.index);
+                }}
+              ></div>
+            );
+          })}
+        </div>
+        {/* <div className={AboutSNFTApp_ls.AboutSNFTAppBox_turntableBox}>
           <div className={AboutSNFTApp_ls.AboutSNFTAppBox_turntable}>
             <p className={AboutSNFTApp_ls.AboutSNFTAppBox_turntable_p1}>
               Trading rights and interests: S-NFTs, like ordinary NFTs, have
@@ -122,7 +249,7 @@ export default function AboutSNFTApp() {
               third-level for 0.271, and fourth-level for 0.65 ERBs.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

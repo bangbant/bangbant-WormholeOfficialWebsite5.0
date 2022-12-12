@@ -95,7 +95,7 @@ export default function HomePageApp() {
             <p className={HomePageApp_ls.bigimg2_text}>
               Distinct from smart-contract based NFTs, S-NFTs are a native
               chain-layer non-fungible asset on WormholesChain. S-NFTs are
-              rewarded to WormholesChain S-NFT Miner; they receive 4/11 of the
+              rewarded to WormholesChain S-NFT Miners; they receive 4/11 of the
               Mainnet block rewards.
             </p>
             <div
@@ -106,7 +106,7 @@ export default function HomePageApp() {
                 );
               }}
             >
-              Mandatory reading for S-NFT Miner
+              Mandatory reading for S-NFT Miners
             </div>
             <div
               className={HomePageApp_ls.bigimg2_button2}
@@ -163,17 +163,17 @@ export default function HomePageApp() {
                 The WormholesChain multi-dimensional blockchain architecture
                 allows the realization of a linear increase in throughput with
                 each additional chain and layer added to the system, allowing
-                the WormholesChain to easily achieve high transactions per
-                second (TPS).
+                WormholesChain to easily achieve high transactions per second
+                (TPS).
               </p>
             </div>
             <div>
               <span>Diversified Developer Ecosystem</span>
               <p>
                 WormholesChain provides developers with a simple way to
-                integrate their DApp and projects with the WormholesChain,
-                allowing developers and creators to focus their time on what
-                they do best – creating the best new DApps and products.
+                integrate their DApp and projects with WormholesChain, allowing
+                developers and creators to focus their time on what they do best
+                – creating the best new DApps and products.
               </p>
             </div>
           </div>
@@ -234,7 +234,11 @@ export default function HomePageApp() {
             </p>
           </div>
         </div>
-        <div className={HomePageApp_ls.centerbox4}>
+        <div
+          className={HomePageApp_ls.centerbox4}
+          name="eventApp"
+          id="eventApp"
+        >
           <div className={HomePageApp_ls.centerbox4_titlebox}>
             <div>{/* 线 */}</div>
             <span>WormholesChain Event</span>
@@ -243,10 +247,10 @@ export default function HomePageApp() {
             <div className={HomePageApp_ls.centerbox4_databox_block1}>
               <p className={HomePageApp_ls.centerbox4_databox_block1_title}>
                 Mirror Universe <br />
-                Public Test NO.1
+                Public Test NO.2
               </p>
               <p className={HomePageApp_ls.centerbox4_databox_block1_text}>
-                WormhoelsChain solves the security and fairness issue through
+                WormholesChain solves the security and fairness issue through
                 Dynamic Random Election (DRE) Consensus, which implements the
                 first genuinely decentralized POS public chain in Web3.
               </p>
@@ -286,22 +290,22 @@ export default function HomePageApp() {
               style={{ backgroundColor: '#ffffff' }}
             >
               <p className={HomePageApp_ls.centerbox4_databox_block1_title}>
-                Mirror Universe <br />
-                Public Test NO.1
+                Wormholes Lightyear
+                <br /> Public Test NO.1
               </p>
               <p className={HomePageApp_ls.centerbox4_databox_block1_text}>
-                WormhoelsChain solves the security and fairness issue through
+                WormholesChain solves the security and fairness issue through
                 Dynamic Random Election (DRE) Consensus, which implements the
                 first genuinely decentralized POS public chain in Web3.
               </p>
-              <span>Ended</span>
+              <span>Coming soon</span>
             </div>
           </div>
         </div>
         <div className={HomePageApp_ls.MainPartners}>
           <p className={HomePageApp_ls.MainPartners_centertitle}>
             Main&nbsp;<span>Partners</span> and
-            <br /> Team<span>Members</span>
+            <br /> Team<span>&nbsp;Members</span>
           </p>
           <div className={HomePageApp_ls.MainPartners_line}>
             <div>
@@ -313,7 +317,10 @@ export default function HomePageApp() {
           <div className={HomePageApp_ls.MainPartners_smboxyc}>
             <div className={HomePageApp_ls.MainPartners_smbox}>
               <div className={HomePageApp_ls.MainPartners_smbox_long}>
-                <div>
+                <Link
+                  className={HomePageApp_ls.MainPartners_smbox_long_div}
+                  to={{ pathname: '/MandraCapitalApp', state: '' }}
+                >
                   <img
                     src={require('../../assets/images/HomePageApp/Group 766.png')}
                     style={{ width: '45.57px', height: '46.21px' }}
@@ -326,8 +333,13 @@ export default function HomePageApp() {
                   <img
                     src={require('../../assets/images/HomePageApp/Slice 972.png')}
                   />
-                </div>
-                <div>
+                </Link>
+                <div
+                  className={HomePageApp_ls.MainPartners_smbox_long_div}
+                  onClick={() => {
+                    window.open('https://www.emgroup.com/');
+                  }}
+                >
                   <img
                     src={require('../../assets/images/HomePageApp/Slice 823.png')}
                     style={{ width: '35.58px', height: '36.31px' }}
@@ -337,7 +349,12 @@ export default function HomePageApp() {
                     src={require('../../assets/images/HomePageApp/Slice 972.png')}
                   />
                 </div>
-                <div>
+                <div
+                  className={HomePageApp_ls.MainPartners_smbox_long_div}
+                  onClick={() => {
+                    window.open('https://liquid2.vc/');
+                  }}
+                >
                   <img
                     src={require('../../assets/images/HomePageApp/Slice 821.png')}
                     style={{ width: '28.73px', height: '36px' }}
@@ -347,7 +364,7 @@ export default function HomePageApp() {
                     src={require('../../assets/images/HomePageApp/Slice 972.png')}
                   />
                 </div>
-                <div>
+                <div className={HomePageApp_ls.MainPartners_smbox_long_div}>
                   <img
                     src={require('../../assets/images/HomePageApp/Slice 951.png')}
                     style={{ width: '40.43px', height: '36.18px' }}
@@ -359,6 +376,7 @@ export default function HomePageApp() {
                   </p>
                   <img
                     src={require('../../assets/images/HomePageApp/Slice 972.png')}
+                    style={{ opacity: 0 }}
                   />
                 </div>
               </div>
@@ -377,7 +395,7 @@ export default function HomePageApp() {
                   />
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
                     Co-Founder of Chronicled, Zanbato, CrossCoin Ventures, and
-                    Elastic Path Consulting Professor at Stanford University
+                    Elastic Path, Consulting Professor at Stanford University,
                     PhD, Stanford University.
                   </p>
                   <div
@@ -402,7 +420,7 @@ export default function HomePageApp() {
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
                     Board Member of Mapletree Fund, National Museum of
                     Singapore, 30+ Years of Investment Banking and Law
-                    Experience at Goldman Sachs, Milbank Tweed, and Paul Weiss
+                    Experience at Goldman Sachs, Milbank Tweed, and Paul Weiss,
                     BA, Cambridge University, LLM, Harvard University.
                   </p>
                   <div
@@ -426,7 +444,7 @@ export default function HomePageApp() {
                   />
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
                     Managing Partner of PacBridge Capital, Board Member of E/M
-                    Group, Linksys Technologies 20+ Years of Investment Banking
+                    Group, Linksys Technologies, 20+ Years of Investment Banking
                     Experience at Credit Suisse, Morgan Stanley, and Merrill
                     Lynch.
                   </p>
@@ -450,7 +468,7 @@ export default function HomePageApp() {
                     className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                    Staff Scientist at Lawrence Berkeley National Laboratory
+                    Staff Scientist at Lawrence Berkeley National Laboratory,
                     PhD, Columbia University.
                   </p>
                   <div
@@ -474,8 +492,8 @@ export default function HomePageApp() {
                   />
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
                     Founder and CEO of SANA Semiconductors, Co-Founder of
-                    Tavanza, and Former CTO of Redwood Venture Partners
-                    Consulting Professor at Stanford University PhD, Stanford
+                    Tavanza, and Former CTO of Redwood Venture Partners,
+                    Consulting Professor at Stanford University, PhD, Stanford
                     University.
                   </p>
                   <div
@@ -498,7 +516,7 @@ export default function HomePageApp() {
                     className={HomePageApp_ls.MainPartners_bigbox_long_bimg}
                   />
                   <p className={HomePageApp_ls.MainPartners_bigbox_long_text}>
-                    Professor at UESTC PhD, Purdue University Specialist in
+                    Professor at UESTC, PhD, Purdue University, Specialist in
                     Cybersecurity.
                   </p>
                   <div
@@ -537,8 +555,8 @@ export default function HomePageApp() {
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q3 2022</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                WormholesChain Testnet, One-Click NFT Marketplace WormholesChain
-                Limino, WormholesChain Scan
+                WormholesChain Testnet, One-Click NFT Marketplace,
+                WormholesChain Limino, WormholesChain Scan
               </p>
             </div>
             <div className={HomePageApp_ls.Roadmap_14}>

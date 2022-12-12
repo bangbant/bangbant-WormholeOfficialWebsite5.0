@@ -12,7 +12,7 @@ export default function WalletApp() {
           <div className={styles.titleLight}>
             The WormholesChain Limino is your portal to the WormholesChain
             ecosystem, acting as a secure means for storing and transacting your
-            crypto assets on the WormholesChain. Join us in building the
+            crypto assets on WormholesChain. Join us in building the
             WormholesChain ecosystem by creating a WormholesChain Limino today!
           </div>
           <div

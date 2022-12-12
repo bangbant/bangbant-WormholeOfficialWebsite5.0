@@ -202,7 +202,7 @@ export default function AboutERB() {
                 >
                   <div className={styles.slideTitle}>Crypto Asset Exchange</div>
                   <div className={styles.content}>
-                    ERB, as the underlying native fungible token of the
+                    ERB, as the underlying native fungible token of
                     WormholesChain, can be used as a medium of value exchange
                     with any other crypto assets throughout the network.
                   </div>

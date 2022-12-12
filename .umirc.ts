@@ -102,6 +102,10 @@ export default defineConfig({
           path: '/PrivacyPolicy',
           component: './PrivacyPolicy/PrivacyPolicy.jsx',
         },
+        {
+          path: '/PrivacyPolicyApp',
+          component: './PrivacyPolicyApp/PrivacyPolicyApp.jsx',
+        },
       ],
     },
   ],

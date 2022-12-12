@@ -28,16 +28,32 @@ export default function Footer() {
     let re = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     return re.test(str);
   }
+
+  function changeReactInputValue(inputDom, newText) {
+    let lastValue = inputDom.value;
+    inputDom.value = newText;
+    let event = new Event('input', { bubbles: true });
+    event.simulated = true;
+    let tracker = inputDom._valueTracker;
+    if (tracker) {
+      tracker.setValue(lastValue);
+    }
+    inputDom.dispatchEvent(event);
+  }
+
   //订阅按钮
   function comclick() {
     let data = document.getElementById('combutton').value;
     if (com(data) == true) {
       setVisible(true);
       setComdata(data);
+      localStorage.setItem('WormholesChainEmail', data);
     } else {
       setVisible(false);
       message.error('Incorrect email format!');
     }
+    let inputdata = document.getElementById('combutton');
+    changeReactInputValue(inputdata, '');
   }
   function CloseOutlinedclick() {
     setVisible(false);
@@ -46,7 +62,7 @@ export default function Footer() {
     if (checkeddata == true) {
       setVisible(false);
       message.success('Subscription succeeded!');
-      subscriptionPost_q(comdata);
+      subscriptionPost_q(localStorage.getItem('WormholesChainEmail'));
     } else {
       setTs(true);
     }
@@ -112,7 +128,13 @@ export default function Footer() {
               By subscribing to this mailing list, you are opting in to
               receiving email updates from Chevening. You can opt out at any
               time. We process your personal data in line with our 
-              <span>privacy policy</span>
+              <span
+                onClick={() => {
+                  history.push('/PrivacyPolicy');
+                }}
+              >
+                privacy policy
+              </span>
             </p>
             <p className={Footer_ls.FooterBox_model_p4}>
               <Checkbox onChange={onChange}>I agree to be emailed*</Checkbox>
@@ -217,6 +239,12 @@ export default function Footer() {
               {/* <span className={Footer_ls.FooterBox_databoxLink}>
                 Subchain System
               </span> */}
+              <Link
+                className={Footer_ls.FooterBox_databoxLink}
+                to={{ pathname: '/PrivacyPolicy', state: '' }}
+              >
+                Privacy Policy
+              </Link>
               <Link
                 to={{ pathname: '/Join', state: '' }}
                 className={Footer_ls.FooterBox_databoxLink}

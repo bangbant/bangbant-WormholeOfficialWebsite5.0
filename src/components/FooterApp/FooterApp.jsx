@@ -24,16 +24,30 @@ export default function FooterApp() {
     let re = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     return re.test(str);
   }
+  function changeReactInputValue(inputDom, newText) {
+    let lastValue = inputDom.value;
+    inputDom.value = newText;
+    let event = new Event('input', { bubbles: true });
+    event.simulated = true;
+    let tracker = inputDom._valueTracker;
+    if (tracker) {
+      tracker.setValue(lastValue);
+    }
+    inputDom.dispatchEvent(event);
+  }
   //订阅按钮
   function comclick() {
     let data = document.getElementById('combutton').value;
     if (com(data) == true) {
       setVisible(true);
       setComdata(data);
+      localStorage.setItem('WormholesChainEmail', data);
     } else {
       setVisible(false);
       message.error('Incorrect email format!');
     }
+    let inputdata = document.getElementById('combutton');
+    changeReactInputValue(inputdata, '');
   }
   function CloseOutlinedclick() {
     setVisible(false);
@@ -42,7 +56,7 @@ export default function FooterApp() {
     if (checkeddata == true) {
       setVisible(false);
       message.success('Subscription succeeded!');
-      subscriptionPost_q(comdata);
+      subscriptionPost_q(localStorage.getItem('WormholesChainEmail'));
     } else {
       setTs(true);
     }
@@ -109,7 +123,13 @@ export default function FooterApp() {
               By subscribing to this mailing list, you are opting in to
               receiving email updates from Chevening. You can opt out at any
               time. We process your personal data in line with our 
-              <span>privacy policy</span>
+              <span
+                onClick={() => {
+                  history.push('/PrivacyPolicyApp');
+                }}
+              >
+                privacy policy
+              </span>
             </p>
             <p className={FooterApp_ls.FooterBox_model_p4}>
               <Checkbox onChange={onChange}>I agree to be emailed*</Checkbox>
@@ -216,6 +236,12 @@ export default function FooterApp() {
                 Subchain System
               </span> */}
               <Link
+                to={{ pathname: '/PrivacyPolicyApp', state: '' }}
+                className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
+              >
+                Privacy Policy
+              </Link>
+              <Link
                 to={{ pathname: '/JoinApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
@@ -237,7 +263,7 @@ export default function FooterApp() {
                 DRE Consensus
               </Link>
               <Link
-                to={{ pathname: '/Wallet', state: '' }}
+                to={{ pathname: '/WalletApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
                 Test Wallet

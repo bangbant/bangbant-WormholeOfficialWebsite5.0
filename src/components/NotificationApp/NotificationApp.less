@@ -1,0 +1,47 @@
+.NotificationBox {
+  width: 281px;
+  height: 207px;
+  background-color: #f0f0f3;
+  box-shadow: 20px 20px 30px 0px rgba(201, 201, 201, 0.35),
+    -3px -4px 30px 0px rgba(201, 201, 201, 0.35);
+  position: fixed;
+  bottom: -230px;
+  left: 40px;
+  z-index: 99999;
+  padding: 53px 30px 0;
+  transition: all 2s;
+}
+.NotificationBox_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.NotificationBox_icon:hover {
+  color: #a486fa;
+}
+.NotificationBox_text {
+  font-size: 12px;
+  font-family: Manrope-SemiBold;
+  color: #000000;
+  line-height: 16px;
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  span:hover {
+    color: #a486fa;
+  }
+}
+.NotificationBox_button {
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #a486fa;
+  width: 214px;
+  height: 43px;
+  text-align: center;
+  line-height: 51px;
+  margin-top: 20px;
+  cursor: pointer;
+}

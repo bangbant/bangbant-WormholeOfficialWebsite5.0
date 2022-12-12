@@ -5,6 +5,7 @@ import HeaderApp from '../components/HeaderApp/HeaderApp';
 import FooterApp from '../components/FooterApp/FooterApp';
 import HomePageApp from './HomePageApp/HomePageApp';
 import Notification from '../components/Notification/Notification';
+import NotificationApp from '../components/NotificationApp/NotificationApp';
 import React, { useState, useEffect } from 'react';
 import PubSub from 'pubsub-js';
 import { Helmet } from 'umi';
@@ -33,7 +34,7 @@ export default function IndexPage(props) {
     };
     return result.device;
   };
-  console.log(getDevice());
+  console.log(window);
   useEffect(() => {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     setWormholes(
@@ -58,11 +59,12 @@ export default function IndexPage(props) {
         />
       </Helmet>
       {/* <div className={styles.box}>
+        <Notification />
         <Header />
         {props.children}
         <Footer />
       </div> */}
-      {getDevice() == 'pc' ? (
+      {getDevice() == 'pc' || window.outerWidth >= 800 ? (
         <div className={styles.box}>
           <Notification />
           <Header />
@@ -71,6 +73,7 @@ export default function IndexPage(props) {
         </div>
       ) : (
         <div className={styles.boxApp}>
+          <NotificationApp />
           <HeaderApp props={props} />
           <div onClick={NavigationStow}>
             {window.location.pathname == '/' ? <HomePageApp /> : props.children}

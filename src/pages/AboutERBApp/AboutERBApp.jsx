@@ -88,7 +88,7 @@ export default function AboutERBApp() {
           </div>
         </div>
         <div className={styles.itemboxLeft}>
-          <div className={styles.item}>
+          <div className={styles.item} style={{ height: '154px' }}>
             <div className={styles.itemLeft}>Diversified Demand</div>
             <div className={styles.itemRight}>
               Owing to the NFT Marketplaces built on the multi-chain and
@@ -153,9 +153,9 @@ export default function AboutERBApp() {
               Crypto Asset<br></br>Exchange
             </div>
             <div className={styles.text}>
-              ERB, as the underlying native fungible token of the
-              WormholesChain, can be used as a medium of value exchange with any
-              other crypto assets throughout the network.
+              ERB, as the underlying native fungible token of WormholesChain,
+              can be used as a medium of value exchange with any other crypto
+              assets throughout the network.
             </div>
           </div>
           <div className={styles.boxitem}>

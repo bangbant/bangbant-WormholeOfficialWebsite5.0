@@ -144,6 +144,12 @@ export default function Header() {
                 >
                   Architecture
                 </span>
+                <Link
+                  to={{ pathname: '/PrivacyPolicy', state: '' }}
+                  className={Header_ls.HeaderBox3_right_spanblock_link}
+                >
+                  Privacy Policy
+                </Link>
                 {/* <span className={Header_ls.HeaderBox3_right_spanblock_link}>
                   Subchain System
                 </span> */}

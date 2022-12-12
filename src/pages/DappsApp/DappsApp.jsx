@@ -28,7 +28,7 @@ export default function DappsApp() {
               <div className={Dapps_ls.line}>{/* 线 */}</div>
               <p className={Dapps_ls.DappsBox_titletextbox_left_text2}>
                 Collect and trade S-NFTs to exchange for more&nbsp;
-                <span>WormholesChain</span>&nbsp; ecosystem rights.
+                <span>WormholesChain</span>&nbsp;ecosystem rights.
               </p>
             </div>
           </div>
@@ -162,9 +162,10 @@ export default function DappsApp() {
             <p>Ecosystem Development</p>
           </div>
           <p className={Dapps_ls.DappsBox_centerbottom_title2}>
-            <span>WormholesChain</span>&nbsp; Foundation Ecosystem
+            <span>WormholesChain</span>&nbsp;
             <br />
-            Fund
+            Foundation Ecosystem
+            <br /> Fund
           </p>
           <p className={Dapps_ls.DappsBox_centerbottom_title3}>
             The WormholesChain Foundation Ecosystem Fund will provide

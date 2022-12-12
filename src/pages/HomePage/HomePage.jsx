@@ -33,6 +33,7 @@ export default function HomePage() {
     const data = await total();
     console.log('总数查询');
     console.log(data);
+
     if (data) {
       setTotaldata(data);
     }
@@ -140,7 +141,7 @@ export default function HomePage() {
             <p className={HomePage_ls.HomePageBox2_box_data}>
               Distinct from smart-contract based NFTs, S-NFTs are a native
               chain-layer non-fungible asset on WormholesChain. S-NFTs are
-              rewarded to WormholesChain S-NFT Miner; they receive 4/11 of the
+              rewarded to WormholesChain S-NFT Miners; they receive 4/11 of the
               Mainnet block rewards.
             </p>
             <div
@@ -151,7 +152,7 @@ export default function HomePage() {
                 );
               }}
             >
-              Mandatory reading for S-NFT Miner
+              Mandatory reading for S-NFT Miners
             </div>
             <div
               className={HomePage_ls.HomePageBox2_box_button2}
@@ -207,8 +208,8 @@ export default function HomePage() {
                 The WormholesChain multi-dimensional blockchain architecture
                 allows the realization of a linear increase in throughput with
                 each additional chain and layer added to the system, allowing
-                the WormholesChain to easily achieve high transactions per
-                second (TPS).
+                WormholesChain to easily achieve high transactions per second
+                (TPS).
               </p>
             </div>
           </div>
@@ -268,9 +269,9 @@ export default function HomePage() {
             </p>
             <p className={HomePage_ls.HomePageBox3_databox_block_text}>
               WormholesChain provides developers with a simple way to integrate
-              their DApp and projects with the WormholesChain, allowing
-              developers and creators to focus their time on what they do best –
-              creating the best new DApps and products.
+              their DApp and projects with WormholesChain, allowing developers
+              and creators to focus their time on what they do best – creating
+              the best new DApps and products.
             </p>
           </div>
           <div className={HomePage_ls.HomePageBox3_databox_block1}>
@@ -315,10 +316,10 @@ export default function HomePage() {
               style={{ backgroundColor: '#F0F0F3' }}
             >
               <p className={HomePage_ls.HomePageBox3_video_block_title}>
-                Mirror Universe Public Test NO.1
+                Mirror Universe Public Test NO.2
               </p>
               <p className={HomePage_ls.HomePageBox3_video_block_text}>
-                WormhoelsChain solves the security and fairness issue through
+                WormholesChain solves the security and fairness issue through
                 Dynamic Random Election (DRE) Consensus, which implements the
                 first genuinely decentralized POS public chain in Web3.
               </p>
@@ -357,10 +358,10 @@ export default function HomePage() {
               style={{ backgroundColor: '#FFFFFF' }}
             >
               <p className={HomePage_ls.HomePageBox3_video_block_title}>
-                Wormholes LightYear Public Test NO.1
+                Wormholes Lightyear Public Test NO.1
               </p>
               <p className={HomePage_ls.HomePageBox3_video_block_text}>
-                WormhoelsChain solves the security and fairness issue through
+                WormholesChain solves the security and fairness issue through
                 Dynamic Random Election (DRE) Consensus, which implements the
                 first genuinely decentralized POS public chain in Web3.
               </p>
@@ -380,7 +381,7 @@ export default function HomePage() {
         />
         <div className={HomePage_ls.HomePageBox6_center}>
           <p className={HomePage_ls.HomePageBox6_title}>
-            <span>Main</span>&nbsp; Partners and&nbsp;
+            <span>Main</span>&nbsp;Partners and&nbsp;
             <span>Team</span> Members
           </p>
           <div className={HomePage_ls.HomePageBox6_line}>{/* 线 */}</div>
@@ -547,7 +548,7 @@ export default function HomePage() {
                       }
                     >
                       Co-Founder of Chronicled, Zanbato, CrossCoin Ventures, and
-                      Elastic Path Consulting Professor at Stanford University
+                      Elastic Path, Consulting Professor at Stanford University,
                       PhD, Stanford University.
                     </p>
                     <div
@@ -596,8 +597,8 @@ export default function HomePage() {
                     >
                       Board Member of Mapletree Fund, National Museum of
                       Singapore, 30+ Years of Investment Banking and Law
-                      Experience at Goldman Sachs, Milbank Tweed, and Paul Weiss
-                      BA, Cambridge University, LLM, Harvard University.
+                      Experience at Goldman Sachs, Milbank Tweed, and Paul
+                      Weiss, BA, Cambridge University, LLM, Harvard University.
                     </p>
                     <div
                       className={
@@ -651,7 +652,7 @@ export default function HomePage() {
                       }
                     >
                       Managing Partner of PacBridge Capital, Board Member of E/M
-                      Group, Linksys Technologies 20+ Years of Investment
+                      Group, Linksys Technologies, 20+ Years of Investment
                       Banking Experience at Credit Suisse, Morgan Stanley, and
                       Merrill Lynch.
                     </p>
@@ -699,7 +700,7 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Staff Scientist at Lawrence Berkeley National Laboratory
+                      Staff Scientist at Lawrence Berkeley National Laboratory,
                       PhD, Columbia University.
                     </p>
                     <div
@@ -754,8 +755,8 @@ export default function HomePage() {
                       }
                     >
                       Founder and CEO of SANA Semiconductors, Co-Founder of
-                      Tavanza, and Former CTO of Redwood Venture Partners
-                      Consulting Professor at Stanford University PhD, Stanford
+                      Tavanza, and Former CTO of Redwood Venture Partners,
+                      Consulting Professor at Stanford University, PhD, Stanford
                       University.
                     </p>
                     <div
@@ -802,7 +803,7 @@ export default function HomePage() {
                         HomePage_ls.HomePageBox6_Carouselbox2_centerboxlong_block_d_data
                       }
                     >
-                      Professor at UESTC PhD, Purdue University Specialist in
+                      Professor at UESTC, PhD, Purdue University, Specialist in
                       Cybersecurity.
                     </p>
                     <div
@@ -870,7 +871,7 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q3 2022</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              WormholesChain Testnet, One-Click NFT Marketplace WormholesChain
+              WormholesChain Testnet, One-Click NFT Marketplace, WormholesChain
               Limino, WormholesChain Scan
             </p>
           </div>
@@ -959,9 +960,8 @@ export default function HomePage() {
             </div>
             <p className={HomePage_ls.HomePageBox7_databox_dname}>Q1 2023</p>
             <p className={HomePage_ls.HomePageBox7_databox_dtext}>
-              GameFi, Web3 Hackathon Event, WormholesChain Foundation Ecosystem
-              <br />
-              Fund
+              GameFi, Web3 Hackathon Event, WormholesChain Foundation
+              <br /> Ecosystem Fund
             </p>
           </div>
           <img

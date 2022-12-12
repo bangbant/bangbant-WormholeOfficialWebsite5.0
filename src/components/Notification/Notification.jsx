@@ -7,21 +7,25 @@ export default function Notification() {
   useEffect(() => {
     let timebs = String(new Date().getTime());
     timebs = timebs.slice(0, 10);
-    if (Number(timebs) > Number(localStorage.getItem('storageTime'))) {
+    if (
+      Number(timebs) > Number(localStorage.getItem('WormholesChainstorageTime'))
+    ) {
       setBlocktop('20px');
     }
   }, []);
   function close() {
+    let time = String(new Date().getTime());
+    time = time.slice(0, 10);
+    time = String(Number(time) + 259200);
+    localStorage.setItem('WormholesChainstorageTime', time);
     setBlocktop('-320px');
   }
   function PrivacyPolicy() {
     let time = String(new Date().getTime());
     time = time.slice(0, 10);
-    time = String(Number(time) + 259200);
-    localStorage.setItem('storageTime', time);
-
+    time = String(Number(time) + 25920000000);
+    localStorage.setItem('WormholesChainstorageTime', time);
     setBlocktop('-320px');
-    history.push('/PrivacyPolicy');
   }
   return (
     <>
@@ -34,7 +38,14 @@ export default function Notification() {
         </span>
         <p className={Notification_ls.NotificationBox_text}>
           We use cookies to give you the best possible exprience on our website.
-          For more details please read our
+          For more details please read our{' '}
+          <span
+            onClick={() => {
+              history.push('/PrivacyPolicy');
+            }}
+          >
+            Cookies
+          </span>
         </p>
         <div
           className={Notification_ls.NotificationBox_button}
