@@ -115,7 +115,7 @@ export default function Header() {
             className={Header_ls.HeaderBox3_left}
           >
             <img src={require('../../assets/images/Header/Frame.png')} />
-            <span>WormholesChain</span>
+            <span>Wormholes</span>
           </Link>
           <div className={Header_ls.HeaderBox3_right}>
             <div
@@ -157,7 +157,7 @@ export default function Header() {
                   to={{ pathname: '/Join', state: '' }}
                   className={Header_ls.HeaderBox3_right_spanblock_link}
                 >
-                  Join WormholesChain
+                  Join Wormholes
                 </Link>
               </div>
             </div>

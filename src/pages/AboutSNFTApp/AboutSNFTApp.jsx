@@ -49,8 +49,8 @@ export default function AboutSNFTApp() {
         </p>
         <p className={AboutSNFTApp_ls.AboutSNFTAppBox_text}>
           Distinct from smart-contract based NFTs, S-NFTs are a native
-          chain-layer non-fungible asset on WormholesChain. S-NFTs are rewarded
-          to WormholesChain S-NFT Miners.
+          chain-layer non-fungible asset on Wormholes. S-NFTs are rewarded to
+          Wormholes S-NFT Miners.
         </p>
         <img
           className={AboutSNFTApp_ls.AboutSNFTAppBox_titleimg1}
@@ -177,8 +177,8 @@ export default function AboutSNFTApp() {
                   />
                   <p>
                     Staking rights and interests: S-NFTs can be staked into a
-                    decentralized exchange to get assets on the many
-                    WormholesChain subchains.
+                    decentralized exchange to get assets on the many Wormholes
+                    subchains.
                   </p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function AboutSNFTApp() {
             </p>
             <p className={AboutSNFTApp_ls.AboutSNFTAppBox_turntable_p4}>
               Staking rights and interests: S-NFTs can be staked into a
-              decentralized exchange to get assets on the many WormholesChain
+              decentralized exchange to get assets on the many Wormholes
               subchains.
             </p>
             <p className={AboutSNFTApp_ls.AboutSNFTAppBox_turntable_p5}>

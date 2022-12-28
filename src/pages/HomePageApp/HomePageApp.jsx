@@ -94,9 +94,9 @@ export default function HomePageApp() {
             </p>
             <p className={HomePageApp_ls.bigimg2_text}>
               Distinct from smart-contract based NFTs, S-NFTs are a native
-              chain-layer non-fungible asset on WormholesChain. S-NFTs are
-              rewarded to WormholesChain S-NFT Miners; they receive 4/11 of the
-              Mainnet block rewards.
+              chain-layer non-fungible asset on Wormholes. S-NFTs are rewarded
+              to Wormholes S-NFT Miners; they receive 4/11 of the Mainnet block
+              rewards.
             </p>
             <div
               className={HomePageApp_ls.bigimg2_button1}
@@ -127,17 +127,17 @@ export default function HomePageApp() {
           <p className={HomePageApp_ls.centerbox2_title}>
             Advantages of
             <br />
-            <span>WormholesChain</span>
+            <span>Wormholes</span>
           </p>
           <div className={HomePageApp_ls.centerbox2_line}>{/* 线 */}</div>
           <div className={HomePageApp_ls.centerbox2_databox}>
             <div>
               <span>Infinite Scalability</span>
               <p>
-                WormholesChain is a multi-dimensional blockchain, in which
-                parallel chains are coupled together to form the network,
-                supporting parallelism as a way to linearly increase throughput
-                with each additional chain added to the system.
+                Wormholes is a multi-dimensional blockchain, in which parallel
+                chains are coupled together to form the network, supporting
+                parallelism as a way to linearly increase throughput with each
+                additional chain added to the system.
               </p>
             </div>
             <div>
@@ -160,20 +160,19 @@ export default function HomePageApp() {
                 Architecture
               </span>
               <p style={{ color: '#000000' }}>
-                The WormholesChain multi-dimensional blockchain architecture
-                allows the realization of a linear increase in throughput with
-                each additional chain and layer added to the system, allowing
-                WormholesChain to easily achieve high transactions per second
-                (TPS).
+                The Wormholes multi-dimensional blockchain architecture allows
+                the realization of a linear increase in throughput with each
+                additional chain and layer added to the system, allowing
+                Wormholes to easily achieve high transactions per second (TPS).
               </p>
             </div>
             <div>
               <span>Diversified Developer Ecosystem</span>
               <p>
-                WormholesChain provides developers with a simple way to
-                integrate their DApp and projects with WormholesChain, allowing
-                developers and creators to focus their time on what they do best
-                – creating the best new DApps and products.
+                Wormholes provides developers with a simple way to integrate
+                their DApp and projects with Wormholes, allowing developers and
+                creators to focus their time on what they do best – creating the
+                best new DApps and products.
               </p>
             </div>
           </div>
@@ -215,7 +214,7 @@ export default function HomePageApp() {
             <p>
               The multi-level blockchain system structure: It consists of
               Transport, Blockchain, API, and Application levels, which make the
-              WormholesChain network secure and efficient.
+              Wormholes network secure and efficient.
             </p>
           </div>
           <div>
@@ -241,7 +240,7 @@ export default function HomePageApp() {
         >
           <div className={HomePageApp_ls.centerbox4_titlebox}>
             <div>{/* 线 */}</div>
-            <span>WormholesChain Event</span>
+            <span>Wormholes Event</span>
           </div>
           <div className={HomePageApp_ls.centerbox4_databox}>
             <div className={HomePageApp_ls.centerbox4_databox_block1}>
@@ -250,9 +249,9 @@ export default function HomePageApp() {
                 Public Test NO.2
               </p>
               <p className={HomePageApp_ls.centerbox4_databox_block1_text}>
-                WormholesChain solves the security and fairness issue through
-                Dynamic Random Election (DRE) Consensus, which implements the
-                first genuinely decentralized POS public chain in Web3.
+                Wormholes solves the security and fairness issue through Dynamic
+                Random Election (DRE) Consensus, which implements the first
+                genuinely decentralized POS public chain in Web3.
               </p>
               <span>Ended</span>
             </div>
@@ -271,8 +270,8 @@ export default function HomePageApp() {
                 className={HomePageApp_ls.centerbox4_databox_block1_text}
                 style={{ color: '#E3E3E3' }}
               >
-                ERB and S-NFT of WormholesChain will take you to experience
-                different economic models.
+                ERB and S-NFT of Wormholes will take you to experience different
+                economic models.
               </p>
               <span
                 style={{ color: '#FFFFFF' }}
@@ -294,9 +293,9 @@ export default function HomePageApp() {
                 <br /> Public Test NO.1
               </p>
               <p className={HomePageApp_ls.centerbox4_databox_block1_text}>
-                WormholesChain solves the security and fairness issue through
-                Dynamic Random Election (DRE) Consensus, which implements the
-                first genuinely decentralized POS public chain in Web3.
+                Wormholes solves the security and fairness issue through Dynamic
+                Random Election (DRE) Consensus, which implements the first
+                genuinely decentralized POS public chain in Web3.
               </p>
               <span>Coming soon</span>
             </div>
@@ -548,23 +547,22 @@ export default function HomePageApp() {
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>July 2022</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                WormholesChain Twitter, Medium, Discord
+                Wormholes Twitter, Medium, Discord
               </p>
             </div>
             <div className={HomePageApp_ls.Roadmap_13}>
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q3 2022</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                WormholesChain Testnet, One-Click NFT Marketplace,
-                WormholesChain Limino, WormholesChain Scan
+                Wormholes Testnet, One-Click NFT Marketplace, Wormholes Limino,
+                Wormholes Scan
               </p>
             </div>
             <div className={HomePageApp_ls.Roadmap_14}>
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q4 2022</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                WormholesChain Cross Swap, WormholesChain Faucet, WormholesChain
-                Evm Extend
+                Wormholes Cross Swap, Wormholes Faucet, Wormholes Evm Extend
               </p>
             </div>
             <div className={HomePageApp_ls.Roadmap_15}>
@@ -581,7 +579,7 @@ export default function HomePageApp() {
             <div className={HomePageApp_ls.Roadmap_16}>
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q1 2023</span>
-              <p className={HomePageApp_ls.Roadmap_p}>WormholesChain Limino</p>
+              <p className={HomePageApp_ls.Roadmap_p}>Wormholes Limino</p>
             </div>
             <div className={HomePageApp_ls.Roadmap_17}>
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
@@ -611,8 +609,8 @@ export default function HomePageApp() {
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q2 2023</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                Metaverse & NFT Tools, incl. Oculus Tools, WormholesChain
-                Metaverse APl
+                Metaverse & NFT Tools, incl. Oculus Tools, Wormholes Metaverse
+                APl
               </p>
             </div>
             <img
@@ -636,8 +634,8 @@ export default function HomePageApp() {
               <div className={HomePageApp_ls.Roadmap_y}>{/* 圆 */}</div>
               <span className={HomePageApp_ls.Roadmap_span}>Q1 2023</span>
               <p className={HomePageApp_ls.Roadmap_p}>
-                GameFi, Web3 Hackathon Event, WormholesChain Foundation
-                Ecosystem Fund
+                GameFi, Web3 Hackathon Event, Wormholes Foundation Ecosystem
+                Fund
               </p>
             </div>
           </div>

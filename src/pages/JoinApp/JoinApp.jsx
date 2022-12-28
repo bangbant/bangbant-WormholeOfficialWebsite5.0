@@ -11,12 +11,11 @@ export default function JoinApp() {
           <div className={styles.topRight}>
             <div className={styles.topRightBolder}>
               Join the<br></br>
-              <span>WormholesChain</span>
+              <span>Wormholes</span>
               Global<br></br>Community Team
             </div>
             <div className={styles.topRightLight}>
-              Grow together with WormholesChain and help build a better Web3
-              future.
+              Grow together with Wormholes and help build a better Web3 future.
             </div>
           </div>
         </div>
@@ -24,31 +23,30 @@ export default function JoinApp() {
           <div className={styles.block}>
             <div className={styles.dot}></div>
             <div className={styles.item}>
-              If you know blockchain development, come work with the
-              WormholesChain Community Team to resolve security bugs and
-              optimize algorithm protocols and application tools, earning
-              rewards in the process.
+              If you know blockchain development, come work with the Wormholes
+              Community Team to resolve security bugs and optimize algorithm
+              protocols and application tools, earning rewards in the process.
             </div>
           </div>
           <div className={styles.block}>
             <div className={styles.dot}></div>
             <div className={styles.item}>
               If you are good at writing, come provide unique written or video
-              content about WormholesChain to a global audience, earning rewards
-              in the process.
+              content about Wormholes to a global audience, earning rewards in
+              the process.
             </div>
           </div>
           <div className={styles.block}>
             <div className={styles.dot}></div>
             <div className={styles.item}>
-              If you can propose and develop creative ideas for WormholesChain,
-              you will earn recieve rewards if they are selected.
+              If you can propose and develop creative ideas for Wormholes, you
+              will earn recieve rewards if they are selected.
             </div>
           </div>
           <div className={styles.block}>
             <div className={styles.dot}></div>
             <div className={styles.item}>
-              If know community operation, come work with the WormholesChain
+              If know community operation, come work with the Wormholes
               Community Team to establish an active global community, getting
               paid as you reach benchmarks.
             </div>
@@ -57,7 +55,7 @@ export default function JoinApp() {
         <div className={styles.bottom}>
           <div className={styles.topRightBolder}>
             Apply Here to&nbsp;<span>Join</span>&nbsp;the<br></br>
-            <span>WormholesChain</span>&nbsp;Global<br></br>Community Team
+            <span>Wormholes</span>&nbsp;Global<br></br>Community Team
           </div>
           <div
             className={styles.Button}

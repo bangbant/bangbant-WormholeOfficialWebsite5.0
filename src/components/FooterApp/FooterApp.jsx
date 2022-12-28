@@ -245,7 +245,7 @@ export default function FooterApp() {
                 to={{ pathname: '/JoinApp', state: '' }}
                 className={FooterApp_ls.FooterAppBox_Navigationbox_block_span}
               >
-                Join WormholesChain
+                Join Wormholes
               </Link>
             </div>
             <div className={FooterApp_ls.FooterAppBox_Navigationbox_block}>

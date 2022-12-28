@@ -5,7 +5,7 @@ export default function DRE() {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.titleBolder}>
-          WormholesChain&nbsp;<span>DRE Consensus</span>
+          Wormholes&nbsp;<span>DRE Consensus</span>
         </div>
         <div className={styles.titleLight}>
           Dynamic Random Election (DRE)-based Consensus Mechanism: A set of

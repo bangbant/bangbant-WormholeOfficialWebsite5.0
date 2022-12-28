@@ -90,7 +90,7 @@ export default function HeaderApp(props) {
               <img
                 src={require('../../assets/images/HeaderApp/Frame@2x.png')}
               />
-              <span>WormholesChain</span>
+              <span>Wormholes</span>
             </Link>
             {icondata == 0 ? (
               <span
@@ -184,7 +184,7 @@ export default function HeaderApp(props) {
               className={HeaderApp_ls.HeaderAppBox_dropdown_block_sbox_d}
               to={{ pathname: '/JoinApp', state: '' }}
             >
-              Join WormholesChain
+              Join Wormholes
             </Link>
           </div>
           <div

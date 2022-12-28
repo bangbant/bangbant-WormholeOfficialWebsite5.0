@@ -6,15 +6,15 @@ export default function Wallet() {
       <div className={styles.content}>
         <div className={styles.top}>
           <div className={styles.titleBolder}>
-            WormholesChain&nbsp;<span>Limino</span>
+            Wormholes&nbsp;<span>Limino</span>
           </div>
           <div className={styles.titleLight}>
-            The WormholesChain Limino is your portal to the WormholesChain
-            ecosystem, acting as a secure means
-            <br /> for storing and transacting your crypto assets on
-            WormholesChain. Join us in building the
+            The Wormholes Limino is your portal to the Wormholes ecosystem,
+            acting as a secure means
+            <br /> for storing and transacting your crypto assets on Wormholes.
+            Join us in building the
             <br />
-            WormholesChain ecosystem by creating a WormholesChain Limino today!
+            Wormholes ecosystem by creating a Wormholes Limino today!
           </div>
           <div
             className={styles.Button}
@@ -32,7 +32,7 @@ export default function Wallet() {
             <div className={styles.line}></div>
           </div>
           <div className={styles.titleBolder}>
-            WormholesChain&nbsp;<span>Limino</span>&nbsp;Functions
+            Wormholes&nbsp;<span>Limino</span>&nbsp;Functions
           </div>
           <div className={styles.flexBox}>
             <div className={styles.middelLeft}>
@@ -40,14 +40,14 @@ export default function Wallet() {
                 src={require('../../assets/images/Wallet/rightimg.png')}
               ></img>
               <div className={styles.title}>
-                Stake ERB on<br></br>WormholesChain
+                Stake ERB on<br></br>Wormholes
               </div>
               <div className={styles.item}>
-                As the native token of the WormholesChain, ERB gives its holder
-                access to important functions on WormholesChain, including
-                participating in the building of WormholesChain. Through the
-                WormholesChain Limino, ERB can be staked to create validator
-                nodes and to have the chance to get validator rewards.
+                As the native token of the Wormholes, ERB gives its holder
+                access to important functions on Wormholes, including
+                participating in the building of Wormholes. Through the
+                Wormholes Limino, ERB can be staked to create validator nodes
+                and to have the chance to get validator rewards.
               </div>
               <div
                 className={styles.Button}
@@ -74,9 +74,9 @@ export default function Wallet() {
                 <br /> Marketplace
               </div>
               <div className={styles.item}>
-                By staking a small amount of ERB through the WormholesChain
-                Limino, users can create their own NFT Marketplace with just one
-                click and gain the chance to receive S-NFT rewards.
+                By staking a small amount of ERB through the Wormholes Limino,
+                users can create their own NFT Marketplace with just one click
+                and gain the chance to receive S-NFT rewards.
               </div>
               <div
                 className={styles.Button}
@@ -94,8 +94,8 @@ export default function Wallet() {
       </div>
       <div className={styles.bottom}>
         <div className={styles.titleBolder}>
-          <span>WormholesChain</span>&nbsp;is almost here, stay<br></br>tuned
-          for updates!
+          <span>Wormholes</span>&nbsp;is almost here, stay<br></br>tuned for
+          updates!
         </div>
         <div className={styles.lineBox}>
           <div className={styles.line}></div>
@@ -108,7 +108,7 @@ export default function Wallet() {
               window.open('https://market-2.gitbook.io/wormholestestwallet/');
             }}
           >
-            WormholesChain Limino Tutorial
+            Wormholes Limino Tutorial
           </div>
           <div
             className={styles.Button}
@@ -116,7 +116,7 @@ export default function Wallet() {
               window.open('https://metamask.io/');
             }}
           >
-            WormholesChain Supports MetaMask
+            Wormholes Supports MetaMask
           </div>
         </div>
       </div>

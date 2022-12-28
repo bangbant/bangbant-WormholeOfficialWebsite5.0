@@ -9,15 +9,14 @@ export default function AboutERBApp() {
             About the&nbsp;<span>ERB</span>
           </div>
           <div className={styles.topRightLight}>
-            The principal cryptocurrency of WormholesChain is the WormholesChain
-            ERB. ERB is used to pay transaction fees on WormholesChain NFT
-            Marketplaces, gas fees, and persistent storage payments.It is also
-            used as a stake to open NFT marketplaces and increase mining
-            revenue. Finally, ERB plays a crucial role in voting and
-            participating in governance throughout the community, ranging from
-            frequent tasks such as voting on the theme of each issue of S-NFT to
-            major decisions such as the disbursement of funds from the
-            WormholesChain Community Fund.
+            The principal cryptocurrency of Wormholes is the Wormholes ERB. ERB
+            is used to pay transaction fees on Wormholes NFT Marketplaces, gas
+            fees, and persistent storage payments.It is also used as a stake to
+            open NFT marketplaces and increase mining revenue. Finally, ERB
+            plays a crucial role in voting and participating in governance
+            throughout the community, ranging from frequent tasks such as voting
+            on the theme of each issue of S-NFT to major decisions such as the
+            disbursement of funds from the Wormholes Community Fund.
           </div>
         </div>
         <div className={styles.topRight}>
@@ -31,9 +30,9 @@ export default function AboutERBApp() {
             <span className={styles.smallTitle}>Inflation Logic</span>
           </div>
           <div className={styles.topRightLight}>
-            WormholesChain validation and staking rewards are distributed in the
-            form of ERBs and S-NFTs. S-NFTs can also be exchanged for ERBs in
-            Limino, the WormholesChain digital wallet.
+            Wormholes validation and staking rewards are distributed in the form
+            of ERBs and S-NFTs. S-NFTs can also be exchanged for ERBs in Limino,
+            the Wormholes digital wallet.
           </div>
         </div>
       </div>
@@ -60,7 +59,7 @@ export default function AboutERBApp() {
           <div className={styles.item}>
             <div className={styles.itemLeft}>Secure</div>
             <div className={styles.itemRight}>
-              WormholesChain uses the most advanced encryption technology and
+              Wormholes uses the most advanced encryption technology and
               security systems to ensure the security and stability of the
               network and its users assets.
             </div>
@@ -70,9 +69,9 @@ export default function AboutERBApp() {
           <div className={styles.item}>
             <div className={styles.itemLeft}>Low-Cost Liquidity</div>
             <div className={styles.itemRight}>
-              The WormholesChain multi-dimensional blockchain architecture
-              combined with its lightweight and fair consensus algorithms allow
-              on-chain assets to move quickly and cheaply without sacrificing
+              The Wormholes multi-dimensional blockchain architecture combined
+              with its lightweight and fair consensus algorithms allow on-chain
+              assets to move quickly and cheaply without sacrificing
               decentralization.
             </div>
           </div>
@@ -92,10 +91,9 @@ export default function AboutERBApp() {
             <div className={styles.itemLeft}>Diversified Demand</div>
             <div className={styles.itemRight}>
               Owing to the NFT Marketplaces built on the multi-chain and
-              multi-layer structure and the WormholesChain application layer,
-              the WormholesChain token economic model creates significant demand
-              for ERBs and S-NFTs, opening up new roles in the WormholesChain
-              ecosystem.
+              multi-layer structure and the Wormholes application layer, the
+              Wormholes token economic model creates significant demand for ERBs
+              and S-NFTs, opening up new roles in the Wormholes ecosystem.
             </div>
           </div>
         </div>
@@ -110,8 +108,8 @@ export default function AboutERBApp() {
             <span>Application</span>&nbsp;Scenarios
           </div>
           <div className={styles.topRightLight}>
-            ERB is used to pay transaction fees on WormholesChain NFT
-            Marketplaces, gas<br></br>fees, and persistent storage payments.
+            ERB is used to pay transaction fees on Wormholes NFT Marketplaces,
+            gas<br></br>fees, and persistent storage payments.
           </div>
         </div>
       </div>
@@ -122,17 +120,17 @@ export default function AboutERBApp() {
             <div className={styles.text}>
               The ERB staking system creates the primary incentive for users and
               nodes to validate transactions properly, maintaining the security
-              and stability of the WormholesChain ecosystem.
+              and stability of the Wormholes ecosystem.
             </div>
           </div>
           <div className={styles.boxitem}>
             <div className={styles.title}>Why Stake?</div>
             <div className={styles.text}>
-              Staking allows validator nodes to join the WormholesChain network
-              by locking a quantity of their mainnet ERBs for a specified amount
-              of time. The network takes the number of ERBs staked by the node
-              as one of the determiners of the level of trust in the node,
-              preventing some nodes from operating WormholesChain mainnet nodes
+              Staking allows validator nodes to join the Wormholes network by
+              locking a quantity of their mainnet ERBs for a specified amount of
+              time. The network takes the number of ERBs staked by the node as
+              one of the determiners of the level of trust in the node,
+              preventing some nodes from operating Wormholes mainnet nodes
               inappropriately to control and break network rules. Staking ERBs
               increases the cost of misbehavior for rule-breakers and protects
               the entire network from the possibility of manipulation by
@@ -153,9 +151,9 @@ export default function AboutERBApp() {
               Crypto Asset<br></br>Exchange
             </div>
             <div className={styles.text}>
-              ERB, as the underlying native fungible token of WormholesChain,
-              can be used as a medium of value exchange with any other crypto
-              assets throughout the network.
+              ERB, as the underlying native fungible token of Wormholes, can be
+              used as a medium of value exchange with any other crypto assets
+              throughout the network.
             </div>
           </div>
           <div className={styles.boxitem}>

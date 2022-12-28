@@ -11,15 +11,15 @@ export default function Ecosystem() {
           <div className={styles.topRight}>
             <div className={styles.topRightBold}>
               The principal cryptocurrency of
-              <br /> WormholesChain is the WormholesChain ERB.
+              <br /> Wormholes is the Wormholes ERB.
             </div>
             <div className={styles.topRightBolder}>
-              WormholesChain&nbsp;<span>Ecosystem</span>
+              Wormholes&nbsp;<span>Ecosystem</span>
             </div>
             <div className={styles.topRightLight}>
-              The WormholesChain economy is backed by a two-tier token model
-              consisting of the WormholesChain fungible token ERB and
-              non-fungible token S-NFT.
+              The Wormholes economy is backed by a two-tier token model
+              consisting of the Wormholes fungible token ERB and non-fungible
+              token S-NFT.
             </div>
           </div>
         </div>
@@ -31,9 +31,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                ERB is used to pay transaction<br></br>fees on WormholesChain
-                NFT<br></br>Marketplaces, gas fees, and<br></br>persistent
-                storage payments.
+                ERB is used to pay transaction<br></br>fees on Wormholes NFT
+                <br></br>Marketplaces, gas fees, and<br></br>persistent storage
+                payments.
               </div>
             </div>
             <div className={styles.outleft1}>
@@ -54,7 +54,7 @@ export default function Ecosystem() {
               <div className={styles.text}>
                 Ranging from frequent tasks such as voting on the theme of each
                 issue of S-NFT to major decisions such as the disbursement of
-                funds from the WormholesChain Community fund.
+                funds from the Wormholes Community fund.
               </div>
             </div>
             <div className={styles.outleft3}>
@@ -63,9 +63,9 @@ export default function Ecosystem() {
               ></img>
               <div className={styles.dot}></div>
               <div className={styles.text}>
-                WormholesChain S-NFTs are the second native token of the
-                WormholesChain. S-NFTs serve as the direct reward for S-NFT
-                Nodes who stake their tokens on WormholesChain.
+                Wormholes S-NFTs are the second native token of the Wormholes.
+                S-NFTs serve as the direct reward for S-NFT Nodes who stake
+                their tokens on Wormholes.
               </div>
             </div>
             <div className={styles.outright1}>
@@ -77,8 +77,7 @@ export default function Ecosystem() {
                 The theme of each issue of S-NFTs is decided on by the community
                 through voting, giving S-NFTs a collectible value separate from
                 their pure exchange to ERB value and allowing community members
-                to participate in creating the assets that make up
-                WormholesChain.
+                to participate in creating the assets that make up Wormholes.
               </div>
             </div>
             <div className={styles.outright2}>

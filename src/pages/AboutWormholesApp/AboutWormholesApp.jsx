@@ -18,7 +18,7 @@ export default function AboutWormholesApp() {
             className={AboutWormholes_ls.centerimg}
           />
           <div className={AboutWormholes_ls.text}>
-            WormholesChain is a multi-dimensional blockchain, in which parallel
+            Wormholes is a multi-dimensional blockchain, in which parallel
             chains are coupled together to form the network, supporting
             parallelism as a way to linearly increase throughput with each
             additional chain added to the system. There is no upper bound on
@@ -33,7 +33,7 @@ export default function AboutWormholesApp() {
             <div className={AboutWormholes_ls.title}>“Secure”</div>
           </div>
           <div className={AboutWormholes_ls.text}>
-            The WormholesChain network consists of multiple independent peer
+            The Wormholes network consists of multiple independent peer
             blockchains. Each parallel blockchain is coupled with the previous
             blocks of other chains at the same or different block height. In a
             general blockchain data structure, ordered blocks are linked "back",

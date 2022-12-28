@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 import PubSub from 'pubsub-js';
 import { Helmet } from 'umi';
 export default function IndexPage(props) {
-  const [wormholes, setWormholes] = useState('WormholesChain Official Website');
+  const [wormholes, setWormholes] = useState('Wormholes Official Website');
   const getDevice = () => {
     let agent = navigator.userAgent.toLowerCase();
     let result = {
@@ -38,7 +38,7 @@ export default function IndexPage(props) {
   useEffect(() => {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     setWormholes(
-      `WormholesChain ${props.location.pathname.slice(
+      `Wormholes ${props.location.pathname.slice(
         1,
         props.location.pathname.length,
       )}`,

@@ -15,12 +15,12 @@ export default function AboutWormholes() {
               className={AboutWormholes_ls.AboutWormholesBox_titlebox_imgy}
             />
             <p className={AboutWormholes_ls.AboutWormholesBox_titlebox_text}>
-              WormholesChain is a multi-dimensional blockchain, in which
-              parallel chains are coupled together to form the network,
-              supporting parallelism as a way to linearly increase throughput
-              with each additional chain added to the system. There is no upper
-              bound on network size, and the network size is theoretically
-              constrained only by the existing global IP infrastructure.
+              Wormholes is a multi-dimensional blockchain, in which parallel
+              chains are coupled together to form the network, supporting
+              parallelism as a way to linearly increase throughput with each
+              additional chain added to the system. There is no upper bound on
+              network size, and the network size is theoretically constrained
+              only by the existing global IP infrastructure.
             </p>
             <span>“Decentralized”</span>
           </div>
@@ -32,7 +32,7 @@ export default function AboutWormholes() {
               className={AboutWormholes_ls.AboutWormholesBox_centerbox_imgy}
             />
             <p className={AboutWormholes_ls.AboutWormholesBox_centerbox_text}>
-              The WormholesChain network consists of multiple independent peer
+              The Wormholes network consists of multiple independent peer
               blockchains. Each parallel blockchain is coupled with the previous
               blocks of other chains at the same or different block height. In a
               general blockchain data structure, ordered blocks are linked

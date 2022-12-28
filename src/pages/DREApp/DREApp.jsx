@@ -5,7 +5,7 @@ export default function DREApp() {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.titleBolder}>
-          WormholesChain<br></br>
+          Wormholes<br></br>
           <span>DRE Consensus</span>
         </div>
         <div className={styles.titleLight}>

@@ -28,7 +28,7 @@ export default function DappsApp() {
               <div className={Dapps_ls.line}>{/* 线 */}</div>
               <p className={Dapps_ls.DappsBox_titletextbox_left_text2}>
                 Collect and trade S-NFTs to exchange for more&nbsp;
-                <span>WormholesChain</span>&nbsp;ecosystem rights.
+                <span>Wormholes</span>&nbsp;ecosystem rights.
               </p>
             </div>
           </div>
@@ -162,29 +162,29 @@ export default function DappsApp() {
             <p>Ecosystem Development</p>
           </div>
           <p className={Dapps_ls.DappsBox_centerbottom_title2}>
-            <span>WormholesChain</span>&nbsp;
+            <span>Wormholes</span>&nbsp;
             <br />
             Foundation Ecosystem
             <br /> Fund
           </p>
           <p className={Dapps_ls.DappsBox_centerbottom_title3}>
-            The WormholesChain Foundation Ecosystem Fund will provide
-            development support for NFT ecosystem projects built on{' '}
-            <span>(DeFi, NFT, GameFi, Metaverse)</span> WormholesChain.
+            The Wormholes Foundation Ecosystem Fund will provide development
+            support for NFT ecosystem projects built on{' '}
+            <span>(DeFi, NFT, GameFi, Metaverse)</span> Wormholes.
           </p>
           <div className={Dapps_ls.DappsBox_centerbottom_blockbox}>
             <div className={Dapps_ls.DappsBox_centerbottom_blockbox_d1}>
               <img src={require('../../assets/images/Dapps/Slice 911.png')} />
               <p>
-                If you want to join us in building WormholesChain and a Web3
-                future for us all, the WormholesChain Ventures Fund will provide
-                support to you and your team...
+                If you want to join us in building Wormholes and a Web3 future
+                for us all, the Wormholes Ventures Fund will provide support to
+                you and your team...
               </p>
             </div>
             <div className={Dapps_ls.DappsBox_centerbottom_blockbox_d2}>
               <p>
                 Apply for a<br></br>
-                <span>WormholesChain</span> <br />
+                <span>Wormholes</span> <br />
                 Foundation Grant
               </p>
               <span>Let us know if you have any questions!</span>

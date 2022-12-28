@@ -49,18 +49,18 @@ export default function EcosystemApp() {
           <div className={styles.topRight}>
             <div className={styles.topRightBold}>
               The principal cryptocurrency
-              <br /> of WormholesChain is the
-              <br /> WormholesChain ERB.
+              <br /> of Wormholes is the
+              <br /> Wormholes ERB.
             </div>
             <div className={styles.topRightBolder}>
-              WormholesChain
+              Wormholes
               <br />
               <span>Ecosystem</span>
             </div>
             <div className={styles.topRightLight}>
-              The WormholesChain economy is backed by a two-tier token model
-              consisting of the WormholesChain fungible token ERB and
-              non-fungible token S-NFT.
+              The Wormholes economy is backed by a two-tier token model
+              consisting of the Wormholes fungible token ERB and non-fungible
+              token S-NFT.
             </div>
             {/* <div className={styles.button}>Learn More</div> */}
           </div>
@@ -75,7 +75,7 @@ export default function EcosystemApp() {
                     src={require('../../assets/images/EcosystemApp/Slice 1022@2x.png')}
                   />
                   <p>
-                    ERB is used to pay transaction fees on WormholesChain NFT
+                    ERB is used to pay transaction fees on Wormholes NFT
                     Marketplaces, gas fees, and persistent storage payments.
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function EcosystemApp() {
                     community through voting, giving S-NFTs a collectible value
                     separate from their pure exchange to ERB value and allowing
                     community members to participate in creating the assets that
-                    make up WormholesChain.
+                    make up Wormholes.
                   </p>
                 </div>
               </div>
@@ -110,9 +110,9 @@ export default function EcosystemApp() {
                     src={require('../../assets/images/EcosystemApp/Slice 1020@2x.png')}
                   />
                   <p>
-                    WormholesChain S-NFTs are the second native token of the
-                    WormholesChain. S-NFTs serve as the direct reward for S-NFT
-                    Nodes who stake their tokens on WormholesChain.
+                    Wormholes S-NFTs are the second native token of the
+                    Wormholes. S-NFTs serve as the direct reward for S-NFT Nodes
+                    who stake their tokens on Wormholes.
                   </p>
                 </div>
               </div>
@@ -126,8 +126,7 @@ export default function EcosystemApp() {
                   <p>
                     Ranging from frequent tasks such as voting on the theme of
                     each issue of S-NFT to major decisions such as the
-                    disbursement of funds from the WormholesChain Community
-                    fund.
+                    disbursement of funds from the Wormholes Community fund.
                   </p>
                 </div>
                 <div className={styles.TouchcarouselBox_block_d}>
@@ -173,14 +172,14 @@ export default function EcosystemApp() {
             // style={{ transform: 'rotate(210deg)' }}
           >
             <p className={styles.turntable_p1}>
-              ERB is used to pay transaction fees on WormholesChain NFT
+              ERB is used to pay transaction fees on Wormholes NFT
               Marketplaces, gas fees, and persistent storage payments.
             </p>
             <p className={styles.turntable_p2}>
               The theme of each issue of S-NFTs is decided on by the community
               through voting, giving S-NFTs a collectible value separate from
               their pure exchange to ERB value and allowing community members to
-              participate in creating the assets that make up WormholesChain.
+              participate in creating the assets that make up Wormholes.
             </p>
             <p className={styles.turntable_p6}>
               Finally, ERB plays a crucial role in voting and participating in
@@ -189,12 +188,12 @@ export default function EcosystemApp() {
             <p className={styles.turntable_p5}>
               Ranging from frequent tasks such as voting on the theme of each
               issue of S-NFT to major decisions such as the disbursement of
-              funds from the WormholesChain Community fund.
+              funds from the Wormholes Community fund.
             </p>
             <p className={styles.turntable_p4}>
-              WormholesChain S-NFTs are the second native token of the
-              WormholesChain. S-NFTs serve as the direct reward for S-NFT Nodes
-              who stake their tokens on WormholesChain.
+              Wormholes S-NFTs are the second native token of the
+              Wormholes. S-NFTs serve as the direct reward for S-NFT Nodes
+              who stake their tokens on Wormholes.
             </p>
             <p className={styles.turntable_p3}>
               S-NFTs also have an additional utility function, rewarding holders
