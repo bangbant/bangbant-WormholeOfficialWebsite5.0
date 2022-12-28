@@ -136,7 +136,7 @@ export default defineConfig({
   hash: true,
   links: [
     // href的图片你可以放在public里面，直接./图片名.png 就可以了，也可以是cdn链接
-    { rel: 'ico', href: './src/assets/images/logo.ico' },
+    { rel: 'ico', href: './public/favicon.ico' },
   ],
   title: false,
 });

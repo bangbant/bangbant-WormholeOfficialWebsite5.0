@@ -332,7 +332,7 @@ export default function HomePage() {
                 className={HomePage_ls.HomePageBox3_video_block_title}
                 style={{ color: '#FFFFFF' }}
               >
-                Meteorite Effect Event NO.1
+                Meteorite Effect Event NO.2
               </p>
               <p
                 className={HomePage_ls.HomePageBox3_video_block_text}
@@ -342,12 +342,12 @@ export default function HomePage() {
                 economic models.
               </p>
               <span
-                style={{ color: '#FFFFFF', cursor: 'pointer' }}
                 onClick={() => {
                   window.open(
                     'https://market-2.gitbook.io/meteorite-effect-event/',
                   );
                 }}
+                className={HomePage_ls.HomePageBox3_video_block_span1}
               >
                 Ongoing
               </span>
@@ -364,7 +364,9 @@ export default function HomePage() {
                 Random Election (DRE) Consensus, which implements the first
                 genuinely decentralized POS public chain in Web3.
               </p>
-              <span>Coming soon</span>
+              <span className={HomePage_ls.HomePageBox3_video_block_span}>
+                Ongoing
+              </span>
             </div>
           </div>
         </div>

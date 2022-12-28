@@ -54,7 +54,7 @@ export default function IndexPage(props) {
         <title>{wormholes}</title>
         <link
           rel="shortcut ico"
-          href="../assets/images/logo.ico"
+          href="../../public/favicon.ico"
           type="images/ico"
         />
       </Helmet>

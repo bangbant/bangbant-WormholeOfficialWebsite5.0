@@ -66,7 +66,7 @@ export default function Header() {
       {contextHolder}
       <div className={Header_ls.HeaderBox}>
         <img src={require('../../assets/images/Header/Slice 817.png')} />
-        <a href="/#event">Meteorite Effect Event NO.1</a>
+        <a href="/#event">Wormholes Lightyear Public Test NO.1</a>
       </div>
       <div className={Header_ls.HeaderBox2}>
         <div className={Header_ls.HeaderBox2_center}>

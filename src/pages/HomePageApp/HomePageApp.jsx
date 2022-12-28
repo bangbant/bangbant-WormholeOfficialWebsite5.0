@@ -264,7 +264,7 @@ export default function HomePageApp() {
                 style={{ color: '#FFFFFF' }}
               >
                 Meteorite Effect <br />
-                Event NO.1
+                Event NO.2
               </p>
               <p
                 className={HomePageApp_ls.centerbox4_databox_block1_text}
@@ -297,7 +297,7 @@ export default function HomePageApp() {
                 Random Election (DRE) Consensus, which implements the first
                 genuinely decentralized POS public chain in Web3.
               </p>
-              <span>Coming soon</span>
+              <span>Ongoing</span>
             </div>
           </div>
         </div>

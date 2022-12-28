@@ -78,7 +78,7 @@ export default function HeaderApp(props) {
             src={require('../../assets/images/HeaderApp/Slice 817@2x.png')}
           />
           <a className={HeaderApp_ls.HeaderAppBox_Notice_a} href="/#eventApp">
-            Meteorite Effect Event NO.1
+            Wormholes Lightyear Public Test NO.1
           </a>
         </div>
         <div className={HeaderApp_ls.HeaderAppBox_Navigation}>

@@ -20,7 +20,7 @@ export default function AboutERBApp() {
           </div>
         </div>
         <div className={styles.topRight}>
-          <img src={require('../../assets/images/AboutERB/logo.png')}></img>
+          <img src={require('../../assets/images/AboutERB/logos.png')}></img>
         </div>
       </div>
       <div className={styles.mid}>
