@@ -277,7 +277,7 @@ export default function HomePageApp() {
                 style={{ color: '#FFFFFF' }}
                 onClick={() => {
                   window.open(
-                    'https://market-2.gitbook.io/meteorite-effect-event/',
+                    'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
                   );
                 }}
               >
@@ -297,7 +297,15 @@ export default function HomePageApp() {
                 Random Election (DRE) Consensus, which implements the first
                 genuinely decentralized POS public chain in Web3.
               </p>
-              <span>Ongoing</span>
+              <span
+                onClick={() => {
+                  window.open(
+                    'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
+                  );
+                }}
+              >
+                Ongoing
+              </span>
             </div>
           </div>
         </div>

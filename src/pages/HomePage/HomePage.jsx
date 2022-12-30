@@ -344,7 +344,7 @@ export default function HomePage() {
               <span
                 onClick={() => {
                   window.open(
-                    'https://market-2.gitbook.io/meteorite-effect-event/',
+                    'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
                   );
                 }}
                 className={HomePage_ls.HomePageBox3_video_block_span1}
@@ -364,7 +364,14 @@ export default function HomePage() {
                 Random Election (DRE) Consensus, which implements the first
                 genuinely decentralized POS public chain in Web3.
               </p>
-              <span className={HomePage_ls.HomePageBox3_video_block_span}>
+              <span
+                className={HomePage_ls.HomePageBox3_video_block_span}
+                onClick={() => {
+                  window.open(
+                    'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
+                  );
+                }}
+              >
                 Ongoing
               </span>
             </div>

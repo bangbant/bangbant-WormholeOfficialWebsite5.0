@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './AboutSNFT.less';
 export default function AboutSNFT() {
+  let L0 = 0.03;
+  let L1 = 0.143;
+  let L2 = 0.271;
+  let L3 = 0.65;
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -121,8 +125,10 @@ export default function AboutSNFT() {
             <div className={styles.text}>
               Exchange rights and interests: exchange S-NFTs at differing
               exchange rates depending on the level of the S-NFTs. First-level
-              S-NFTs can be exchanged for 0.095 ERBs, second-level for 0.143,
-              third-level for 0.271, and fourth-level for 0.65 ERBs.
+              S-NFTs can be exchanged for {L0} ERBs, second-level for{' '}
+              {(L1 * 16 - L0 * 16).toFixed(2)}, third-level for{' '}
+              {(L2 * 16 * 16 - L1 * 16 * 16).toFixed(2)}, and fourth-level for{' '}
+              {(L3 * 16 * 16 * 16 - L2 * 16 * 16 * 16).toFixed(2)} ERBs.
             </div>
           </div>
           <div className={styles.outleft2}>
