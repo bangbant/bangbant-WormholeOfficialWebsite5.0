@@ -275,13 +275,13 @@ export default function HomePageApp() {
               </p>
               <span
                 style={{ color: '#FFFFFF' }}
-                onClick={() => {
-                  window.open(
-                    'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
-                  );
-                }}
+                // onClick={() => {
+                //   window.open(
+                //     'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
+                //   );
+                // }}
               >
-                Ongoing
+                Ended
               </span>
             </div>
             <div
@@ -298,13 +298,13 @@ export default function HomePageApp() {
                 genuinely decentralized POS public chain in Web3.
               </p>
               <span
-                onClick={() => {
-                  window.open(
-                    'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
-                  );
-                }}
+              // onClick={() => {
+              //   window.open(
+              //     'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
+              //   );
+              // }}
               >
-                Ongoing
+                Ended
               </span>
             </div>
           </div>

@@ -342,14 +342,14 @@ export default function HomePage() {
                 economic models.
               </p>
               <span
-                onClick={() => {
-                  window.open(
-                    'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
-                  );
-                }}
+                // onClick={() => {
+                //   window.open(
+                //     'https://market-2.gitbook.io/meteorite-effect-no.2-s-nft-miner/',
+                //   );
+                // }}
                 className={HomePage_ls.HomePageBox3_video_block_span1}
               >
-                Ongoing
+                Ended
               </span>
             </div>
             <div
@@ -366,13 +366,13 @@ export default function HomePage() {
               </p>
               <span
                 className={HomePage_ls.HomePageBox3_video_block_span}
-                onClick={() => {
-                  window.open(
-                    'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
-                  );
-                }}
+                // onClick={() => {
+                //   window.open(
+                //     'https://medium.com/wormholeschain-network/wormholes-lightyear-no-1-public-test-85e7082c6df1',
+                //   );
+                // }}
               >
-                Ongoing
+                Ended
               </span>
             </div>
           </div>
